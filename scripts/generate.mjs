@@ -102,7 +102,7 @@ function generateTypes(messages) {
 }
 
 function generateRust() {
-  const nativeCodes = { zh: 0, en: 1, ru: 2 };
+  const nativeCodes = { zh: 0, en: 1, ru: 2, ja: 3 };
   const entries = metadata.applications.desktop.map(id => {
     const language = metadata.languages.find(item => item.id === id);
     const code = nativeCodes[language.nativeText];

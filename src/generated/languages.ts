@@ -54,33 +54,38 @@ export const languages = [
     "tag": "ja",
     "direction": "ltr",
     "fallback": "en",
-    "nativeText": "en"
+    "nativeText": "ja"
   }
 ] as const;
 export const applications = {
   "desktop": [
     "en",
     "zh",
-    "ru"
+    "ru",
+    "ja"
   ],
   "web": [
     "zh",
     "en",
-    "ru"
+    "ru",
+    "ja"
   ],
   "native": [
     "zh",
     "en",
-    "ru"
+    "ru",
+    "ja"
   ],
   "coze": [
     "zh",
     "en",
-    "ru"
+    "ru",
+    "ja"
   ],
   "website": [
     "zh",
     "en",
-    "ru"
+    "ru",
+    "ja"
   ]
 } as const;

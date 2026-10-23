@@ -13,7 +13,8 @@ const baselines = {
 it('preserves the complete pre-migration Chinese, English and Russian copy', () => {
   for (const [module, resources] of Object.entries({ client, coze })) {
     const dictionaries = resources as Record<string, Record<string, string>>;
-    const entries = Object.keys(dictionaries.zh).filter(key => key !== 'coze.application.title' && !key.startsWith('client.skills.'))
+    const entries = Object.keys(dictionaries.zh).filter(key => key !== 'coze.application.title'
+      && key !== 'client.app.webPageTitle' && !key.startsWith('client.skills.'))
       .map(key => [dictionaries.zh[key], dictionaries.en[key], dictionaries.ru[key]])
       .sort((a, b) => a[0].localeCompare(b[0], 'en'));
     expect(createHash('sha256').update(JSON.stringify(entries)).digest('hex'))

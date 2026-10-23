@@ -5,18 +5,18 @@ import { resources as coze } from '../src/catalogs/coze';
 import { loadResource } from '../src/catalogs/loader';
 
 describe('language registration and release policies', () => {
-  it('registers Japanese without enabling it in any application', () => {
+  it('registers Japanese and enables it in prepared applications', () => {
     expect(resolveLanguage(' JA_jp.UTF-8 ')).toBe('ja');
     expect(resolveLanguage('zh-Hant-HK')).toBe('zh');
     expect(resolveLanguage('zhuang')).toBeUndefined();
     for (const app of Object.keys(applications) as (keyof typeof applications)[]) {
-      expect(isAppLanguage(app, 'ja')).toBe(false);
+      expect(isAppLanguage(app, 'ja')).toBe(true);
       expect(languageOptions(applications[app]).map(option => option.value)).toEqual(applications[app]);
     }
   });
 
   it('accepts only enabled language IDs and leaves state unchanged on rejection', () => {
-    const instance = createI18n({ locale: 'en', enabledLanguages: applications.desktop });
+    const instance = createI18n({ locale: 'en', enabledLanguages: ['en'] });
     expect(() => instance.setLocale('ja')).toThrow('not enabled');
     expect(instance.getLocale()).toBe('en');
     expect(() => createI18n({ locale: 'ja', enabledLanguages: ['en'] })).toThrow();
@@ -38,7 +38,9 @@ describe('translations', () => {
   });
 
   it('uses Japanese resources and falls back for incomplete drafts', () => {
-    const instance = createI18n({ locale: 'ja', resources });
+    const instance = createI18n({ locale: 'ja', resources: {
+      en: resources.en, ja: { 'common.actions.copy': 'コピー' },
+    } });
     expect(instance.t('common.actions.copy')).toBe('コピー');
     expect(instance.t('common.greeting', { name: '$&{name}' })).toBe('Hello, $&{name}');
     expect(instance.text('missing.{id}', { id: 5 })).toBe('missing.5');
@@ -76,12 +78,12 @@ describe('translations', () => {
 });
 
 describe('resource loading', () => {
-  it('accepts Japanese by adding resources while retaining English for an untranslated module', async () => {
+  it('loads released Japanese resources across independent modules', async () => {
     const instance = createI18n({ locale: 'ja', loadResource });
     await instance.load('ja', ['common', 'coze', 'desktop']);
     expect(instance.t('coze.application.title')).toBe('アプリケーション');
     expect(instance.t('common.actions.copy')).toBe('コピー');
-    expect(instance.t('downloads.title')).toBe('Downloads');
+    expect(instance.t('downloads.title')).toBe('ダウンロード');
   });
 
   it('loads just requested modules and their fallback language', async () => {
@@ -90,7 +92,7 @@ describe('resource loading', () => {
     await Promise.all([instance.load('ja', ['common']), instance.load('ja', ['common'])]);
     expect(loader.mock.calls).toEqual([['ja', 'common'], ['en', 'common']]);
     expect(instance.t('common.actions.copy')).toBe('コピー');
-    expect(instance.t('common.actions.cancel')).toBe('Cancel');
+    expect(instance.t('common.actions.cancel')).toBe('キャンセル');
     expect(instance.text('coze.application.title')).toBe('coze.application.title');
   });
 

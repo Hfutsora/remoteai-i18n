@@ -87,6 +87,10 @@ export interface MessageParams1 {
   "autoReset.search": Record<string, never>;
   "autoReset.singleHint": Record<string, never>;
   "autoReset.title": Record<string, never>;
+  "bubble.refreshAccounts": Record<string, never>;
+  "bubble.refreshingAccounts": Record<string, never>;
+  "bubble.refreshingUsage": Record<string, never>;
+  "bubble.refreshUsage": Record<string, never>;
   "chip.description": Record<string, never>;
   "chip.title": Record<string, never>;
   "claudeCode.launch": Record<string, never>;
@@ -196,8 +200,4 @@ export interface MessageParams1 {
   "client.accountUsage.usageForThisAccountIsBeingProcessedPleaseWait": Record<string, never>;
   "client.accountUsage.willAskEachSelectedAccountHowIsTheWeatherToday": { "device": string | number };
   "client.aggregateRouting.balanceConversations": Record<string, never>;
-  "client.aggregateRouting.chooseAModelForThisService": Record<string, never>;
-  "client.aggregateRouting.chooseServicesFromTopToBottomExistingConversationsKeepTheir": Record<string, never>;
-  "client.aggregateRouting.eachServiceCanUseItsOwnModelNameUnderOne": Record<string, never>;
-  "client.aggregateRouting.enterAWholeNumberFrom1To": { "max": string | number };
 }

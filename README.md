@@ -93,15 +93,21 @@ This decoder is separate from ordinary translation; `i18n.text('复制')` does n
 
 1. Add metadata to `languages.json` without adding it to any application's enabled list.
 2. Add module translation resources and declare the language as draft in `catalogs.json`.
-3. Generate and check. Japanese is already registered with partial `common`/`coze` resources, demonstrating fallback.
+3. Generate and check. Draft resources may fall back; released resources must pass completeness checks.
 4. Complete the modules an application uses, move the language to those modules' released lists, and only then add
    it to that application's enabled list. Include the `client` module for desktop, web and native releases.
 
-The generated Rust table uses **desktop's enabled list**, not all registered languages. Japanese is currently rejected
-by desktop preference persistence because it is not released there. Each registered language declares `nativeText`:
+Japanese is released in desktop, web, native, Coze and the website. Its acceptance covers complete module resources,
+saved preferences, live switching with unsaved content, offline native resources and website language routes.
+The first-launch policy remains Chinese for a Chinese system locale and English otherwise; saved choices take priority.
+The engine tests use intentionally partial resources to verify fallback independently of shipped dictionaries.
+
+The generated Rust table uses **desktop's enabled list**, not all registered languages. Each language declares `nativeText`:
 this explicitly selects existing Rust-native resources until that language's native dialogs/notifications are ready.
 Adding genuinely new Rust text resources still needs Rust work; a TypeScript dictionary cannot localize native text.
-`nativeText` currently accepts `zh`, `en`, and `ru`; expanding it requires implementing and testing the native resources.
+`nativeText` accepts `zh`, `en`, `ru` and `ja`; expanding it requires implementing and testing the native resources.
+Japanese includes native notifications, save dialogs, login pages, tray labels and safe proxy error messages.
+App-owned structured copy (website content, legal documents and platform permissions) must also be completed before release.
 
 ## Application adapters
 
@@ -109,6 +115,7 @@ The old forwarding files and legacy package entry have been removed. Application
 resources. `shared/localization` owns client bundle integration, device defaults and the shared UI language store;
 storage, Tauri communication and native preferences stay in the applications. This store is never used by the
 website server, which creates an instance for each render. Coze keeps its own instance and independent resources.
+Web chat views embedded in desktop inherit and follow the host selection without writing Web language preferences.
 
 The migration regression test fingerprints the original Chinese, English and Russian copy, including explicit
 fallback text, independently of the new keys. Update that baseline deliberately when changing existing wording.

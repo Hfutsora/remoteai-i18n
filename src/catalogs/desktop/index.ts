@@ -2,4 +2,5 @@
 import zh from './zh';
 import en from './en';
 import ru from './ru';
-export const resources = { zh, en, ru };
+import ja from './ja';
+export const resources = { zh, en, ru, ja };

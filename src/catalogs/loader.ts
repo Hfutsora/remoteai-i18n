@@ -8,6 +8,7 @@ const loaders: Record<string, () => Promise<Messages>> = {
   'desktop/zh': () => import('./desktop/zh').then(module => module.default),
   'desktop/en': () => import('./desktop/en').then(module => module.default),
   'desktop/ru': () => import('./desktop/ru').then(module => module.default),
+  'desktop/ja': () => import('./desktop/ja').then(module => module.default),
   'coze/zh': () => import('./coze/zh').then(module => module.default),
   'coze/en': () => import('./coze/en').then(module => module.default),
   'coze/ru': () => import('./coze/ru').then(module => module.default),
@@ -15,8 +16,10 @@ const loaders: Record<string, () => Promise<Messages>> = {
   'website/zh': () => import('./website/zh').then(module => module.default),
   'website/en': () => import('./website/en').then(module => module.default),
   'website/ru': () => import('./website/ru').then(module => module.default),
+  'website/ja': () => import('./website/ja').then(module => module.default),
   'client/zh': () => import('./client/zh').then(module => module.default),
   'client/en': () => import('./client/en').then(module => module.default),
   'client/ru': () => import('./client/ru').then(module => module.default),
+  'client/ja': () => import('./client/ja').then(module => module.default),
 };
 export const loadResource: ResourceLoader = async (language, module) => loaders[`${module}/${language}`]?.();

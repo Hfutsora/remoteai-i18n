@@ -11,11 +11,10 @@
     "released": [
       "zh",
       "en",
-      "ru"
-    ],
-    "draft": [
+      "ru",
       "ja"
-    ]
+    ],
+    "draft": []
   },
   "desktop": {
     "applications": [
@@ -26,11 +25,10 @@
     "released": [
       "zh",
       "en",
-      "ru"
-    ],
-    "draft": [
+      "ru",
       "ja"
-    ]
+    ],
+    "draft": []
   },
   "coze": {
     "applications": [
@@ -40,11 +38,10 @@
     "released": [
       "zh",
       "en",
-      "ru"
-    ],
-    "draft": [
+      "ru",
       "ja"
-    ]
+    ],
+    "draft": []
   },
   "website": {
     "applications": [
@@ -54,11 +51,10 @@
     "released": [
       "zh",
       "en",
-      "ru"
-    ],
-    "draft": [
+      "ru",
       "ja"
-    ]
+    ],
+    "draft": []
   },
   "client": {
     "applications": [
@@ -70,10 +66,9 @@
     "released": [
       "zh",
       "en",
-      "ru"
-    ],
-    "draft": [
+      "ru",
       "ja"
-    ]
+    ],
+    "draft": []
   }
 }
