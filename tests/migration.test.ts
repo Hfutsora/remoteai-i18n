@@ -15,6 +15,9 @@ const additions = new Set(['client.chat.usePlugin',
   'client.remoteDesktop.takeoverTitle', 'client.remoteDesktop.takeoverMessage',
   'client.remoteDesktop.takeoverConfirm', 'client.remoteDesktop.takeoverCancel',
   'client.remoteDesktop.connectionInUse', 'client.remoteDesktop.connectionCancelled',
+  'client.appearance.globalFontSize', 'client.appearance.globalFontDescription',
+  'client.appearance.followGlobalFont', 'client.appearance.followGlobalFontDescription',
+  'client.appearance.guiFontSettings',
 ]);
 
 it('preserves the complete pre-migration Chinese, English and Russian copy', () => {

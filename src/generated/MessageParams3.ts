@@ -12,6 +12,11 @@ export interface MessageParams3 {
   "client.app.working": Record<string, never>;
   "client.app.yourSessionHasExpiredPleaseSignInAgain": Record<string, never>;
   "client.app.youSwitchedBetweenAnOfficialModelAndAThirdParty": Record<string, never>;
+  "client.appearance.followGlobalFont": Record<string, never>;
+  "client.appearance.followGlobalFontDescription": Record<string, never>;
+  "client.appearance.globalFontDescription": Record<string, never>;
+  "client.appearance.globalFontSize": Record<string, never>;
+  "client.appearance.guiFontSettings": Record<string, never>;
   "client.chat.1K1000TokensLeaveBlankToUseThe": Record<string, never>;
   "client.chat.access": { "value1": string | number };
   "client.chat.accountAndComputer": Record<string, never>;
@@ -195,9 +200,4 @@ export interface MessageParams3 {
   "client.chat.generationStopped": Record<string, never>;
   "client.chat.goal": Record<string, never>;
   "client.chat.goalDetails": Record<string, never>;
-  "client.chat.goalKeepWorking": Record<string, never>;
-  "client.chat.goalMode": Record<string, never>;
-  "client.chat.hideFileChanges": Record<string, never>;
-  "client.chat.hideRemoteTerminal": Record<string, never>;
-  "client.chat.hideTerminal": Record<string, never>;
 }
