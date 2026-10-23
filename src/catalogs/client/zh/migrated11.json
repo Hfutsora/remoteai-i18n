@@ -81,7 +81,7 @@
   "client.remoteDesktop.automaticallyUnlockRemoteComputer": "自动解锁被控端",
   "client.remoteDesktop.windowsAccount": "Windows 账号",
   "client.remoteDesktop.windowsPassword": "Windows 登录密码",
-  "client.remoteDesktop.forExampleComputerUsername": "例如：电脑名\\用户名",
+  "client.remoteDesktop.windowsUsernamePlaceholder": "请输入用户名，无需填写电脑名",
   "client.remoteDesktop.editSignInDetails": "修改登录信息",
   "client.remoteDesktop.saveAndEnable": "保存并启用",
   "client.remoteDesktop.savedOnTheRemoteComputerTheseSettingsApplyOnYour": "已保存在远程电脑，下次连接自动生效。",

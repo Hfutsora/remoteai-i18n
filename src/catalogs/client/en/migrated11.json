@@ -81,7 +81,7 @@
   "client.remoteDesktop.automaticallyUnlockRemoteComputer": "Automatically unlock remote computer",
   "client.remoteDesktop.windowsAccount": "Windows account",
   "client.remoteDesktop.windowsPassword": "Windows password",
-  "client.remoteDesktop.forExampleComputerUsername": "For example: COMPUTER\\username",
+  "client.remoteDesktop.windowsUsernamePlaceholder": "Username (no computer name needed)",
   "client.remoteDesktop.editSignInDetails": "Edit sign-in details",
   "client.remoteDesktop.saveAndEnable": "Save and enable",
   "client.remoteDesktop.savedOnTheRemoteComputerTheseSettingsApplyOnYour": "Saved on the remote computer. These settings apply on your next connection.",

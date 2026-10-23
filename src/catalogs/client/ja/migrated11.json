@@ -81,7 +81,7 @@
   "client.remoteDesktop.automaticallyUnlockRemoteComputer": "リモートコンピュータのロックを自動的に解除する",
   "client.remoteDesktop.windowsAccount": "Windows アカウント",
   "client.remoteDesktop.windowsPassword": "Windows パスワード",
-  "client.remoteDesktop.forExampleComputerUsername": "例: COMPUTER\\username",
+  "client.remoteDesktop.windowsUsernamePlaceholder": "ユーザー名（PC名は不要）",
   "client.remoteDesktop.editSignInDetails": "ログイン情報を編集",
   "client.remoteDesktop.saveAndEnable": "保存して有効にする",
   "client.remoteDesktop.savedOnTheRemoteComputerTheseSettingsApplyOnYour": "リモートコンピュータに保存されました。これらの設定は次の接続時に適用されます。",

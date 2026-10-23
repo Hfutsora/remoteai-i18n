@@ -81,7 +81,7 @@
   "client.remoteDesktop.automaticallyUnlockRemoteComputer": "Автоматическая разблокировка компьютера",
   "client.remoteDesktop.windowsAccount": "Учётная запись Windows",
   "client.remoteDesktop.windowsPassword": "Пароль Windows",
-  "client.remoteDesktop.forExampleComputerUsername": "Например: КОМПЬЮТЕР\\пользователь",
+  "client.remoteDesktop.windowsUsernamePlaceholder": "Имя пользователя (без имени ПК)",
   "client.remoteDesktop.editSignInDetails": "Изменить данные входа",
   "client.remoteDesktop.saveAndEnable": "Сохранить и включить",
   "client.remoteDesktop.savedOnTheRemoteComputerTheseSettingsApplyOnYour": "Сохранено на удалённом компьютере. Настройки применятся при следующем подключении.",

@@ -100,7 +100,6 @@ export interface MessageParams20 {
   "client.remoteDesktop.filesReceivedDownloadThemBelow": Record<string, never>;
   "client.remoteDesktop.filesReceivedSelectDownloadFilesToSaveThem": Record<string, never>;
   "client.remoteDesktop.fileTransferFailedPleaseCopyTheFilesAgain": Record<string, never>;
-  "client.remoteDesktop.forExampleComputerUsername": Record<string, never>;
   "client.remoteDesktop.fps": Record<string, never>;
   "client.remoteDesktop.fps.c207a1": Record<string, never>;
   "client.remoteDesktop.frameRate": Record<string, never>;
@@ -200,4 +199,5 @@ export interface MessageParams20 {
   "client.remoteDesktop.slideWhileHoldingTheLeftButtonToDragReleaseTo": Record<string, never>;
   "client.remoteDesktop.smooth": Record<string, never>;
   "client.remoteDesktop.sound": Record<string, never>;
+  "client.remoteDesktop.soundUnavailable": Record<string, never>;
 }

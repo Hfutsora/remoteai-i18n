@@ -6,7 +6,7 @@ import { createI18n } from '../src/engine';
 import { createErrorFormatter } from '../src/errors';
 
 const baselines = {
-  "client": "9a53d35b1bdea31663385765d056c432cf9d9cc860078ef13da86ca44c3a680f",
+  "client": "b2c6d30f6b5a33b6fd5b4054640b20cb76471f3ef42a9b7c1e6572a73cf62650",
   "coze": "54efc3f47447847456222d9c0470eca8ea5ed35b5afe24104da1e27471db06de"
 };
 
