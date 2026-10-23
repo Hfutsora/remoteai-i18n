@@ -20,7 +20,8 @@
     "./website-content/*": "./src/website-content/*.ts",
     "./legal/*.json": "./src/legal/*.json",
     "./legal/*": "./src/legal/*.ts",
-    "./error-templates": "./src/errorTemplates.json"
+    "./error-templates": "./src/errorTemplates.json",
+    "./tooling/dream-skin": "./tooling/dreamSkin.mjs"
   },
   "scripts": {
     "generate": "node scripts/generate.mjs",

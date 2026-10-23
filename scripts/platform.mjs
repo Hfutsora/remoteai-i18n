@@ -1,12 +1,16 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import { generateChromeResources } from './chrome.mjs';
 
 /** Platform tools consume generated copies at their required paths without runtime file access. */
 export function generatePlatformResources(root, generated) {
   const manifest = JSON.parse(fs.readFileSync(path.join(root, 'platform.json'), 'utf8'));
+  generateChromeResources(root, manifest.chrome, generated);
   const read = file => fs.readFileSync(path.join(root, file), 'utf8').replace(/\r\n/g, '\n');
   for (const { source, target } of manifest.mirrors) {
-    const banner = target.endsWith('.json') ? '' : `// Generated from packages/i18n/${source}. Do not edit.\n`;
+    const notice = `Generated from packages/i18n/${source}. Do not edit.`;
+    const banner = target.endsWith('.json') ? ''
+      : target.endsWith('.strings') ? `/* ${notice} */\n` : `// ${notice}\n`;
     generated.set(`../../${target}`, banner + read(source));
   }
   for (const { source, target, name } of manifest.sections) {

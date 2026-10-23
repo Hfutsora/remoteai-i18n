@@ -1,23 +1,15 @@
 ﻿import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { execFileSync } from 'node:child_process';
 import ts from 'typescript';
-import { translationViolations } from './ownership.mjs';
+import { keyArguments, mappedKeyViolations, nativeTranslationTables, translationViolations } from './ownership.mjs';
 
 const root = fileURLToPath(new URL('../../../', import.meta.url));
-const roots = ['shared', 'apps/desktop/src', 'apps/web/src', 'apps/native/src', 'apps/coze/ui/src',
-  'apps/admin-ui/src', 'apps/website/src'];
 const errors = [];
 const han = /\p{Script=Han}/u;
-const keyArguments = { t: 0, uiText: 0, displayText: 0, translateMessage: 1, msg: 0 };
-
-function sourceFiles(directory) {
-  return fs.readdirSync(directory, { withFileTypes: true }).flatMap(entry => {
-    const file = path.join(directory, entry.name);
-    if (entry.isDirectory()) return sourceFiles(file);
-    return /\.tsx?$/.test(entry.name) && !/\.(test|generated)\./.test(entry.name) ? [file] : [];
-  });
-}
+const manifest = JSON.parse(fs.readFileSync(new URL('../platform.json', import.meta.url), 'utf8'));
+const generated = new Set([...manifest.mirrors.map(entry => entry.target), manifest.chrome.module]);
 
 function literalKeys(node) {
   if (!node) return [];
@@ -31,9 +23,17 @@ function literalKeys(node) {
   return [];
 }
 
+function applicationCode(file) {
+  let code = fs.readFileSync(file, 'utf8');
+  const relative = path.relative(root, file).replaceAll('\\', '/');
+  for (const section of manifest.sections.filter(entry => entry.target === relative)) {
+    code = code.replace(new RegExp(`// i18n:${section.name}:start[\\s\\S]*?// i18n:${section.name}:end`), '');
+  }
+  return code;
+}
+
 function checkFile(file) {
-  const code = fs.readFileSync(file, 'utf8');
-  const source = ts.createSourceFile(file, code, ts.ScriptTarget.Latest, true);
+  const source = ts.createSourceFile(file, applicationCode(file), ts.ScriptTarget.Latest, true);
   const report = (node, message) => {
     const line = source.getLineAndCharacterOfPosition(node.getStart(source)).line + 1;
     errors.push(`${path.relative(root, file)}:${line}: ${message}`);
@@ -47,17 +47,36 @@ function checkFile(file) {
       for (const key of literalKeys(node.arguments[keyArguments[node.expression.text]])) {
         if (han.test(key.text)) report(key, 'Use a semantic message key.');
       }
+      const fallback = node.arguments[1];
+      if (node.expression.text === 't' && fallback && ts.isStringLiteralLike(fallback) && han.test(fallback.text)) {
+        report(fallback, 'Keep fallback copy in the language package.');
+      }
     }
     ts.forEachChild(node, visit);
   };
   visit(source);
+  for (const node of mappedKeyViolations(source)) report(node, 'Use semantic keys for mapped presentation labels.');
   for (const node of translationViolations(source)) {
     report(node, 'Keep translation resources in packages/i18n; import them through a public package entry.');
   }
 }
 
-const files = roots.flatMap(directory => sourceFiles(path.join(root, directory)));
-files.push(path.join(root, 'apps/native/App.tsx'));
+// Include build tooling and platform JS, plus new files awaiting their first commit.
+const repositoryFiles = execFileSync('git', ['ls-files', '--cached', '--others', '--exclude-standard', '-z'],
+  { cwd: root, encoding: 'utf8' }).split('\0').filter(Boolean);
+const candidates = [...new Set(repositoryFiles)].filter(file => /^(apps|shared|scripts)\//.test(file)
+  && !/^(apps\/admin\/)/.test(file)
+  && !/(?:^|\/)(?:vendor|fixtures|__tests__|e2e|gen)\/|\.(?:test|spec|pw|generated)\./.test(file)
+  && !generated.has(file) && fs.existsSync(path.join(root, file)));
+for (const file of candidates.filter(file => /\.strings$|\/(?:_locales|locales)\/.*\.json$/.test(file))) {
+  errors.push(`${file}: Declare platform translation resources in packages/i18n/platform.json.`);
+}
+for (const file of candidates.filter(file => file.endsWith('.rs'))) {
+  for (const table of nativeTranslationTables(applicationCode(path.join(root, file)))) {
+    errors.push(`${file}: Keep native ${table} translations in generated package resources.`);
+  }
+}
+const files = candidates.filter(file => /\.[cm]?[jt]sx?$/.test(file)).map(file => path.join(root, file));
 files.forEach(checkFile);
 if (errors.length) {
   console.error(errors.join('\n'));

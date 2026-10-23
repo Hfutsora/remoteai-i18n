@@ -121,12 +121,24 @@ use the narrow public `copy`, `website-content` and `legal` entries, so importin
 Admin's three-language release policy is in `languages.json`. Its Russian dictionary remains deliberately partial
 and falls back to English on operator pages; centralizing resources does not release additional languages.
 
-`platform.json` lists the platform resources generated from `platform/`: Chrome extension locale JSON, iOS permission
-descriptions, native Rust translators and embedded JavaScript copy. The platform tools require files at their existing
+`platform.json` lists the platform resources generated from `platform/`: Chrome extension locale JSON, iOS/macOS
+permission descriptions, Coze built-in templates, native Rust translators and embedded JavaScript copy.
+Chrome's fallback module and marked HTML defaults are also generated from its Chinese catalog.
+The platform tools require files at their existing
 application paths, so these are generated outputs, not independent translation sources. Update the package source and
 run `npm run generate:i18n`. For embedded copy, only the `i18n:<name>:start/end` section is generated; surrounding
 application code stays editable. `check:i18n` rejects changed or missing outputs and inline translation tables in
 application source. CI runs this check for application and shared-source changes as well as package changes.
+
+The ownership scan includes application/shared TypeScript, platform JavaScript and build scripts. It rejects bilingual
+tuples, concatenated or nested language branches, mapped Chinese message keys and unregistered permission resources.
+Protocol error matching, user content, theme artwork/provenance metadata and test expectations are not translation
+sources. Frozen `apps/admin` and vendored implementations are excluded. Generated platform outputs can still contain
+translated text; edit their package sources instead.
+
+Dream skin integrators read released copy through `@remoteai/i18n/tooling/dream-skin` and validate every released
+language before changing registries. Add translations to the package first. The integrators no longer rewrite the
+desktop language adapter. Nature artwork batch manifests are generated mirrors of the package's tooling resources.
 
 ## Application adapters
 

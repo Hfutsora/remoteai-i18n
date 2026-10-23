@@ -1,4 +1,6 @@
 export default {
+  "minuteRemainderZh": " {value1} 分",
+  "minuteRemainderEn": " {value1} min",
   "text_49da61ce": "天",
   "d_18ac3e73": "d",
   "text_2446e1e4": "重置时间未知",
