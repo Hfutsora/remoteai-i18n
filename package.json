@@ -1,0 +1,46 @@
+{
+  "name": "@remoteai/i18n",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": "./src/index.ts",
+    "./react": "./src/react.tsx",
+    "./common": "./src/catalogs/common/index.ts",
+    "./desktop": "./src/catalogs/desktop/index.ts",
+    "./coze": "./src/catalogs/coze/index.ts",
+    "./website": "./src/catalogs/website/index.ts",
+    "./catalogs/*": "./src/catalogs/*/index.ts",
+    "./legacy": "./src/legacy/index.ts",
+    "./legacy/resources/en": "./src/legacy/resources/en/index.ts",
+    "./legacy/resources/ru": "./src/legacy/resources/ru/index.ts",
+    "./legacy/resources/backend": "./src/legacy/resources/backend/index.ts",
+    "./legacy/resources/en/desktop": "./src/legacy/resources/en/desktop/index.ts",
+    "./legacy/resources/*": "./src/legacy/resources/*.ts",
+    "./legacy/coze/*": "./src/legacy/coze/*.ts",
+    "./loader": "./src/catalogs/loader.ts"
+  },
+  "scripts": {
+    "generate": "node scripts/generate.mjs",
+    "check": "node scripts/generate.mjs --check && tsc --noEmit && vitest run",
+    "test": "vitest run"
+  },
+  "peerDependencies": {
+    "react": "^18.3.1 || ^19.0.0"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "typescript": "~5.6.3",
+    "vitest": "^4.1.9",
+    "jsdom": "^26.1.0"
+  }
+}

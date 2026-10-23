@@ -1,0 +1,7 @@
+{
+  "common.actions.copy": "コピー",
+  "common.actions.apply": "適用",
+  "common.items.count": {
+    "other": "{count} 件"
+  }
+}

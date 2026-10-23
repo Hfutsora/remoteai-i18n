@@ -1,0 +1,50 @@
+{
+  "common": {
+    "applications": ["desktop", "web", "native", "coze", "website"],
+    "base": "en",
+    "released": [
+      "zh",
+      "en",
+      "ru"
+    ],
+    "draft": [
+      "ja"
+    ]
+  },
+  "desktop": {
+    "applications": ["desktop", "web"],
+    "base": "en",
+    "released": [
+      "zh",
+      "en",
+      "ru"
+    ],
+    "draft": [
+      "ja"
+    ]
+  },
+  "coze": {
+    "applications": ["coze"],
+    "base": "en",
+    "released": [
+      "zh",
+      "en",
+      "ru"
+    ],
+    "draft": [
+      "ja"
+    ]
+  },
+  "website": {
+    "applications": ["website"],
+    "base": "en",
+    "released": [
+      "zh",
+      "en",
+      "ru"
+    ],
+    "draft": [
+      "ja"
+    ]
+  }
+}
