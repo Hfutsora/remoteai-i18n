@@ -7,6 +7,7 @@
   "client.chat.budgetExhausted": "预算已用完",
   "client.chat.keepWorkingUntilTheGoalIsComplete": "持续推进，直到完成目标",
   "client.chat.useSkill": "使用技能 {value1}",
+  "client.chat.usePlugin": "使用插件 {value1}",
   "client.chat.disabled": "（已停用）",
   "client.chat.loadingSkills": "正在加载技能…",
   "client.chat.noMatchingCommandsOrSkills": "没有找到匹配的命令或技能",

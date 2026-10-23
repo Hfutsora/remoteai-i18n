@@ -7,6 +7,7 @@
   "client.chat.budgetExhausted": "Budget exhausted",
   "client.chat.keepWorkingUntilTheGoalIsComplete": "Keep working until the goal is complete",
   "client.chat.useSkill": "Use skill {value1}",
+  "client.chat.usePlugin": "Use plugin {value1}",
   "client.chat.disabled": "(disabled)",
   "client.chat.loadingSkills": "Loading skills…",
   "client.chat.noMatchingCommandsOrSkills": "No matching commands or skills",

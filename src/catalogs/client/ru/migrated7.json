@@ -7,6 +7,7 @@
   "client.chat.budgetExhausted": "Бюджет исчерпан",
   "client.chat.keepWorkingUntilTheGoalIsComplete": "Продолжать работу до достижения цели",
   "client.chat.useSkill": "Использовать навык {value1}",
+  "client.chat.usePlugin": "Использовать плагин {value1}",
   "client.chat.disabled": "(отключено)",
   "client.chat.loadingSkills": "Загрузка навыков…",
   "client.chat.noMatchingCommandsOrSkills": "Нет подходящих команд или навыков",

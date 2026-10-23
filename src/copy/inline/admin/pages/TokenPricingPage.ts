@@ -1,4 +1,6 @@
 export default {
+  descriptionEn: "Personal settings take precedence. Long-context pricing applies above the input threshold, including cache. "
+    + "Leave the threshold blank for 272,000 tokens.",
   "text_cb896e33": "计价预设加载失败，请重试。",
   "Unable_to_load_pricing_presets_57877aab": "Unable to load pricing presets. Please retry.",
   "text_e09daea1": "请检查名称、别名、价格、计费起点和倍率，名称及别名不能重复。",

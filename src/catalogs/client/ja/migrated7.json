@@ -7,6 +7,7 @@
   "client.chat.budgetExhausted": "予算を使い切りました",
   "client.chat.keepWorkingUntilTheGoalIsComplete": "ゴールが達成されるまで 仕事を続ける",
   "client.chat.useSkill": "スキル{value1}を使う",
+  "client.chat.usePlugin": "プラグイン{value1}を使う",
   "client.chat.disabled": "(無効)",
   "client.chat.loadingSkills": "スキルを読み込み中...",
   "client.chat.noMatchingCommandsOrSkills": "コマンドやスキルが一致しません",

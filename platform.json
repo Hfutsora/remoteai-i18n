@@ -99,9 +99,26 @@
     {
       "source": "platform/desktop/src-tauri/resources/dream-skin/presets/.batch-extremes.json",
       "target": "apps/desktop/src-tauri/resources/dream-skin/presets/.batch-extremes.json"
+    },
+    {
+      "source": "platform/desktop/src-tauri/src/local_proxy/request_error/chinese.rs",
+      "target": "apps/desktop/src-tauri/src/local_proxy/request_error/chinese.rs"
+    },
+    {
+      "source": "platform/desktop/src-tauri/src/local_proxy/error_messages/chinese.rs",
+      "target": "apps/desktop/src-tauri/src/local_proxy/error_messages/chinese.rs"
+    },
+    {
+      "source": "platform/desktop/src-tauri/src/local_proxy/error_messages/known.rs",
+      "target": "apps/desktop/src-tauri/src/local_proxy/error_messages/known.rs"
     }
   ],
   "sections": [
+    {
+      "source": "platform/desktop/overlays/skin-defaults.js",
+      "target": "apps/desktop/src-tauri/resources/dream-skin/assets/macos/renderer-inject.js",
+      "name": "skin-defaults"
+    },
     {
       "source": "platform/desktop/overlays/context-usage.js",
       "target": "apps/desktop/src-tauri/src/dream_skin_native/context_usage_overlay.js",

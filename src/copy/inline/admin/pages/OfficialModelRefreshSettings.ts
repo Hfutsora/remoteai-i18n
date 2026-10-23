@@ -1,4 +1,6 @@
 export default {
+  descriptionEn: "Turning this off keeps the current list. You can still refresh manually. "
+    + "Failed or empty updates keep existing models.",
   "text_736cff23": "自动更新",
   "Automatic_updates_147b1b68": "Automatic updates",
   "text_fbaf301e": "重新加载设置",

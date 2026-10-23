@@ -1,6 +1,8 @@
 import { expect, it } from 'vitest';
 import ts from 'typescript';
-import { mappedKeyViolations, nativeTranslationTables, translationViolations } from '../scripts/ownership.mjs';
+import {
+  mappedKeyViolations, nativeTranslationTables, presentationViolations, translationViolations,
+} from '../scripts/ownership.mjs';
 
 const check = code => translationViolations(ts.createSourceFile('screen.tsx', code, ts.ScriptTarget.Latest, true));
 
@@ -14,6 +16,24 @@ it('rejects translation dictionaries and inline copy in application code', () =>
   expect(check('const copy = { zh: { save: "保存" }, en: { save: "Save" } };')).toHaveLength(1);
   expect(check('const label = language === "zh" ? "保存" : "Save";')).toHaveLength(1);
   expect(check('const label = zh ? `共 ${count} 项` : `${count} items`;')).toHaveLength(1);
+});
+
+it('rejects English-only copy left in a language branch', () => {
+  expect(check('const text = zh ? copy.hint : "Keep the current list. " + "Refresh manually.";')).toHaveLength(1);
+  expect(check('if (language === "en") return "Try again later.";')).toHaveLength(1);
+  expect(check('if (result.language !== "kt") throw new Error("Kotlin is required.");')).toEqual([]);
+});
+
+it('rejects raw UI text and nested translation fragments while preserving wire values', () => {
+  const checkPresentation = code => presentationViolations(
+    ts.createSourceFile('screen.tsx', code, ts.ScriptTarget.Latest, true));
+  expect(checkPresentation('const view = <strong>本机</strong>;')).toHaveLength(1);
+  expect(checkPresentation('const view = <button aria-label="本机" />;')).toHaveLength(1);
+  expect(checkPresentation('const view = <button title={"本机"} />;')).toHaveLength(1);
+  expect(checkPresentation('const menu = [{ label: "撤销授权", action: revoke }];')).toHaveLength(1);
+  expect(checkPresentation('t("client.mobile.usageWindow", { value1: primary ? "主" : "次" });')).toHaveLength(2);
+  expect(checkPresentation('t("coze.intent", { name: verbatim("其他") });')).toEqual([]);
+  expect(checkPresentation('t("client.chat.useSkill", { value1: skill.name });')).toEqual([]);
 });
 
 it('allows platform locale adapters, user data and package resource references', () => {

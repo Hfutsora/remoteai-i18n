@@ -1,4 +1,6 @@
 export default {
+  descriptionEn: "Let online computers share public installers to speed up downloads for computers and phones. "
+    + "These settings apply to all users.",
   "text_61ce84e8": "让在线电脑共享公开安装包，帮助电脑和手机下载得更快。设置统一应用于所有用户。",
   "text_ed23a6c4": "安装包共享",
   "Installer_sharing_3b199b16": "Installer sharing",

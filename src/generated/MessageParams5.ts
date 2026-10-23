@@ -14,6 +14,7 @@ export interface MessageParams5 {
   "client.chat.use": Record<string, never>;
   "client.chat.use.e0049a": { "value1": string | number; "value2": string | number };
   "client.chat.usedRemaining": { "percent": string | number; "remaining": string | number };
+  "client.chat.usePlugin": { "value1": string | number };
   "client.chat.useSkill": { "value1": string | number };
   "client.chat.useSuggestion": Record<string, never>;
   "client.chat.useTheSameChatAccountAsYourComputer": Record<string, never>;
@@ -199,5 +200,4 @@ export interface MessageParams5 {
   "client.composer.copyFileOnRemoteComputer": Record<string, never>;
   "client.composer.copyPath": Record<string, never>;
   "client.composer.couldNotConfirmWhetherTheMessageWasSentYourEdits": Record<string, never>;
-  "client.composer.couldNotLoadAppsPleaseReopenTheMenu": Record<string, never>;
 }

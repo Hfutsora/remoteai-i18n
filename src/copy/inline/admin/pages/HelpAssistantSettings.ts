@@ -1,4 +1,6 @@
 export default {
+  descriptionEn: "Set the assistant’s model, reasoning effort and instructions. It uses the account selected in Codex "
+    + "and reports unsupported models without switching.",
   "text_6c11196b": "问题解答助手",
   "Help_assistant_03ad1405": "Help assistant",
   "text_7bdd5ce1": "重新加载",

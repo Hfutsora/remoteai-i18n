@@ -131,10 +131,16 @@ application code stays editable. `check:i18n` rejects changed or missing outputs
 application source. CI runs this check for application and shared-source changes as well as package changes.
 
 The ownership scan includes application/shared TypeScript, platform JavaScript and build scripts. It rejects bilingual
-tuples, concatenated or nested language branches, mapped Chinese message keys and unregistered permission resources.
+tuples, concatenated or nested language branches (including English-only leftovers), raw translated JSX text,
+accessibility labels, translation parameter fragments, mapped Chinese message keys and unregistered permission resources.
 Protocol error matching, user content, theme artwork/provenance metadata and test expectations are not translation
 sources. Frozen `apps/admin` and vendored implementations are excluded. Generated platform outputs can still contain
 translated text; edit their package sources instead.
+
+Default Rust proxy renderers and canonical client status/error tables are package resources too. Classifiers,
+serialized error codes and legacy source strings used as protocol values remain in service code. Render these through
+the error formatter, which accepts both canonical service text and semantic keys; ordinary `displayText` only looks up
+keys. Do not compare a translated label with an old Chinese literal to determine UI state.
 
 Dream skin integrators read released copy through `@remoteai/i18n/tooling/dream-skin` and validate every released
 language before changing registries. Add translations to the package first. The integrators no longer rewrite the

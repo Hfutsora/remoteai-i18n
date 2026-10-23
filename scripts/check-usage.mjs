@@ -3,7 +3,9 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { execFileSync } from 'node:child_process';
 import ts from 'typescript';
-import { keyArguments, mappedKeyViolations, nativeTranslationTables, translationViolations } from './ownership.mjs';
+import {
+  keyArguments, mappedKeyViolations, nativeTranslationTables, presentationViolations, translationViolations,
+} from './ownership.mjs';
 
 const root = fileURLToPath(new URL('../../../', import.meta.url));
 const errors = [];
@@ -55,6 +57,9 @@ function checkFile(file) {
     ts.forEachChild(node, visit);
   };
   visit(source);
+  for (const node of presentationViolations(source)) {
+    report(node, 'Keep presentation copy and fragments in the language package.');
+  }
   for (const node of mappedKeyViolations(source)) report(node, 'Use semantic keys for mapped presentation labels.');
   for (const node of translationViolations(source)) {
     report(node, 'Keep translation resources in packages/i18n; import them through a public package entry.');

@@ -10,11 +10,14 @@ const baselines = {
   "coze": "54efc3f47447847456222d9c0470eca8ea5ed35b5afe24104da1e27471db06de"
 };
 
+// New complete templates added after migration are covered by the catalog completeness checks.
+const additions = new Set(['client.chat.usePlugin']);
+
 it('preserves the complete pre-migration Chinese, English and Russian copy', () => {
   for (const [module, resources] of Object.entries({ client, coze })) {
     const dictionaries = resources as Record<string, Record<string, string>>;
     const entries = Object.keys(dictionaries.zh).filter(key => key !== 'coze.application.title'
-      && key !== 'client.app.webPageTitle' && !key.startsWith('client.skills.'))
+      && key !== 'client.app.webPageTitle' && !key.startsWith('client.skills.') && !additions.has(key))
       .map(key => [dictionaries.zh[key], dictionaries.en[key], dictionaries.ru[key]])
       .sort((a, b) => a[0].localeCompare(b[0], 'en'));
     expect(createHash('sha256').update(JSON.stringify(entries)).digest('hex'))
