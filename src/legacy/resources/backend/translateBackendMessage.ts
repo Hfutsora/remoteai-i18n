@@ -228,4 +228,3 @@ export function translateBackendMessage(language: Language, message: unknown): s
     return safeString(message);
   }
 }
-
