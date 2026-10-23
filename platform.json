@@ -1,0 +1,80 @@
+{
+  "mirrors": [
+    {
+      "source": "platform/desktop/src-tauri/resources/chrome-extension/_locales/zh_CN/messages.json",
+      "target": "apps/desktop/src-tauri/resources/chrome-extension/_locales/zh_CN/messages.json"
+    },
+    {
+      "source": "platform/desktop/src-tauri/resources/chrome-extension/_locales/en/messages.json",
+      "target": "apps/desktop/src-tauri/resources/chrome-extension/_locales/en/messages.json"
+    },
+    {
+      "source": "platform/desktop/src-tauri/resources/chrome-extension/_locales/ru/messages.json",
+      "target": "apps/desktop/src-tauri/resources/chrome-extension/_locales/ru/messages.json"
+    },
+    {
+      "source": "platform/native/locales/zh.json",
+      "target": "apps/native/locales/zh.json"
+    },
+    {
+      "source": "platform/native/locales/en.json",
+      "target": "apps/native/locales/en.json"
+    },
+    {
+      "source": "platform/native/locales/ru.json",
+      "target": "apps/native/locales/ru.json"
+    },
+    {
+      "source": "platform/native/locales/ja.json",
+      "target": "apps/native/locales/ja.json"
+    },
+    {
+      "source": "platform/desktop/src-tauri/src/storage/interface_copy.rs",
+      "target": "apps/desktop/src-tauri/src/storage/interface_copy.rs"
+    },
+    {
+      "source": "platform/desktop/src-tauri/src/storage/interface_copy_japanese.rs",
+      "target": "apps/desktop/src-tauri/src/storage/interface_copy_japanese.rs"
+    },
+    {
+      "source": "platform/desktop/src-tauri/src/local_proxy/error_messages/russian.rs",
+      "target": "apps/desktop/src-tauri/src/local_proxy/error_messages/russian.rs"
+    },
+    {
+      "source": "platform/desktop/src-tauri/src/local_proxy/error_messages/japanese.rs",
+      "target": "apps/desktop/src-tauri/src/local_proxy/error_messages/japanese.rs"
+    },
+    {
+      "source": "platform/desktop/src-tauri/src/local_proxy/request_error/russian.rs",
+      "target": "apps/desktop/src-tauri/src/local_proxy/request_error/russian.rs"
+    },
+    {
+      "source": "platform/desktop/src-tauri/src/local_proxy/request_error/japanese.rs",
+      "target": "apps/desktop/src-tauri/src/local_proxy/request_error/japanese.rs"
+    },
+    {
+      "source": "platform/desktop/src-tauri/src/system_tray/localization.rs",
+      "target": "apps/desktop/src-tauri/src/system_tray/localization.rs"
+    },
+    {
+      "source": "platform/desktop/src-tauri/src/dream_skin_native/context_settings_copy.js",
+      "target": "apps/desktop/src-tauri/src/dream_skin_native/context_settings_copy.js"
+    },
+    {
+      "source": "platform/desktop/src-tauri/src/system_tray/copy.rs",
+      "target": "apps/desktop/src-tauri/src/system_tray/copy.rs"
+    }
+  ],
+  "sections": [
+    {
+      "source": "platform/desktop/overlays/context-usage.js",
+      "target": "apps/desktop/src-tauri/src/dream_skin_native/context_usage_overlay.js",
+      "name": "context-usage"
+    },
+    {
+      "source": "platform/desktop/overlays/speed-selector.js",
+      "target": "apps/desktop/src-tauri/src/dream_skin_native/speed_selector_overlay.rs",
+      "name": "speed-selector"
+    }
+  ]
+}

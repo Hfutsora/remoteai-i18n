@@ -87,5 +87,10 @@ export const applications = {
     "en",
     "ru",
     "ja"
+  ],
+  "admin": [
+    "zh",
+    "en",
+    "ru"
   ]
 } as const;

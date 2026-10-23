@@ -10,7 +10,7 @@ describe('language registration and release policies', () => {
     expect(resolveLanguage('zh-Hant-HK')).toBe('zh');
     expect(resolveLanguage('zhuang')).toBeUndefined();
     for (const app of Object.keys(applications) as (keyof typeof applications)[]) {
-      expect(isAppLanguage(app, 'ja')).toBe(true);
+      expect(isAppLanguage(app, 'ja')).toBe(app !== 'admin');
       expect(languageOptions(applications[app]).map(option => option.value)).toEqual(applications[app]);
     }
   });

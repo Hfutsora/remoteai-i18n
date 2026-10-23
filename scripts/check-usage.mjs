@@ -2,9 +2,11 @@
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import ts from 'typescript';
+import { translationViolations } from './ownership.mjs';
 
 const root = fileURLToPath(new URL('../../../', import.meta.url));
-const roots = ['shared', 'apps/desktop/src', 'apps/web/src', 'apps/native/src', 'apps/coze/ui/src'];
+const roots = ['shared', 'apps/desktop/src', 'apps/web/src', 'apps/native/src', 'apps/coze/ui/src',
+  'apps/admin-ui/src', 'apps/website/src'];
 const errors = [];
 const han = /\p{Script=Han}/u;
 const keyArguments = { t: 0, uiText: 0, displayText: 0, translateMessage: 1, msg: 0 };
@@ -49,6 +51,9 @@ function checkFile(file) {
     ts.forEachChild(node, visit);
   };
   visit(source);
+  for (const node of translationViolations(source)) {
+    report(node, 'Keep translation resources in packages/i18n; import them through a public package entry.');
+  }
 }
 
 const files = roots.flatMap(directory => sourceFiles(path.join(root, directory)));

@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { messageParams, validateCatalog } from './validation.mjs';
+import { generatePlatformResources } from './platform.mjs';
 
 const root = fileURLToPath(new URL('..', import.meta.url));
 const check = process.argv.includes('--check');
@@ -131,6 +132,7 @@ for (const [module, policy] of Object.entries(catalogs)) {
 if (errors.length) { console.error(errors.join('\n')); process.exit(1); }
 generateTypes(messages);
 generateRust();
+generatePlatformResources(root, generated);
 generated.set('src/catalogs/loader.ts', `${banner}import type { Messages, ResourceLoader } from '../messages';\n`
   + `const loaders: Record<string, () => Promise<Messages>> = {\n${loaders.join('\n')}\n};\n`
   + 'export const loadResource: ResourceLoader = async (language, module) => loaders[`${module}/${language}`]?.();\n');

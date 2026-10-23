@@ -14,7 +14,13 @@
     "./catalogs/*": "./src/catalogs/*/index.ts",
     "./loader": "./src/catalogs/loader.ts",
     "./client": "./src/catalogs/client/index.ts",
-    "./errors": "./src/errors.ts"
+    "./errors": "./src/errors.ts",
+    "./copy/*": "./src/copy/*.ts",
+    "./website-content/*.json": "./src/website-content/*.json",
+    "./website-content/*": "./src/website-content/*.ts",
+    "./legal/*.json": "./src/legal/*.json",
+    "./legal/*": "./src/legal/*.ts",
+    "./error-templates": "./src/errorTemplates.json"
   },
   "scripts": {
     "generate": "node scripts/generate.mjs",

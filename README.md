@@ -13,6 +13,9 @@ there is no npm publication or separate build step. The root entry has no React,
 | `@remoteai/i18n/catalogs/<module>/<language>` | One module in one language, default-exported messages |
 | `@remoteai/i18n/loader` | Optional dynamic imports by module and language |
 | `@remoteai/i18n/errors` | Structured error formatting and decoding of existing service text responses |
+| `@remoteai/i18n/copy/<feature>` | Typed structured copy, admin dictionaries and feature-specific presentation tables |
+| `@remoteai/i18n/website-content/<module>` | Website copy, feature descriptions, resource lists and their types |
+| `@remoteai/i18n/legal/agreement`, `/legal/types` | User agreements and consent copy shared by desktop, web and native |
 
 ## Instances and application policies
 
@@ -64,8 +67,8 @@ and languages. The package's root and React entries never import application dic
 Semantic resources are JSON files under `src/catalogs/<module>/<language>/`. Desktop's existing keys and values are
 preserved, split into resource chunks. New keys should use context, such as `common.actions.apply` versus
 `coze.application.title`. New resource modules are registered in `catalogs.json`; that file also declares each
-module's released and draft languages. The first website semantic key uses a request-owned Provider; its other
-structured marketing content stays in the website for gradual migration.
+module's released and draft languages. Structured marketing content, legal documents and existing feature-specific
+tables also belong to this package; their public entries preserve their shapes and established fallback policies.
 
 ```json
 {
@@ -83,7 +86,7 @@ metadata and the Rust acceptance table. Run `npm run check:i18n` before committi
 TypeScript usage and behavior. Released languages must be complete; drafts may omit resources, but supplied draft
 translations must have correct parameters. CI also rejects retired imports and Chinese keys in application calls.
 
-`i18n.t` checks generated semantic keys and parameters. `i18n.text` accepts runtime keys or application-owned
+`i18n.t` checks generated semantic keys and parameters. `i18n.text` accepts runtime keys or explicitly imported
 dictionaries. Prefer `t` for application copy. Presentation models carry semantic keys; user names, paths, model
 IDs and editable content remain literal values. `createErrorFormatter(resources)` accepts `{ code, params, message? }`.
 It also decodes existing service text responses against the Chinese resource values at the display boundary.
@@ -107,7 +110,23 @@ this explicitly selects existing Rust-native resources until that language's nat
 Adding genuinely new Rust text resources still needs Rust work; a TypeScript dictionary cannot localize native text.
 `nativeText` accepts `zh`, `en`, `ru` and `ja`; expanding it requires implementing and testing the native resources.
 Japanese includes native notifications, save dialogs, login pages, tray labels and safe proxy error messages.
-App-owned structured copy (website content, legal documents and platform permissions) must also be completed before release.
+Structured copy (website content, legal documents and platform permissions) must also be completed before release.
+
+## Resource ownership
+
+All maintained translation resources live in `packages/i18n`. Application adapters own language selection, storage,
+React subscriptions and platform integration, but must not introduce translation dictionaries or inline language
+branches containing copy. New UI messages should use semantic catalog keys; structured documents and legacy tables
+use the narrow public `copy`, `website-content` and `legal` entries, so importing one feature does not load all copy.
+Admin's three-language release policy is in `languages.json`. Its Russian dictionary remains deliberately partial
+and falls back to English on operator pages; centralizing resources does not release additional languages.
+
+`platform.json` lists the platform resources generated from `platform/`: Chrome extension locale JSON, iOS permission
+descriptions, native Rust translators and embedded JavaScript copy. The platform tools require files at their existing
+application paths, so these are generated outputs, not independent translation sources. Update the package source and
+run `npm run generate:i18n`. For embedded copy, only the `i18n:<name>:start/end` section is generated; surrounding
+application code stays editable. `check:i18n` rejects changed or missing outputs and inline translation tables in
+application source. CI runs this check for application and shared-source changes as well as package changes.
 
 ## Application adapters
 
