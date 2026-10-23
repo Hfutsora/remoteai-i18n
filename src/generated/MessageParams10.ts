@@ -30,6 +30,9 @@ export interface MessageParams10 {
   "client.dictation.voiceRecordingIsUnsupportedPleaseUpdateYourAppOrBrowser": Record<string, never>;
   "client.dictation.voiceTranscriptionIsCurrentlyUnavailableForThisAccount": Record<string, never>;
   "client.dictation.yourSessionExpiredSignInAgainAndRetry": Record<string, never>;
+  "client.discovery.back": Record<string, never>;
+  "client.discovery.title": Record<string, never>;
+  "client.discovery.twoFactor": Record<string, never>;
   "client.downloads.addedToDownloads": Record<string, never>;
   "client.downloads.allowPopUpsToOpenThisFileThenTryAgain": Record<string, never>;
   "client.downloads.appUpdates": Record<string, never>;
@@ -197,7 +200,4 @@ export interface MessageParams10 {
   "client.errors.thisOperationIsNotSupportedByThisClient": Record<string, never>;
   "client.errors.thisReplyDidNotComplete": Record<string, never>;
   "client.errors.updateRemoteAiOnYourComputerAndTryAgain": Record<string, never>;
-  "client.errors.updateTheDesktopAppToViewUsage": Record<string, never>;
-  "client.errors.waitForTheCurrentTaskToFinish": Record<string, never>;
-  "client.errors.yourAnswerIsQueuedCheckQueuedMessagesForProgress": Record<string, never>;
 }
