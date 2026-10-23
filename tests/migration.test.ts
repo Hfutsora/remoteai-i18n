@@ -4,6 +4,7 @@ import { resources as client } from '../src/catalogs/client';
 import { resources as coze } from '../src/catalogs/coze';
 import { createI18n } from '../src/engine';
 import { createErrorFormatter } from '../src/errors';
+import gitConflicts from '../src/catalogs/client/zh/git-conflicts.json';
 
 const baselines = {
   "client": "b2c6d30f6b5a33b6fd5b4054640b20cb76471f3ef42a9b7c1e6572a73cf62650",
@@ -12,6 +13,7 @@ const baselines = {
 
 // New complete templates added after migration are covered by the catalog completeness checks.
 const additions = new Set(['client.chat.usePlugin',
+  ...Object.keys(gitConflicts),
   'client.remoteDesktop.takeoverTitle', 'client.remoteDesktop.takeoverMessage',
   'client.remoteDesktop.takeoverConfirm', 'client.remoteDesktop.takeoverCancel',
   'client.remoteDesktop.connectionInUse', 'client.remoteDesktop.connectionCancelled',
