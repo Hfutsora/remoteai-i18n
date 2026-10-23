@@ -1,0 +1,10 @@
+{
+  "client.deviceScreen.turnOff": "Turn off computer screen",
+  "client.deviceScreen.restore": "Restore computer screen",
+  "client.deviceScreen.turnOffShort": "Screen off",
+  "client.deviceScreen.restoreShort": "Screen on",
+  "client.deviceScreen.confirmTitle": "Temporarily turn off the computer screen?",
+  "client.deviceScreen.confirmMessage": "Remote Desktop will open and turn off the computer’s physical screens. You can keep working remotely. When the connection ends, the computer locks and its screens are restored. First use may require setup on the computer.",
+  "client.deviceScreen.changing": "Switching the computer screen. Please wait…",
+  "client.deviceScreen.failed": "Could not switch the computer screen. Reconnect and try again."
+}

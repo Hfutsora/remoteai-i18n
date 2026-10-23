@@ -1,0 +1,10 @@
+{
+  "client.deviceScreen.turnOff": "PC の画面をオフにする",
+  "client.deviceScreen.restore": "PC の画面を元に戻す",
+  "client.deviceScreen.turnOffShort": "画面オフ",
+  "client.deviceScreen.restoreShort": "画面を戻す",
+  "client.deviceScreen.confirmTitle": "PC の画面を一時的にオフにしますか？",
+  "client.deviceScreen.confirmMessage": "リモートデスクトップを開き、PC の実際の画面をオフにします。リモート操作は引き続き利用できます。接続が終了すると PC がロックされ、画面が元に戻ります。初回は PC 側での設定が必要な場合があります。",
+  "client.deviceScreen.changing": "PC の画面を切り替えています。しばらくお待ちください…",
+  "client.deviceScreen.failed": "PC の画面を切り替えられませんでした。再接続してお試しください。"
+}

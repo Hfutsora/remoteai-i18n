@@ -1,0 +1,10 @@
+{
+  "client.deviceScreen.turnOff": "关闭电脑屏幕",
+  "client.deviceScreen.restore": "恢复电脑屏幕",
+  "client.deviceScreen.turnOffShort": "关闭屏幕",
+  "client.deviceScreen.restoreShort": "恢复显示",
+  "client.deviceScreen.confirmTitle": "暂时关闭电脑屏幕？",
+  "client.deviceScreen.confirmMessage": "将打开远程桌面并关闭电脑实体屏幕，你仍可远程操作。连接结束后，电脑会锁屏并恢复显示。首次使用可能需要在电脑上完成设置。",
+  "client.deviceScreen.changing": "正在切换电脑屏幕，请稍候…",
+  "client.deviceScreen.failed": "电脑屏幕未能切换，请重新连接后重试。"
+}
