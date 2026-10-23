@@ -4,7 +4,11 @@
   "client.deviceScreen.turnOffShort": "Выключить экран",
   "client.deviceScreen.restoreShort": "Включить экран",
   "client.deviceScreen.confirmTitle": "Временно выключить экран компьютера?",
-  "client.deviceScreen.confirmMessage": "Откроется удалённый рабочий стол, а физические экраны компьютера выключатся. Вы сможете продолжить работу удалённо. После отключения компьютер заблокируется, а экраны снова включатся. При первом использовании может потребоваться настройка на компьютере.",
+  "client.deviceScreen.confirmMessage": "Компьютер продолжит работу. Восстановить изображение можно здесь в любое время. Движение мыши или нажатие клавиши может включить экран.",
   "client.deviceScreen.changing": "Переключаем экран компьютера. Подождите…",
-  "client.deviceScreen.failed": "Не удалось переключить экран компьютера. Подключитесь заново и повторите попытку."
+  "client.deviceScreen.failed": "Не удалось выполнить действие. Убедитесь, что компьютер в сети, и повторите попытку.",
+  "client.deviceScreen.offSent": "Команда выключения экрана отправлена",
+  "client.deviceScreen.onSent": "Команда включения экрана отправлена",
+  "client.deviceScreen.updateRequired": "Сначала обновите Remote AI на компьютере.",
+  "client.deviceScreen.openComputerApp": "Сначала откройте Remote AI на компьютере."
 }

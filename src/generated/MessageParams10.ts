@@ -4,10 +4,14 @@ export interface MessageParams10 {
   "client.deviceScreen.confirmMessage": Record<string, never>;
   "client.deviceScreen.confirmTitle": Record<string, never>;
   "client.deviceScreen.failed": Record<string, never>;
+  "client.deviceScreen.offSent": Record<string, never>;
+  "client.deviceScreen.onSent": Record<string, never>;
+  "client.deviceScreen.openComputerApp": Record<string, never>;
   "client.deviceScreen.restore": Record<string, never>;
   "client.deviceScreen.restoreShort": Record<string, never>;
   "client.deviceScreen.turnOff": Record<string, never>;
   "client.deviceScreen.turnOffShort": Record<string, never>;
+  "client.deviceScreen.updateRequired": Record<string, never>;
   "client.dictation.allowMicrophoneAccessThenTryAgain": Record<string, never>;
   "client.dictation.cancelVoiceInput": Record<string, never>;
   "client.dictation.clickTheMicrophoneToFinishUpTo2Minutes": Record<string, never>;
@@ -196,8 +200,4 @@ export interface MessageParams10 {
   "client.errors.settingsHaveNotBeenSavedPleaseTryAgain": Record<string, never>;
   "client.errors.someContentIsNotAvailableOfflineConnectToYourComputer": Record<string, never>;
   "client.errors.someImagesCouldNotBePastedCopyThemSeparatelyOr": Record<string, never>;
-  "client.errors.someSkillsCouldNotBeUpdatedYouCanStillUse": Record<string, never>;
-  "client.errors.theAnswerHasChangedCheckQueuedMessages": Record<string, never>;
-  "client.errors.theChatChangedOrDisconnectedReturnToTheOriginalChat": Record<string, never>;
-  "client.errors.theChatVersionsAreIncompatibleUpdateRemoteAiOnBoth": Record<string, never>;
 }

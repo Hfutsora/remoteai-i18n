@@ -4,7 +4,11 @@
   "client.deviceScreen.turnOffShort": "Screen off",
   "client.deviceScreen.restoreShort": "Screen on",
   "client.deviceScreen.confirmTitle": "Temporarily turn off the computer screen?",
-  "client.deviceScreen.confirmMessage": "Remote Desktop will open and turn off the computer’s physical screens. You can keep working remotely. When the connection ends, the computer locks and its screens are restored. First use may require setup on the computer.",
+  "client.deviceScreen.confirmMessage": "Your computer will keep running. You can restore the display here at any time. Mouse or keyboard input may wake the screen.",
   "client.deviceScreen.changing": "Switching the computer screen. Please wait…",
-  "client.deviceScreen.failed": "Could not switch the computer screen. Reconnect and try again."
+  "client.deviceScreen.failed": "Could not complete the action. Check that your computer is online and try again.",
+  "client.deviceScreen.offSent": "Screen-off command sent",
+  "client.deviceScreen.onSent": "Restore-display command sent",
+  "client.deviceScreen.updateRequired": "Update Remote AI on your computer first.",
+  "client.deviceScreen.openComputerApp": "Open Remote AI on your computer first."
 }

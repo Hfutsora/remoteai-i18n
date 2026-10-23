@@ -4,7 +4,11 @@
   "client.deviceScreen.turnOffShort": "画面オフ",
   "client.deviceScreen.restoreShort": "画面を戻す",
   "client.deviceScreen.confirmTitle": "PC の画面を一時的にオフにしますか？",
-  "client.deviceScreen.confirmMessage": "リモートデスクトップを開き、PC の実際の画面をオフにします。リモート操作は引き続き利用できます。接続が終了すると PC がロックされ、画面が元に戻ります。初回は PC 側での設定が必要な場合があります。",
+  "client.deviceScreen.confirmMessage": "パソコンは動作を続けます。いつでもここで画面を再表示できます。マウスやキーボードの操作で画面が点灯する場合があります。",
   "client.deviceScreen.changing": "PC の画面を切り替えています。しばらくお待ちください…",
-  "client.deviceScreen.failed": "PC の画面を切り替えられませんでした。再接続してお試しください。"
+  "client.deviceScreen.failed": "操作を完了できませんでした。パソコンがオンラインか確認して、もう一度お試しください。",
+  "client.deviceScreen.offSent": "画面を消す指示を送信しました",
+  "client.deviceScreen.onSent": "画面を再表示する指示を送信しました",
+  "client.deviceScreen.updateRequired": "先にパソコンの Remote AI を更新してください。",
+  "client.deviceScreen.openComputerApp": "先にパソコンで Remote AI を開いてください。"
 }
