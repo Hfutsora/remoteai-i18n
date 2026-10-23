@@ -41,4 +41,5 @@ import part38 from './migrated8.json';
 import part39 from './migrated9.json';
 import part40 from './sentAttachments.json';
 import part41 from './skills.json';
-export default { ...part0, ...part1, ...part2, ...part3, ...part4, ...part5, ...part6, ...part7, ...part8, ...part9, ...part10, ...part11, ...part12, ...part13, ...part14, ...part15, ...part16, ...part17, ...part18, ...part19, ...part20, ...part21, ...part22, ...part23, ...part24, ...part25, ...part26, ...part27, ...part28, ...part29, ...part30, ...part31, ...part32, ...part33, ...part34, ...part35, ...part36, ...part37, ...part38, ...part39, ...part40, ...part41 };
+import part42 from './ssh.json';
+export default { ...part0, ...part1, ...part2, ...part3, ...part4, ...part5, ...part6, ...part7, ...part8, ...part9, ...part10, ...part11, ...part12, ...part13, ...part14, ...part15, ...part16, ...part17, ...part18, ...part19, ...part20, ...part21, ...part22, ...part23, ...part24, ...part25, ...part26, ...part27, ...part28, ...part29, ...part30, ...part31, ...part32, ...part33, ...part34, ...part35, ...part36, ...part37, ...part38, ...part39, ...part40, ...part41, ...part42 };
