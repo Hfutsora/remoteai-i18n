@@ -39,6 +39,19 @@ export interface MessageParams3 {
   "client.chat.askAQuestionOrChooseAProjectToGetStarted": Record<string, never>;
   "client.chat.attachedImage": { "value1": string | number };
   "client.chat.attachments": Record<string, never>;
+  "client.chat.attachments.bytes": { "size": string | number };
+  "client.chat.attachments.count": { "count": string | number };
+  "client.chat.attachments.details": Record<string, never>;
+  "client.chat.attachments.folderSize": Record<string, never>;
+  "client.chat.attachments.loading": Record<string, never>;
+  "client.chat.attachments.modified": Record<string, never>;
+  "client.chat.attachments.name": Record<string, never>;
+  "client.chat.attachments.path": Record<string, never>;
+  "client.chat.attachments.pathPending": Record<string, never>;
+  "client.chat.attachments.size": Record<string, never>;
+  "client.chat.attachments.unavailable": Record<string, never>;
+  "client.chat.attachments.view": { "count": string | number };
+  "client.chat.attachments.viewFile": { "name": string | number };
   "client.chat.attachmentsAreTooLargeRemoveSomePhotosOrFilesAnd": Record<string, never>;
   "client.chat.attachmentUploadProgress": Record<string, never>;
   "client.chat.audioReturnedByTool": Record<string, never>;
@@ -187,17 +200,4 @@ export interface MessageParams3 {
   "client.chat.fasterModesAreUnavailableForThisAccount": Record<string, never>;
   "client.chat.fastMode": Record<string, never>;
   "client.chat.fastMode.6e02d1": Record<string, never>;
-  "client.chat.fileChangeDetails": Record<string, never>;
-  "client.chat.fileChanges": Record<string, never>;
-  "client.chat.fileChanges.049e14": Record<string, never>;
-  "client.chat.files": { "count": string | number };
-  "client.chat.files.2d4a2a": Record<string, never>;
-  "client.chat.files.39932f": Record<string, never>;
-  "client.chat.find": Record<string, never>;
-  "client.chat.finishing": Record<string, never>;
-  "client.chat.fullTable": Record<string, never>;
-  "client.chat.generatedImage": Record<string, never>;
-  "client.chat.generationStopped": Record<string, never>;
-  "client.chat.goal": Record<string, never>;
-  "client.chat.goalDetails": Record<string, never>;
 }

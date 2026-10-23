@@ -18,6 +18,11 @@ const additions = new Set(['client.chat.usePlugin',
   'client.appearance.globalFontSize', 'client.appearance.globalFontDescription',
   'client.appearance.followGlobalFont', 'client.appearance.followGlobalFontDescription',
   'client.appearance.guiFontSettings',
+  'client.chat.attachments.count', 'client.chat.attachments.view', 'client.chat.attachments.details',
+  'client.chat.attachments.viewFile', 'client.chat.attachments.name', 'client.chat.attachments.path',
+  'client.chat.attachments.size', 'client.chat.attachments.modified', 'client.chat.attachments.bytes',
+  'client.chat.attachments.loading', 'client.chat.attachments.unavailable', 'client.chat.attachments.pathPending',
+  'client.chat.attachments.folderSize',
 ]);
 
 it('preserves the complete pre-migration Chinese, English and Russian copy', () => {
