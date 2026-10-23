@@ -194,10 +194,10 @@ export interface MessageParams15 {
   "client.messageEditing.thisFollowUpCannotBeDeletedSeparatelyWithoutRemovingEarlier": Record<string, never>;
   "client.messageEditing.thisMessageAndAllFollowingMessagesWillBeDeletedThis": Record<string, never>;
   "client.messageEditing.waitForTheCurrentActionToFinishThenRefreshAnd": Record<string, never>;
+  "client.messageQueue.description": Record<string, never>;
+  "client.messageQueue.enabled": Record<string, never>;
+  "client.messageQueue.hint": Record<string, never>;
+  "client.messageQueue.saveError": Record<string, never>;
+  "client.messageQueue.settings": Record<string, never>;
   "client.mobile.1Reference": Record<string, never>;
-  "client.mobile.2faCloudSyncDisabled": Record<string, never>;
-  "client.mobile.2faCloudSyncEnabled": Record<string, never>;
-  "client.mobile.2faCloudSyncFailed": { "value1": string | number };
-  "client.mobile.5ManagementModules": Record<string, never>;
-  "client.mobile.accountAdded": Record<string, never>;
 }

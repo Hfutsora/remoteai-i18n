@@ -7,6 +7,7 @@ import { createErrorFormatter } from '../src/errors';
 import gitConflicts from '../src/catalogs/client/zh/git-conflicts.json';
 import discovery from '../src/catalogs/client/zh/discovery.json';
 import deviceScreen from '../src/catalogs/client/zh/deviceScreen.json';
+import messageQueue from '../src/catalogs/client/zh/messageQueue.json';
 
 const baselines = {
   "client": "b2c6d30f6b5a33b6fd5b4054640b20cb76471f3ef42a9b7c1e6572a73cf62650",
@@ -18,6 +19,7 @@ const additions = new Set(['client.chat.usePlugin',
   ...Object.keys(gitConflicts),
   ...Object.keys(discovery),
   ...Object.keys(deviceScreen),
+  ...Object.keys(messageQueue),
   'client.remoteDesktop.takeoverTitle', 'client.remoteDesktop.takeoverMessage',
   'client.remoteDesktop.takeoverConfirm', 'client.remoteDesktop.takeoverCancel',
   'client.remoteDesktop.connectionInUse', 'client.remoteDesktop.connectionCancelled',
