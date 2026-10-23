@@ -11,7 +11,11 @@ const baselines = {
 };
 
 // New complete templates added after migration are covered by the catalog completeness checks.
-const additions = new Set(['client.chat.usePlugin']);
+const additions = new Set(['client.chat.usePlugin',
+  'client.remoteDesktop.takeoverTitle', 'client.remoteDesktop.takeoverMessage',
+  'client.remoteDesktop.takeoverConfirm', 'client.remoteDesktop.takeoverCancel',
+  'client.remoteDesktop.connectionInUse', 'client.remoteDesktop.connectionCancelled',
+]);
 
 it('preserves the complete pre-migration Chinese, English and Russian copy', () => {
   for (const [module, resources] of Object.entries({ client, coze })) {

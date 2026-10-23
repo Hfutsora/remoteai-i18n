@@ -47,7 +47,9 @@ export interface MessageParams20 {
   "client.remoteDesktop.computerKeyboard": Record<string, never>;
   "client.remoteDesktop.confirmInstallationOnTheComputerThenTapPrivacyScreenAgain": Record<string, never>;
   "client.remoteDesktop.connectingToTheDesktop": Record<string, never>;
+  "client.remoteDesktop.connectionCancelled": Record<string, never>;
   "client.remoteDesktop.connectionInterruptedWaitingToReconnect": Record<string, never>;
+  "client.remoteDesktop.connectionInUse": Record<string, never>;
   "client.remoteDesktop.connectionLostReconnecting": Record<string, never>;
   "client.remoteDesktop.connectionStats": Record<string, never>;
   "client.remoteDesktop.connectionTimedOutCheckBothDevicesNetworksAndTryAgain": Record<string, never>;
@@ -93,7 +95,6 @@ export interface MessageParams20 {
   "client.remoteDesktop.filesReceivedDownloadThemBelow": Record<string, never>;
   "client.remoteDesktop.filesReceivedSelectDownloadFilesToSaveThem": Record<string, never>;
   "client.remoteDesktop.fileTransferFailedPleaseCopyTheFilesAgain": Record<string, never>;
-  "client.remoteDesktop.forExampleComputerUsername": Record<string, never>;
   "client.remoteDesktop.fps": Record<string, never>;
   "client.remoteDesktop.fps.c207a1": Record<string, never>;
   "client.remoteDesktop.frameRate": Record<string, never>;
@@ -199,5 +200,4 @@ export interface MessageParams20 {
   "client.remoteDesktop.swipeTheScreenOrLowerMousePadToMoveThe": Record<string, never>;
   "client.remoteDesktop.swipeToMove": Record<string, never>;
   "client.remoteDesktop.switchingDisplay": Record<string, never>;
-  "client.remoteDesktop.switchingPrivacyScreenPleaseWait": Record<string, never>;
 }
