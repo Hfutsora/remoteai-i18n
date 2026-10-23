@@ -1,6 +1,12 @@
 {
   "common": {
-    "applications": ["desktop", "web", "native", "coze", "website"],
+    "applications": [
+      "desktop",
+      "web",
+      "native",
+      "coze",
+      "website"
+    ],
     "base": "en",
     "released": [
       "zh",
@@ -12,7 +18,10 @@
     ]
   },
   "desktop": {
-    "applications": ["desktop", "web"],
+    "applications": [
+      "desktop",
+      "web"
+    ],
     "base": "en",
     "released": [
       "zh",
@@ -24,7 +33,9 @@
     ]
   },
   "coze": {
-    "applications": ["coze"],
+    "applications": [
+      "coze"
+    ],
     "base": "en",
     "released": [
       "zh",
@@ -36,8 +47,26 @@
     ]
   },
   "website": {
-    "applications": ["website"],
+    "applications": [
+      "website"
+    ],
     "base": "en",
+    "released": [
+      "zh",
+      "en",
+      "ru"
+    ],
+    "draft": [
+      "ja"
+    ]
+  },
+  "client": {
+    "applications": [
+      "desktop",
+      "web",
+      "native"
+    ],
+    "base": "zh",
     "released": [
       "zh",
       "en",

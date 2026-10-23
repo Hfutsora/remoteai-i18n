@@ -15,5 +15,8 @@ const loaders: Record<string, () => Promise<Messages>> = {
   'website/zh': () => import('./website/zh').then(module => module.default),
   'website/en': () => import('./website/en').then(module => module.default),
   'website/ru': () => import('./website/ru').then(module => module.default),
+  'client/zh': () => import('./client/zh').then(module => module.default),
+  'client/en': () => import('./client/en').then(module => module.default),
+  'client/ru': () => import('./client/ru').then(module => module.default),
 };
 export const loadResource: ResourceLoader = async (language, module) => loaders[`${module}/${language}`]?.();

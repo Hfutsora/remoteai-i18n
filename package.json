@@ -12,18 +12,13 @@
     "./coze": "./src/catalogs/coze/index.ts",
     "./website": "./src/catalogs/website/index.ts",
     "./catalogs/*": "./src/catalogs/*/index.ts",
-    "./legacy": "./src/legacy/index.ts",
-    "./legacy/resources/en": "./src/legacy/resources/en/index.ts",
-    "./legacy/resources/ru": "./src/legacy/resources/ru/index.ts",
-    "./legacy/resources/backend": "./src/legacy/resources/backend/index.ts",
-    "./legacy/resources/en/desktop": "./src/legacy/resources/en/desktop/index.ts",
-    "./legacy/resources/*": "./src/legacy/resources/*.ts",
-    "./legacy/coze/*": "./src/legacy/coze/*.ts",
-    "./loader": "./src/catalogs/loader.ts"
+    "./loader": "./src/catalogs/loader.ts",
+    "./client": "./src/catalogs/client/index.ts",
+    "./errors": "./src/errors.ts"
   },
   "scripts": {
     "generate": "node scripts/generate.mjs",
-    "check": "node scripts/generate.mjs --check && tsc --noEmit && vitest run",
+    "check": "node scripts/generate.mjs --check && node scripts/check-usage.mjs && tsc --noEmit && vitest run",
     "test": "vitest run"
   },
   "peerDependencies": {

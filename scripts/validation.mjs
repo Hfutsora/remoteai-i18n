@@ -26,6 +26,9 @@ function checkShape(message, label, errors) {
 /** Missing draft entries may fall back; supplied draft entries still have to be correct. */
 export function validateCatalog({ base, target, label, released, locale }) {
   const errors = [];
+  for (const key of Object.keys(target)) {
+    if (!/^[a-zA-Z][a-zA-Z0-9_.-]*$/.test(key)) errors.push(`${label}/${key}: use a semantic key`);
+  }
   for (const [key, value] of Object.entries(target)) checkShape(value, `${label}/${key}`, errors);
   if (errors.length) return errors;
   for (const [key, original] of Object.entries(base)) {

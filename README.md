@@ -9,10 +9,10 @@ there is no npm publication or separate build step. The root entry has no React,
 | --- | --- |
 | `@remoteai/i18n` | Registry, instance engine, interpolation, plurals, date and number formatting |
 | `@remoteai/i18n/react` | `I18nProvider` (`Provider`), `useT`, `useLocale`, `useI18n` |
-| `@remoteai/i18n/common`, `/desktop`, `/coze`, `/website` | Explicitly imported module resources |
+| `@remoteai/i18n/common`, `/desktop`, `/client`, `/coze`, `/website` | Explicitly imported module resources |
 | `@remoteai/i18n/catalogs/<module>/<language>` | One module in one language, default-exported messages |
 | `@remoteai/i18n/loader` | Optional dynamic imports by module and language |
-| `@remoteai/i18n/legacy` | Chinese-source-key translator and existing backend-string translation |
+| `@remoteai/i18n/errors` | Structured error formatting and decoding of existing service text responses |
 
 ## Instances and application policies
 
@@ -55,10 +55,9 @@ never changes the selected locale. The application decides when to call `setLoca
 discard outdated user selections. A missing key follows the registered fallback chain, then `fallbackLocale`,
 then returns the key. A fallback plural uses the language of the message that was found.
 
-Native applications statically import their resources so translations remain available offline. The current native
-and web legacy adapters retain their existing eager resources to avoid changing startup behavior in this extraction.
-Moving those established screens to asynchronous loading is a separate migration. The package's root and React
-entries never import those legacy bundles.
+Native applications statically import their resources so translations remain available offline. Established client
+screens retain eager resources to preserve startup behavior. The lazy loader supports loading individual modules
+and languages. The package's root and React entries never import application dictionaries.
 
 ## Resources, types and validation
 
@@ -82,11 +81,13 @@ Run `npm run generate:i18n` after editing resources or metadata. It validates mi
 categories and release policies, then generates typed keys/parameters, resource indexes, lazy loaders, TypeScript
 metadata and the Rust acceptance table. Run `npm run check:i18n` before committing; CI checks generated drift,
 TypeScript usage and behavior. Released languages must be complete; drafts may omit resources, but supplied draft
-translations must have correct parameters. Legacy shared dictionaries retain their own source-key parity checks.
+translations must have correct parameters. CI also rejects retired imports and Chinese keys in application calls.
 
-`i18n.t` checks generated semantic keys and parameters. `i18n.text` accepts runtime keys for compatibility or
-application-owned dictionaries. Prefer `t` for new code. Backend errors can gradually move to stable semantic codes
-plus parameters; existing string errors remain supported without changing their protocol or classifiers.
+`i18n.t` checks generated semantic keys and parameters. `i18n.text` accepts runtime keys or application-owned
+dictionaries. Prefer `t` for application copy. Presentation models carry semantic keys; user names, paths, model
+IDs and editable content remain literal values. `createErrorFormatter(resources)` accepts `{ code, params, message? }`.
+It also decodes existing service text responses against the Chinese resource values at the display boundary.
+This decoder is separate from ordinary translation; `i18n.text('复制')` does not translate source text.
 
 ## Adding a language (Japanese acceptance example)
 
@@ -94,7 +95,7 @@ plus parameters; existing string errors remain supported without changing their 
 2. Add module translation resources and declare the language as draft in `catalogs.json`.
 3. Generate and check. Japanese is already registered with partial `common`/`coze` resources, demonstrating fallback.
 4. Complete the modules an application uses, move the language to those modules' released lists, and only then add
-   it to that application's enabled list. Existing legacy screens need translations before that application ships it.
+   it to that application's enabled list. Include the `client` module for desktop, web and native releases.
 
 The generated Rust table uses **desktop's enabled list**, not all registered languages. Japanese is currently rejected
 by desktop preference persistence because it is not released there. Each registered language declares `nativeText`:
@@ -102,9 +103,13 @@ this explicitly selects existing Rust-native resources until that language's nat
 Adding genuinely new Rust text resources still needs Rust work; a TypeScript dictionary cannot localize native text.
 `nativeText` currently accepts `zh`, `en`, and `ru`; expanding it requires implementing and testing the native resources.
 
-## Compatibility paths
+## Application adapters
 
-`shared/i18n` and the existing application i18n entry points remain callable. Shared dictionary files forward to
-`src/legacy/resources`; Coze's area files forward to its separate legacy dictionaries. Edit resources in this package,
-not the forwarding modules. Desktop's old `translate(language, key, values)` delegates to the engine and retains its
-existing typing and UI copy. Coze retains its runtime pattern recognition and its own dictionary context.
+The old forwarding files and legacy package entry have been removed. Applications use semantic keys and package
+resources. `shared/localization` owns client bundle integration, device defaults and the shared UI language store;
+storage, Tauri communication and native preferences stay in the applications. This store is never used by the
+website server, which creates an instance for each render. Coze keeps its own instance and independent resources.
+
+The migration regression test fingerprints the original Chinese, English and Russian copy, including explicit
+fallback text, independently of the new keys. Update that baseline deliberately when changing existing wording.
+The offline native file browser receives its host's language with each settings update, including live switches.
