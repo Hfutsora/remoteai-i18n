@@ -12,7 +12,7 @@
   "client.ssh.privateKey": "Private key",
   "client.ssh.passphrase": "Key passphrase (optional)",
   "client.ssh.required": "Please fill in this field",
-  "client.ssh.credentialsHint": "The address and username are saved after connecting. Passwords and private keys are used only for this sign-in.",
+  "client.ssh.credentialsHint": "After connecting, the address and username are saved on the computer for your other devices. Passwords and private keys are used only for this login.",
   "client.ssh.trustHost": "First connection: verify the server fingerprint",
   "client.ssh.trustAndConnect": "Trust and connect",
   "client.ssh.connect": "Connect and save",
@@ -30,7 +30,7 @@
   "client.ssh.fileTooLarge": "Files up to 4 MB are supported. Choose a smaller file.",
   "client.ssh.conflict": "A file with this name already exists. Choose another name.",
   "client.ssh.limit": "You can open up to 8 SSH connections. Close one to continue.",
-  "client.ssh.storageFailed": "Could not save the connection. Check browser storage settings.",
+  "client.ssh.storageFailed": "Could not save the connection on the computer. Please try again.",
   "client.ssh.home": "Home directory",
   "client.ssh.parent": "Parent directory",
   "client.ssh.refresh": "Refresh",
@@ -50,5 +50,9 @@
   "client.ssh.deleteHint": "This cannot be undone. Folders must be empty.",
   "client.ssh.transferHint": "Files up to 4 MB are supported. Uploads never overwrite existing files.",
   "client.ssh.fileName": "File name",
-  "client.ssh.invalidName": "Enter a valid name without slashes or line breaks."
+  "client.ssh.invalidName": "Enter a valid name without slashes or line breaks.",
+  "client.ssh.loadFailed": "Could not load SSH connections from the computer. Check that it is online, then refresh.",
+  "client.ssh.profileLimit": "You can save up to 64 SSH connections. Remove one first.",
+  "client.ssh.backToTerminal": "Back to terminal",
+  "client.ssh.downloaded": "File saved."
 }
