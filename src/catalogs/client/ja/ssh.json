@@ -1,4 +1,10 @@
 {
+  "client.ssh.importKeyFile": "ファイルから読み込む",
+  "client.ssh.keyFileImported": "読み込み済み：{name}",
+  "client.ssh.keyFileTooLarge": "64 KB 以下の秘密鍵ファイルを選択してください。",
+  "client.ssh.keyFileEmpty": "ファイルが空です。秘密鍵を含むファイルを選択してください。",
+  "client.ssh.keyFileReadFailed": "ファイルを読み込めませんでした。もう一度選択してください。",
+  "client.ssh.keyFileInvalid": "秘密鍵が見つかりません。OpenSSH または PEM 形式の秘密鍵ファイルを選択してください。",
   "client.ssh.passwordAuth": "パスワード認証",
   "client.ssh.keyAuth": "秘密鍵認証",
   "client.ssh.createTitle": "SSH 接続を新規作成",

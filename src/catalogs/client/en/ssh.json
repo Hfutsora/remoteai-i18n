@@ -1,4 +1,10 @@
 {
+  "client.ssh.importKeyFile": "Import from file",
+  "client.ssh.keyFileImported": "Imported: {name}",
+  "client.ssh.keyFileTooLarge": "Choose a private key file no larger than 64 KB.",
+  "client.ssh.keyFileEmpty": "This file is empty. Choose a file containing a private key.",
+  "client.ssh.keyFileReadFailed": "Could not read this file. Please select it again.",
+  "client.ssh.keyFileInvalid": "No private key found. Choose a private key file in OpenSSH or PEM format.",
   "client.ssh.passwordAuth": "Password",
   "client.ssh.keyAuth": "Private key",
   "client.ssh.createTitle": "New SSH connection",

@@ -1,4 +1,10 @@
 {
+  "client.ssh.importKeyFile": "Импорт из файла",
+  "client.ssh.keyFileImported": "Импортирован: {name}",
+  "client.ssh.keyFileTooLarge": "Выберите файл закрытого ключа размером не более 64 КБ.",
+  "client.ssh.keyFileEmpty": "Файл пуст. Выберите файл, содержащий закрытый ключ.",
+  "client.ssh.keyFileReadFailed": "Не удалось прочитать файл. Выберите его ещё раз.",
+  "client.ssh.keyFileInvalid": "Закрытый ключ не найден. Выберите файл ключа в формате OpenSSH или PEM.",
   "client.ssh.passwordAuth": "Пароль",
   "client.ssh.keyAuth": "Закрытый ключ",
   "client.ssh.createTitle": "Новое SSH-подключение",

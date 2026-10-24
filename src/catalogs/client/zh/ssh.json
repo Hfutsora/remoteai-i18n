@@ -1,4 +1,10 @@
 {
+  "client.ssh.importKeyFile": "从文件导入",
+  "client.ssh.keyFileImported": "已导入：{name}",
+  "client.ssh.keyFileTooLarge": "请选择 64 KB 以内的私钥文件。",
+  "client.ssh.keyFileEmpty": "文件为空，请选择包含私钥的文件。",
+  "client.ssh.keyFileReadFailed": "无法读取此文件，请重新选择。",
+  "client.ssh.keyFileInvalid": "未识别到私钥，请选择 OpenSSH 或 PEM 格式的私钥文件。",
   "client.ssh.passwordAuth": "密码登录",
   "client.ssh.keyAuth": "私钥登录",
   "client.ssh.createTitle": "新建 SSH 连接",

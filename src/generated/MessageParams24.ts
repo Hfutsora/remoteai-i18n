@@ -47,9 +47,15 @@ export interface MessageParams24 {
   "client.ssh.host": Record<string, never>;
   "client.ssh.hostChanged": Record<string, never>;
   "client.ssh.hostPlaceholder": Record<string, never>;
+  "client.ssh.importKeyFile": Record<string, never>;
   "client.ssh.invalid": Record<string, never>;
   "client.ssh.invalidName": Record<string, never>;
   "client.ssh.keyAuth": Record<string, never>;
+  "client.ssh.keyFileEmpty": Record<string, never>;
+  "client.ssh.keyFileImported": { "name": string | number };
+  "client.ssh.keyFileInvalid": Record<string, never>;
+  "client.ssh.keyFileReadFailed": Record<string, never>;
+  "client.ssh.keyFileTooLarge": Record<string, never>;
   "client.ssh.keyPlaceholder": Record<string, never>;
   "client.ssh.limit": Record<string, never>;
   "client.ssh.loadFailed": Record<string, never>;
@@ -194,10 +200,4 @@ export interface MessageParams24 {
   "client.threadActions.thisChatAndAllItsChildChatsWillMoveTo": Record<string, never>;
   "client.threadActions.thisChatOrAChildChatHasUnfinishedWorkWait": Record<string, never>;
   "client.threadActions.waitForTheCurrentActionToFinish": Record<string, never>;
-  "client.threadActions.waitForTheReplyToFinishBeforeContinuing": Record<string, never>;
-  "client.threadActions.working": Record<string, never>;
-  "client.usage.addsUpQuotaDecreasesBetweenRefreshesResetIncreasesAreExcluded": Record<string, never>;
-  "client.usage.chartContent": Record<string, never>;
-  "client.usage.chooseOrSearchAccounts": Record<string, never>;
-  "client.usage.couldNotRefreshQuotaHistoryPleaseTryAgain": Record<string, never>;
 }
