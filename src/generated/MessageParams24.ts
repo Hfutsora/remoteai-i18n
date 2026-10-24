@@ -32,6 +32,8 @@ export interface MessageParams24 {
   "client.ssh.confirm": Record<string, never>;
   "client.ssh.conflict": Record<string, never>;
   "client.ssh.connect": Record<string, never>;
+  "client.ssh.connectAction": Record<string, never>;
+  "client.ssh.connecting": Record<string, never>;
   "client.ssh.connection": Record<string, never>;
   "client.ssh.connectionFailed": Record<string, never>;
   "client.ssh.copyFailed": Record<string, never>;
@@ -74,6 +76,7 @@ export interface MessageParams24 {
   "client.ssh.keyRequiredForConnection": Record<string, never>;
   "client.ssh.limit": Record<string, never>;
   "client.ssh.loadFailed": Record<string, never>;
+  "client.ssh.loginHint": Record<string, never>;
   "client.ssh.loginSection": Record<string, never>;
   "client.ssh.manage": Record<string, never>;
   "client.ssh.manageHint": Record<string, never>;
@@ -197,7 +200,4 @@ export interface MessageParams24 {
   "client.terminal.closeTab": { "number": string | number };
   "client.terminal.connectionLostYouCanContinueWhenItReconnects": Record<string, never>;
   "client.terminal.connectToYourComputerThenTryAgain": Record<string, never>;
-  "client.terminal.moreTabs": Record<string, never>;
-  "client.terminal.openingLink": Record<string, never>;
-  "client.terminal.openTerminalLink": Record<string, never>;
 }
