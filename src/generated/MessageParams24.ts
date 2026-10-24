@@ -17,6 +17,7 @@ export interface MessageParams24 {
   "client.skills.codex-switch-remote-command": Record<string, never>;
   "client.ssh.authentication": Record<string, never>;
   "client.ssh.authenticationFailed": Record<string, never>;
+  "client.ssh.backToTerminal": Record<string, never>;
   "client.ssh.cancel": Record<string, never>;
   "client.ssh.closed": Record<string, never>;
   "client.ssh.confirm": Record<string, never>;
@@ -29,6 +30,7 @@ export interface MessageParams24 {
   "client.ssh.deleteConfirm": { "name": string | number };
   "client.ssh.deleteHint": Record<string, never>;
   "client.ssh.download": Record<string, never>;
+  "client.ssh.downloaded": Record<string, never>;
   "client.ssh.empty": Record<string, never>;
   "client.ssh.fileFailed": Record<string, never>;
   "client.ssh.fileName": Record<string, never>;
@@ -44,6 +46,7 @@ export interface MessageParams24 {
   "client.ssh.invalid": Record<string, never>;
   "client.ssh.invalidName": Record<string, never>;
   "client.ssh.limit": Record<string, never>;
+  "client.ssh.loadFailed": Record<string, never>;
   "client.ssh.manage": Record<string, never>;
   "client.ssh.menu": Record<string, never>;
   "client.ssh.name": Record<string, never>;
@@ -56,6 +59,7 @@ export interface MessageParams24 {
   "client.ssh.path": Record<string, never>;
   "client.ssh.port": Record<string, never>;
   "client.ssh.privateKey": Record<string, never>;
+  "client.ssh.profileLimit": Record<string, never>;
   "client.ssh.refresh": Record<string, never>;
   "client.ssh.removeSaved": Record<string, never>;
   "client.ssh.rename": Record<string, never>;
@@ -196,8 +200,4 @@ export interface MessageParams24 {
   "client.usage.resetsIn": { "value1": string | number };
   "client.usage.resetsInDH": { "value1": string | number; "value2": string | number };
   "client.usage.resetsInH": { "value1": string | number; "value2": string | number };
-  "client.usage.resetsInMinutes": { "value1": string | number };
-  "client.usage.resetsRemaining": Record<string, never>;
-  "client.usage.resetTime": Record<string, never>;
-  "client.usage.resetTimeUnknown": Record<string, never>;
 }

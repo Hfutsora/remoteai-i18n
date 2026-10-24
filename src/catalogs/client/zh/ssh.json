@@ -12,7 +12,7 @@
   "client.ssh.privateKey": "私钥",
   "client.ssh.passphrase": "私钥密码（可选）",
   "client.ssh.required": "请填写此项",
-  "client.ssh.credentialsHint": "连接成功后保存地址和用户名。密码和私钥仅用于本次登录。",
+  "client.ssh.credentialsHint": "连接成功后，地址和用户名会保存到电脑，其他设备也可使用。密码和私钥仅用于本次登录。",
   "client.ssh.trustHost": "首次连接，请核对服务器指纹",
   "client.ssh.trustAndConnect": "信任并连接",
   "client.ssh.connect": "连接并保存",
@@ -30,7 +30,7 @@
   "client.ssh.fileTooLarge": "暂时支持 4 MB 以内的文件，请选择较小的文件。",
   "client.ssh.conflict": "同名文件已存在，请换个名称后重试。",
   "client.ssh.limit": "最多可同时打开 8 个 SSH 连接，请先关闭一个。",
-  "client.ssh.storageFailed": "连接配置未能保存，请检查浏览器存储设置。",
+  "client.ssh.storageFailed": "连接配置未能保存到电脑，请重试。",
   "client.ssh.home": "主目录",
   "client.ssh.parent": "上一级",
   "client.ssh.refresh": "刷新",
@@ -50,5 +50,9 @@
   "client.ssh.deleteHint": "删除后无法撤销。文件夹须为空。",
   "client.ssh.transferHint": "支持 4 MB 以内的文件；上传不会覆盖同名文件。",
   "client.ssh.fileName": "文件名",
-  "client.ssh.invalidName": "请输入有效的文件名，不要包含斜杠或换行。"
+  "client.ssh.invalidName": "请输入有效的文件名，不要包含斜杠或换行。",
+  "client.ssh.loadFailed": "无法读取电脑上的 SSH 连接，请确认电脑在线后刷新。",
+  "client.ssh.profileLimit": "最多可保存 64 个 SSH 连接，请先移除一个。",
+  "client.ssh.backToTerminal": "返回终端",
+  "client.ssh.downloaded": "文件已保存。"
 }

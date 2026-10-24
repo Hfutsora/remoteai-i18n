@@ -26,4 +26,13 @@ const copy = {
     quota: "Остаток лимита аккаунта", totalQuota: "Общий остаток лимитов параллельных аккаунтов",
     apiCost: "Стоимость текущего API за сегодня", totalApiCost: "Общая стоимость API за сегодня",
   },
+  ja: {
+    today: "今日", normal: "通常モード", fast: "高速モード", ultrafast: "Ultrafast モード",
+    group: "今日の使用量と速度モード", switchTo: "クリックして切り替え：",
+    speedError: "速度を変更できませんでした。もう一度お試しください。",
+    pending: "更新待ち",
+    tokens: "今日のトークン使用量", cost: "今日の推定コスト",
+    quota: "現在のアカウントの残り利用枠", totalQuota: "同時利用アカウントの残り利用枠の合計",
+    apiCost: "現在の API の今日の推定コスト", totalApiCost: "集約 API の今日の推定コスト合計",
+  },
 };
