@@ -45,6 +45,7 @@ export interface MessageParams10 {
   "client.discovery.back": Record<string, never>;
   "client.discovery.title": Record<string, never>;
   "client.discovery.twoFactor": Record<string, never>;
+  "client.downloads.activeCount": { "count": string | number };
   "client.downloads.addedToDownloads": Record<string, never>;
   "client.downloads.allowPopUpsToOpenThisFileThenTryAgain": Record<string, never>;
   "client.downloads.appUpdates": Record<string, never>;
@@ -199,5 +200,4 @@ export interface MessageParams10 {
   "client.errors.handleQueuedMessagesBeforeArchivingThisChat": Record<string, never>;
   "client.errors.handleQueuedMessagesBeforeStartingAGoal": Record<string, never>;
   "client.errors.loadingTheFullImageWasInterruptedPleaseTryAgain": Record<string, never>;
-  "client.errors.messageNotSentPleaseTryAgainLater": Record<string, never>;
 }

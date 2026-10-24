@@ -3,5 +3,6 @@
   "client.downloads.deleteSelectedCount": "Удалить выбранное ({count})",
   "client.downloads.deleteSelectedTitle": "Удалить выбранные загрузки ({count})?",
   "client.downloads.selectTask": "Выбрать загрузку: {name}",
-  "client.downloads.deleteFailed": "Не удалось удалить некоторые загрузки. Повторите попытку."
+  "client.downloads.deleteFailed": "Не удалось удалить некоторые загрузки. Повторите попытку.",
+  "client.downloads.activeCount": "Активные загрузки: {count}"
 }
