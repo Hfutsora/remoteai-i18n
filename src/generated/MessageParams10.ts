@@ -77,6 +77,10 @@ export interface MessageParams10 {
   "client.downloads.countingFiles": Record<string, never>;
   "client.downloads.currentProject": Record<string, never>;
   "client.downloads.deleteDownload": Record<string, never>;
+  "client.downloads.deleteFailed": Record<string, never>;
+  "client.downloads.deleteSelected": Record<string, never>;
+  "client.downloads.deleteSelectedCount": { "count": string | number };
+  "client.downloads.deleteSelectedTitle": { "count": string | number };
   "client.downloads.download": { "name": string | number };
   "client.downloads.downloadFailed": Record<string, never>;
   "client.downloads.downloadHistoryIsFullRemoveRecordsYouNoLongerNeed": Record<string, never>;
@@ -134,6 +138,7 @@ export interface MessageParams10 {
   "client.downloads.saveToDevice": Record<string, never>;
   "client.downloads.saving": Record<string, never>;
   "client.downloads.savingHasStartedCheckYourBrowserDownloadsForCompletion": Record<string, never>;
+  "client.downloads.selectTask": { "name": string | number };
   "client.downloads.share": Record<string, never>;
   "client.downloads.shareFile": Record<string, never>;
   "client.downloads.source": Record<string, never>;
@@ -195,9 +200,4 @@ export interface MessageParams10 {
   "client.errors.handleQueuedMessagesBeforeStartingAGoal": Record<string, never>;
   "client.errors.loadingTheFullImageWasInterruptedPleaseTryAgain": Record<string, never>;
   "client.errors.messageNotSentPleaseTryAgainLater": Record<string, never>;
-  "client.errors.restoreThisChatBeforeSendingAMessage": Record<string, never>;
-  "client.errors.searchDidNotCompletePleaseTryAgain": Record<string, never>;
-  "client.errors.settingsHaveNotBeenSavedPleaseTryAgain": Record<string, never>;
-  "client.errors.someContentIsNotAvailableOfflineConnectToYourComputer": Record<string, never>;
-  "client.errors.someImagesCouldNotBePastedCopyThemSeparatelyOr": Record<string, never>;
 }
