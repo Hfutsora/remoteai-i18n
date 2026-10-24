@@ -59,16 +59,20 @@ export interface MessageParams24 {
   "client.ssh.path": Record<string, never>;
   "client.ssh.port": Record<string, never>;
   "client.ssh.privateKey": Record<string, never>;
+  "client.ssh.profileChanged": Record<string, never>;
   "client.ssh.profileLimit": Record<string, never>;
   "client.ssh.refresh": Record<string, never>;
   "client.ssh.removeSaved": Record<string, never>;
   "client.ssh.rename": Record<string, never>;
   "client.ssh.required": Record<string, never>;
+  "client.ssh.signIn": Record<string, never>;
   "client.ssh.storageFailed": Record<string, never>;
+  "client.ssh.syncFailed": Record<string, never>;
   "client.ssh.transferHint": Record<string, never>;
   "client.ssh.truncated": Record<string, never>;
   "client.ssh.trustAndConnect": Record<string, never>;
   "client.ssh.trustHost": Record<string, never>;
+  "client.ssh.updateRequired": Record<string, never>;
   "client.ssh.upload": Record<string, never>;
   "client.ssh.username": Record<string, never>;
   "client.taskReview.aProjectCheckIsAlreadyRunningWaitForItTo": Record<string, never>;
@@ -136,8 +140,10 @@ export interface MessageParams24 {
   "client.taskReview.waitingForTheCheckToFinish": Record<string, never>;
   "client.terminal.checkTheLinkAndTryAgain": Record<string, never>;
   "client.terminal.closeATerminalBeforeOpeningAnotherOne": Record<string, never>;
+  "client.terminal.closeTab": { "number": string | number };
   "client.terminal.connectionLostYouCanContinueWhenItReconnects": Record<string, never>;
   "client.terminal.connectToYourComputerThenTryAgain": Record<string, never>;
+  "client.terminal.moreTabs": Record<string, never>;
   "client.terminal.openingLink": Record<string, never>;
   "client.terminal.openTerminalLink": Record<string, never>;
   "client.terminal.openTheRemoteComputerSWebsiteInTheDesktopApp": Record<string, never>;
@@ -194,10 +200,4 @@ export interface MessageParams24 {
   "client.usage.quotaStatus": Record<string, never>;
   "client.usage.rankingsUseTheLatestProxyRequests": { "value1": string | number };
   "client.usage.remaining": { "value1": string | number; "value2": string | number };
-  "client.usage.resetCards": { "value1": string | number };
-  "client.usage.resetsAfter": { "value1": string | number; "value2": string | number; "value3": string | number; "value4": string | number; "value5": string | number; "value6": string | number };
-  "client.usage.resetsAt": Record<string, never>;
-  "client.usage.resetsIn": { "value1": string | number };
-  "client.usage.resetsInDH": { "value1": string | number; "value2": string | number };
-  "client.usage.resetsInH": { "value1": string | number; "value2": string | number };
 }
