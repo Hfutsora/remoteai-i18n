@@ -96,6 +96,8 @@ export interface MessageParams3 {
   "client.chat.collapseProject": Record<string, never>;
   "client.chat.command": Record<string, never>;
   "client.chat.commandsAndSkills": Record<string, never>;
+  "client.chat.commandSuccessRateDescription": Record<string, never>;
+  "client.chat.commandSuccessRateValue": { "value": string | number };
   "client.chat.compact": Record<string, never>;
   "client.chat.compactContext": Record<string, never>;
   "client.chat.compactContext.d36946": Record<string, never>;
@@ -198,6 +200,4 @@ export interface MessageParams3 {
   "client.chat.expandProject": Record<string, never>;
   "client.chat.expandTable": Record<string, never>;
   "client.chat.fasterModesAreUnavailableForThisAccount": Record<string, never>;
-  "client.chat.fastMode": Record<string, never>;
-  "client.chat.fastMode.6e02d1": Record<string, never>;
 }
