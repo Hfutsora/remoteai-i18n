@@ -62,7 +62,7 @@ export interface MessageParams10 {
   "client.downloads.cannotReadTheVideoCheckThatItIsReadableAnd": Record<string, never>;
   "client.downloads.compatibilityMode": Record<string, never>;
   "client.downloads.completedAt": { "time": string | number };
-  "client.downloads.completedAtUnavailable": Record<string, never>;
+  "client.downloads.completionSummary": { "duration": string | number; "time": string | number };
   "client.downloads.compressedFiles": { "done": string | number; "total": string | number };
   "client.downloads.compressing": Record<string, never>;
   "client.downloads.compressionProgress": { "name": string | number };
@@ -162,7 +162,6 @@ export interface MessageParams10 {
   "client.downloads.thisFolderIsEmpty": Record<string, never>;
   "client.downloads.tooManyDownloadsPleaseTryAgainShortly": Record<string, never>;
   "client.downloads.totalDuration": { "duration": string | number };
-  "client.downloads.totalDurationUnavailable": Record<string, never>;
   "client.downloads.updateDownloadedTapToOpenTheAppAndInstall": Record<string, never>;
   "client.downloads.verifying": Record<string, never>;
   "client.downloads.viewGroupedOperationsActivities": { "value1": string | number };
@@ -200,4 +199,5 @@ export interface MessageParams10 {
   "client.errors.couldNotRefreshUsagePleaseTryAgainLater": Record<string, never>;
   "client.errors.couldNotRemoveTheGoalPleaseTryAgainLater": Record<string, never>;
   "client.errors.couldNotStartTheGoalWaitForTheCurrentTask": Record<string, never>;
+  "client.errors.couldNotUpdateYouCanStillUseTheExistingList": Record<string, never>;
 }

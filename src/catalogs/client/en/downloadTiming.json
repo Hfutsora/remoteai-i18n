@@ -1,8 +1,7 @@
 {
   "client.downloads.completedAt": "Completed: {time}",
   "client.downloads.totalDuration": "Total time: {duration}",
-  "client.downloads.completedAtUnavailable": "Completed: Not recorded",
-  "client.downloads.totalDurationUnavailable": "Total time: Not recorded",
+  "client.downloads.completionSummary": "{time} · {duration} total",
   "client.downloads.durationLessThanSecond": "Less than 1 sec",
   "client.downloads.durationSeconds": "{seconds} sec",
   "client.downloads.durationMinutes": "{minutes} min {seconds} sec",
