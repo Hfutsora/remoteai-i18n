@@ -120,7 +120,7 @@
   "client.shared.contextUsedTokensCapacityUnknown": "Context used: {used} tokens (capacity unknown)",
   "client.shared.contextTokensUsed": "Context {used} / {capacity} tokens ({percent}% used)",
   "client.shared.totalRemaining": "Total remaining",
-  "client.shared.currentChat": "Current chat",
+  "client.shared.currentChat": "Current",
   "client.shared.currentAccountQuotaRemaining": "Current account quota remaining",
   "client.shared.combinedAccountQuotaRemaining": "Combined account quota remaining",
   "client.shared.estimatedCombinedApiCostToday": "Estimated combined API cost today",

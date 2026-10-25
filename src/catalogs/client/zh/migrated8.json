@@ -120,7 +120,7 @@
   "client.shared.contextUsedTokensCapacityUnknown": "上下文已用 {used} Token（容量未知）",
   "client.shared.contextTokensUsed": "上下文 {used} / {capacity} Token（{percent}% 已用）",
   "client.shared.totalRemaining": "合计剩余",
-  "client.shared.currentChat": "当前对话",
+  "client.shared.currentChat": "当前",
   "client.shared.currentAccountQuotaRemaining": "当前账户剩余额度",
   "client.shared.combinedAccountQuotaRemaining": "并发账户剩余额度合计",
   "client.shared.estimatedCombinedApiCostToday": "聚合 API 今日预估费用",
