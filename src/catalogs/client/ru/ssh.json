@@ -1,4 +1,12 @@
 {
+  "client.ssh.openFile": "Открыть файл",
+  "client.ssh.fileContent": "Содержимое файла",
+  "client.ssh.saveFile": "Сохранить файл",
+  "client.ssh.fileSaved": "Файл сохранён.",
+  "client.ssh.closeFile": "Закрыть файл",
+  "client.ssh.unsavedTitle": "Отменить несохранённые изменения?",
+  "client.ssh.unsavedHint": "При закрытии файла несохранённые изменения будут потеряны.",
+  "client.ssh.discardChanges": "Отменить изменения",
   "client.ssh.newFile": "Новый файл",
   "client.ssh.copyPath": "Копировать путь",
   "client.ssh.pathCopied": "Путь скопирован.",

@@ -37,6 +37,7 @@ export interface MessageParams24 {
   "client.ssh.cancel": Record<string, never>;
   "client.ssh.cancelUpload": Record<string, never>;
   "client.ssh.closed": Record<string, never>;
+  "client.ssh.closeFile": Record<string, never>;
   "client.ssh.confirm": Record<string, never>;
   "client.ssh.conflict": Record<string, never>;
   "client.ssh.connect": Record<string, never>;
@@ -56,15 +57,18 @@ export interface MessageParams24 {
   "client.ssh.deleteFileHint": Record<string, never>;
   "client.ssh.deleteFolderHint": Record<string, never>;
   "client.ssh.deleteHint": Record<string, never>;
+  "client.ssh.discardChanges": Record<string, never>;
   "client.ssh.download": Record<string, never>;
   "client.ssh.downloaded": Record<string, never>;
   "client.ssh.dropFilesOnly": Record<string, never>;
   "client.ssh.dropUpload": { "path": string | number };
   "client.ssh.empty": Record<string, never>;
   "client.ssh.emptyConnectionsHint": Record<string, never>;
+  "client.ssh.fileContent": Record<string, never>;
   "client.ssh.fileFailed": Record<string, never>;
   "client.ssh.fileName": Record<string, never>;
   "client.ssh.files": Record<string, never>;
+  "client.ssh.fileSaved": Record<string, never>;
   "client.ssh.filesTitle": { "host": string | number };
   "client.ssh.fileTooLarge": Record<string, never>;
   "client.ssh.filter": Record<string, never>;
@@ -102,6 +106,7 @@ export interface MessageParams24 {
   "client.ssh.newFolder": Record<string, never>;
   "client.ssh.noMatchingConnections": Record<string, never>;
   "client.ssh.noSavedConnections": Record<string, never>;
+  "client.ssh.openFile": Record<string, never>;
   "client.ssh.openFolder": Record<string, never>;
   "client.ssh.overwrite": Record<string, never>;
   "client.ssh.parent": Record<string, never>;
@@ -123,6 +128,7 @@ export interface MessageParams24 {
   "client.ssh.required": Record<string, never>;
   "client.ssh.savedConnection": Record<string, never>;
   "client.ssh.savedConnections": Record<string, never>;
+  "client.ssh.saveFile": Record<string, never>;
   "client.ssh.saveSettings": Record<string, never>;
   "client.ssh.searchConnections": Record<string, never>;
   "client.ssh.searchHint": Record<string, never>;
@@ -138,6 +144,8 @@ export interface MessageParams24 {
   "client.ssh.trustAndConnect": Record<string, never>;
   "client.ssh.trustAndTest": Record<string, never>;
   "client.ssh.trustHost": Record<string, never>;
+  "client.ssh.unsavedHint": Record<string, never>;
+  "client.ssh.unsavedTitle": Record<string, never>;
   "client.ssh.updateRequired": Record<string, never>;
   "client.ssh.upload": Record<string, never>;
   "client.ssh.uploadConflictHint": { "name": string | number };
@@ -192,12 +200,4 @@ export interface MessageParams24 {
   "client.taskReview.previewRestore": Record<string, never>;
   "client.taskReview.previewTheRestoreBeforeConfirmingIt": Record<string, never>;
   "client.taskReview.projectChecks": Record<string, never>;
-  "client.taskReview.prTitle": Record<string, never>;
-  "client.taskReview.refreshPrAndCi": Record<string, never>;
-  "client.taskReview.refreshReview": Record<string, never>;
-  "client.taskReview.restoreThisTurnSChanges": Record<string, never>;
-  "client.taskReview.resultIsOutOfDate": Record<string, never>;
-  "client.taskReview.reviewFeedback": Record<string, never>;
-  "client.taskReview.reviewResult": Record<string, never>;
-  "client.taskReview.reviewTheChangesAndVerifyThemBeforeDelivery": Record<string, never>;
 }

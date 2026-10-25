@@ -1,4 +1,12 @@
 {
+  "client.ssh.openFile": "ファイルを開く",
+  "client.ssh.fileContent": "ファイルの内容",
+  "client.ssh.saveFile": "ファイルを保存",
+  "client.ssh.fileSaved": "ファイルを保存しました。",
+  "client.ssh.closeFile": "ファイルを閉じる",
+  "client.ssh.unsavedTitle": "未保存の変更を破棄しますか？",
+  "client.ssh.unsavedHint": "閉じると、保存していない変更は失われます。",
+  "client.ssh.discardChanges": "変更を破棄",
   "client.ssh.newFile": "新規ファイル",
   "client.ssh.copyPath": "パスをコピー",
   "client.ssh.pathCopied": "パスをコピーしました。",

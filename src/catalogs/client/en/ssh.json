@@ -1,4 +1,12 @@
 {
+  "client.ssh.openFile": "Open file",
+  "client.ssh.fileContent": "File content",
+  "client.ssh.saveFile": "Save file",
+  "client.ssh.fileSaved": "File saved.",
+  "client.ssh.closeFile": "Close file",
+  "client.ssh.unsavedTitle": "Discard unsaved changes?",
+  "client.ssh.unsavedHint": "Your unsaved changes will be lost when you close this file.",
+  "client.ssh.discardChanges": "Discard changes",
   "client.ssh.newFile": "New file",
   "client.ssh.copyPath": "Copy path",
   "client.ssh.pathCopied": "Path copied.",
