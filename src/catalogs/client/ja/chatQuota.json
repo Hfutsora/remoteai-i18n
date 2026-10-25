@@ -1,0 +1,5 @@
+{
+  "client.chatQuota.estimatedRemaining": "{amount} 残りの利用枠",
+  "client.chatQuota.estimatedTotal": "{amount} 利用枠合計",
+  "client.chatQuota.estimateDescription": "残りの利用枠と合計は推定値です。推定できない場合は — と表示します。"
+}
