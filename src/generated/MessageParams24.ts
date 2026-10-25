@@ -41,6 +41,8 @@ export interface MessageParams24 {
   "client.ssh.createHint": Record<string, never>;
   "client.ssh.createTitle": Record<string, never>;
   "client.ssh.credentialsHint": Record<string, never>;
+  "client.ssh.credentialsRequired": Record<string, never>;
+  "client.ssh.credentialsUnavailable": Record<string, never>;
   "client.ssh.delete": Record<string, never>;
   "client.ssh.deleteConfirm": { "name": string | number };
   "client.ssh.deleteFileHint": Record<string, never>;
@@ -198,6 +200,4 @@ export interface MessageParams24 {
   "client.terminal.checkTheLinkAndTryAgain": Record<string, never>;
   "client.terminal.closeATerminalBeforeOpeningAnotherOne": Record<string, never>;
   "client.terminal.closeTab": { "number": string | number };
-  "client.terminal.connectionLostYouCanContinueWhenItReconnects": Record<string, never>;
-  "client.terminal.connectToYourComputerThenTryAgain": Record<string, never>;
 }
