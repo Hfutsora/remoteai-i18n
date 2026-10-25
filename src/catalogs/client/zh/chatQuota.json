@@ -1,0 +1,5 @@
+{
+  "client.chatQuota.estimatedRemaining": "{amount} 剩余额度",
+  "client.chatQuota.estimatedTotal": "{amount} 总额度",
+  "client.chatQuota.estimateDescription": "剩余额度和总额度均为预估值；暂无预估时显示 —。"
+}

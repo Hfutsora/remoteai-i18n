@@ -69,6 +69,9 @@ export interface MessageParams5 {
   "client.chat.yourApprovalIsNeeded": Record<string, never>;
   "client.chat.yourBrowserCannotPlayThisFormatDownloadTheVideoTo": Record<string, never>;
   "client.chat.yourBrowserIsSavingTheFile": Record<string, never>;
+  "client.chatQuota.estimateDescription": Record<string, never>;
+  "client.chatQuota.estimatedRemaining": { "amount": string | number };
+  "client.chatQuota.estimatedTotal": { "amount": string | number };
   "client.chatReliability.accountSignIn": Record<string, never>;
   "client.chatReliability.aiCanRunThroughARelayConnection": Record<string, never>;
   "client.chatReliability.aiHasStarted": Record<string, never>;
@@ -197,7 +200,4 @@ export interface MessageParams5 {
   "client.cliImport.verifyingAndImportingFilesPleaseWait": Record<string, never>;
   "client.composer.aConversationNeedsYourApprovalClickToReview": Record<string, never>;
   "client.composer.addAFolderThatCodexCanReadAndEdit": Record<string, never>;
-  "client.composer.addFile": Record<string, never>;
-  "client.composer.addFilesAndFolders": Record<string, never>;
-  "client.composer.addFolder": Record<string, never>;
 }
