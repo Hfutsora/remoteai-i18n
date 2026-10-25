@@ -1,4 +1,5 @@
 {
+  "client.chatQuota.remainingCompact": "{amount} осталось",
   "client.chatQuota.estimatedRemaining": "{amount} остаток лимита",
   "client.chatQuota.estimatedTotal": "{amount} общий лимит",
   "client.chatQuota.estimateDescription": "Остаток и общий лимит указаны приблизительно. Прочерк означает, что оценка недоступна."

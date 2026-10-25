@@ -72,6 +72,7 @@ export interface MessageParams5 {
   "client.chatQuota.estimateDescription": Record<string, never>;
   "client.chatQuota.estimatedRemaining": { "amount": string | number };
   "client.chatQuota.estimatedTotal": { "amount": string | number };
+  "client.chatQuota.remainingCompact": { "amount": string | number };
   "client.chatReliability.accountSignIn": Record<string, never>;
   "client.chatReliability.aiCanRunThroughARelayConnection": Record<string, never>;
   "client.chatReliability.aiHasStarted": Record<string, never>;
@@ -199,5 +200,4 @@ export interface MessageParams5 {
   "client.cliImport.useAVerificationFileFromTheSameReleaseIfProvided": Record<string, never>;
   "client.cliImport.verifyingAndImportingFilesPleaseWait": Record<string, never>;
   "client.composer.aConversationNeedsYourApprovalClickToReview": Record<string, never>;
-  "client.composer.addAFolderThatCodexCanReadAndEdit": Record<string, never>;
 }
