@@ -111,5 +111,16 @@
   "client.ssh.backToTerminal": "ターミナルに戻る",
   "client.ssh.downloaded": "ファイルを保存しました。",
   "client.ssh.credentialsRequired": "ログイン情報が未保存です。パスワードまたは秘密鍵を入力してください。",
-  "client.ssh.credentialsUnavailable": "ログイン情報を読み込むか保存することができません。しばらくしてから再試行してください。"
+  "client.ssh.credentialsUnavailable": "ログイン情報を読み込むか保存することができません。しばらくしてから再試行してください。",
+  "client.ssh.x11Forwarding": "X11 転送を有効にする",
+  "client.ssh.x11Display": "X11 ディスプレイ（任意）",
+  "client.ssh.x11DisplayPlaceholder": "自動選択（例：:0）",
+  "client.ssh.x11Hint": "グラフィカルウィンドウは SSH 接続を開始するパソコンに表示されます。先にそのパソコンで X サーバーを起動してください。リモートモードでは接続先のパソコンに表示されます。",
+  "client.ssh.x11InvalidDisplay": ":0 や localhost:0 など、ローカルの X11 ディスプレイを入力してください。空欄の場合は自動選択されます。",
+  "client.ssh.x11Unavailable": "X サーバーに接続できません。SSH 接続を開始するパソコンの X サーバーとディスプレイを確認してください。",
+  "client.ssh.x11Rejected": "サーバーが X11 転送を許可しませんでした。サーバーの SSH 設定を確認してください。",
+  "client.ssh.dropUpload": "ドロップして {path} にアップロード",
+  "client.ssh.dropFilesOnly": "フォルダーのドラッグにはまだ対応していません。ファイルを選択してください。",
+  "client.ssh.uploadDropHint": "ここにファイルをドラッグすると現在のディレクトリにアップロードできます。",
+  "client.ssh.localFileUnavailable": "ドロップされたファイルを読み込めませんでした。もう一度選択してください。"
 }

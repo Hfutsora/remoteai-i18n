@@ -50,6 +50,8 @@ export interface MessageParams24 {
   "client.ssh.deleteHint": Record<string, never>;
   "client.ssh.download": Record<string, never>;
   "client.ssh.downloaded": Record<string, never>;
+  "client.ssh.dropFilesOnly": Record<string, never>;
+  "client.ssh.dropUpload": { "path": string | number };
   "client.ssh.empty": Record<string, never>;
   "client.ssh.emptyConnectionsHint": Record<string, never>;
   "client.ssh.fileFailed": Record<string, never>;
@@ -78,6 +80,7 @@ export interface MessageParams24 {
   "client.ssh.keyRequiredForConnection": Record<string, never>;
   "client.ssh.limit": Record<string, never>;
   "client.ssh.loadFailed": Record<string, never>;
+  "client.ssh.localFileUnavailable": Record<string, never>;
   "client.ssh.loginHint": Record<string, never>;
   "client.ssh.loginSection": Record<string, never>;
   "client.ssh.manage": Record<string, never>;
@@ -131,9 +134,17 @@ export interface MessageParams24 {
   "client.ssh.upload": Record<string, never>;
   "client.ssh.uploadConflictHint": { "name": string | number };
   "client.ssh.uploadConflictTitle": Record<string, never>;
+  "client.ssh.uploadDropHint": Record<string, never>;
   "client.ssh.uploadingFile": { "name": string | number };
   "client.ssh.username": Record<string, never>;
   "client.ssh.usernamePlaceholder": Record<string, never>;
+  "client.ssh.x11Display": Record<string, never>;
+  "client.ssh.x11DisplayPlaceholder": Record<string, never>;
+  "client.ssh.x11Forwarding": Record<string, never>;
+  "client.ssh.x11Hint": Record<string, never>;
+  "client.ssh.x11InvalidDisplay": Record<string, never>;
+  "client.ssh.x11Rejected": Record<string, never>;
+  "client.ssh.x11Unavailable": Record<string, never>;
   "client.taskReview.aProjectCheckIsAlreadyRunningWaitForItTo": Record<string, never>;
   "client.taskReview.baseBranchLeaveBlankForDefault": Record<string, never>;
   "client.taskReview.changedFiles": { "value1": string | number };
@@ -189,15 +200,4 @@ export interface MessageParams24 {
   "client.taskReview.theCodeHasChangedRefreshTheReviewAndTryAgain": Record<string, never>;
   "client.taskReview.thereIsNoOpenPrForThisBranch": Record<string, never>;
   "client.taskReview.thisCheckIsNotConfiguredForTheProject": Record<string, never>;
-  "client.taskReview.thisCheckIsNotConfiguredSetItUpOnYour": Record<string, never>;
-  "client.taskReview.thisProjectContainsSubmodulesVerifyItOnTheComputerBecause": Record<string, never>;
-  "client.taskReview.thisRunsAProjectCommandOnYourComputerAndMay": Record<string, never>;
-  "client.taskReview.thisTurnSChanges": Record<string, never>;
-  "client.taskReview.thisTurnSChangesHaveBeenRestored": Record<string, never>;
-  "client.taskReview.untrackedFilesAreTooLargeOrIncludeLinksOrganizeThem": Record<string, never>;
-  "client.taskReview.viewCheckRecord": Record<string, never>;
-  "client.taskReview.waitingForTheCheckToFinish": Record<string, never>;
-  "client.terminal.checkTheLinkAndTryAgain": Record<string, never>;
-  "client.terminal.closeATerminalBeforeOpeningAnotherOne": Record<string, never>;
-  "client.terminal.closeTab": { "number": string | number };
 }

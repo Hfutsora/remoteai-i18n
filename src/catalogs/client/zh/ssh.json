@@ -111,5 +111,16 @@
   "client.ssh.backToTerminal": "返回终端",
   "client.ssh.downloaded": "文件已保存。",
   "client.ssh.credentialsRequired": "尚未保存登录信息，请填写密码或私钥。",
-  "client.ssh.credentialsUnavailable": "暂时无法读取或保存登录信息，请稍后重试。"
+  "client.ssh.credentialsUnavailable": "暂时无法读取或保存登录信息，请稍后重试。",
+  "client.ssh.x11Forwarding": "启用 X11 转发",
+  "client.ssh.x11Display": "X11 显示地址（可选）",
+  "client.ssh.x11DisplayPlaceholder": "自动选择，例如 :0",
+  "client.ssh.x11Hint": "图形窗口会显示在发起 SSH 连接的电脑上，请先在该电脑启动 X 服务。远程模式下，窗口显示在所连接的电脑上。",
+  "client.ssh.x11InvalidDisplay": "请填写本机 X11 显示地址，例如 :0 或 localhost:0，也可留空自动选择。",
+  "client.ssh.x11Unavailable": "无法连接 X 服务，请检查发起 SSH 连接的电脑上的 X 服务和显示地址。",
+  "client.ssh.x11Rejected": "服务器未允许 X11 转发，请检查服务器的 SSH 设置。",
+  "client.ssh.dropUpload": "松开以上传到 {path}",
+  "client.ssh.dropFilesOnly": "暂不支持拖入文件夹，请选择文件。",
+  "client.ssh.uploadDropHint": "可将文件拖入此处上传到当前目录。",
+  "client.ssh.localFileUnavailable": "无法读取拖入的文件，请重新选择。"
 }

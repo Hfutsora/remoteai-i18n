@@ -111,5 +111,16 @@
   "client.ssh.backToTerminal": "Back to terminal",
   "client.ssh.downloaded": "File saved.",
   "client.ssh.credentialsRequired": "No login details are saved yet. Enter a password or private key.",
-  "client.ssh.credentialsUnavailable": "Login details could not be loaded or saved. Please try again later."
+  "client.ssh.credentialsUnavailable": "Login details could not be loaded or saved. Please try again later.",
+  "client.ssh.x11Forwarding": "Enable X11 forwarding",
+  "client.ssh.x11Display": "X11 display (optional)",
+  "client.ssh.x11DisplayPlaceholder": "Automatic, e.g. :0",
+  "client.ssh.x11Hint": "Graphical windows open on the computer making the SSH connection. Start an X server there first. In remote mode, windows open on the connected computer.",
+  "client.ssh.x11InvalidDisplay": "Enter a local X11 display such as :0 or localhost:0, or leave it blank for automatic selection.",
+  "client.ssh.x11Unavailable": "Could not connect to the X server. Check the X server and display on the computer making the SSH connection.",
+  "client.ssh.x11Rejected": "The server did not allow X11 forwarding. Check its SSH settings.",
+  "client.ssh.dropUpload": "Drop to upload to {path}",
+  "client.ssh.dropFilesOnly": "Folder uploads are not supported here yet. Please choose files.",
+  "client.ssh.uploadDropHint": "Drag files here to upload them to the current directory.",
+  "client.ssh.localFileUnavailable": "Could not read the dropped file. Please select it again."
 }
