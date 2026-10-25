@@ -69,9 +69,13 @@ export interface MessageParams5 {
   "client.chat.yourApprovalIsNeeded": Record<string, never>;
   "client.chat.yourBrowserCannotPlayThisFormatDownloadTheVideoTo": Record<string, never>;
   "client.chat.yourBrowserIsSavingTheFile": Record<string, never>;
+  "client.chatQuota.currentUsage": Record<string, never>;
+  "client.chatQuota.currentUsageDescription": { "cost": string | number; "tokens": string | number };
+  "client.chatQuota.dailyUsageDescription": { "cost": string | number; "tokens": string | number };
   "client.chatQuota.estimateDescription": Record<string, never>;
   "client.chatQuota.estimatedRemaining": { "amount": string | number };
   "client.chatQuota.estimatedTotal": { "amount": string | number };
+  "client.chatQuota.ratioDescription": { "remaining": string | number; "total": string | number };
   "client.chatQuota.remainingCompact": { "amount": string | number };
   "client.chatReliability.accountSignIn": Record<string, never>;
   "client.chatReliability.aiCanRunThroughARelayConnection": Record<string, never>;
@@ -196,8 +200,4 @@ export interface MessageParams5 {
   "client.cliImport.unableToReadTheInstalledVersionInformationCheckLogDiagnostics": Record<string, never>;
   "client.cliImport.unableToSaveTheInstallationResultCheckThatTheDisk": Record<string, never>;
   "client.cliImport.unableToSelectAFilePleaseTryAgain": Record<string, never>;
-  "client.cliImport.unableToWriteInstallationFilesCheckThatTheDiskIs": Record<string, never>;
-  "client.cliImport.useAVerificationFileFromTheSameReleaseIfProvided": Record<string, never>;
-  "client.cliImport.verifyingAndImportingFilesPleaseWait": Record<string, never>;
-  "client.composer.aConversationNeedsYourApprovalClickToReview": Record<string, never>;
 }
