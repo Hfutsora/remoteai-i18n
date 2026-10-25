@@ -14,6 +14,7 @@ import downloadTiming from '../src/catalogs/client/zh/downloadTiming.json';
 import commandMetrics from '../src/catalogs/client/zh/commandMetrics.json';
 import requestErrors from '../src/catalogs/client/zh/requestErrors.json';
 import chatQuota from '../src/catalogs/client/zh/chatQuota.json';
+import sheet from '../src/catalogs/client/zh/sheet.json';
 
 const baselines = {
   "client": "751b7f50aca5a2ebf8976190600fd93ce74f94673b73390a87c6fc153bdc6e22",
@@ -32,6 +33,7 @@ const additions = new Set(['client.chat.usePlugin',
   ...Object.keys(commandMetrics),
   ...Object.keys(requestErrors),
   ...Object.keys(chatQuota),
+  ...Object.keys(sheet),
   'client.remoteDesktop.takeoverTitle', 'client.remoteDesktop.takeoverMessage',
   'client.remoteDesktop.takeoverConfirm', 'client.remoteDesktop.takeoverCancel',
   'client.remoteDesktop.connectionInUse', 'client.remoteDesktop.connectionCancelled',

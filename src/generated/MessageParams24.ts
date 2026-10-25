@@ -34,6 +34,7 @@ export interface MessageParams24 {
   "client.shared.zoomIn": Record<string, never>;
   "client.shared.zoomLevel": Record<string, never>;
   "client.shared.zoomOut": Record<string, never>;
+  "client.sheet.dragToClose": Record<string, never>;
   "client.skills.codex-switch-chrome": Record<string, never>;
   "client.skills.codex-switch-computer-use": Record<string, never>;
   "client.skills.codex-switch-remote-command": Record<string, never>;
@@ -199,5 +200,4 @@ export interface MessageParams24 {
   "client.taskReview.noConflictsFoundInThePreviewFilesWillBeChecked": Record<string, never>;
   "client.taskReview.notRun": Record<string, never>;
   "client.taskReview.passed": Record<string, never>;
-  "client.taskReview.prAndCi": Record<string, never>;
 }
