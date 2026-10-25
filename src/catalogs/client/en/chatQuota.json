@@ -1,4 +1,5 @@
 {
+  "client.chatQuota.remainingCompact": "{amount} remaining",
   "client.chatQuota.estimatedRemaining": "{amount} remaining quota",
   "client.chatQuota.estimatedTotal": "{amount} total quota",
   "client.chatQuota.estimateDescription": "Remaining and total quota are estimates. A dash means no estimate is available."
