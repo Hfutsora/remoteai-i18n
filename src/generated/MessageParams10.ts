@@ -87,6 +87,7 @@ export interface MessageParams10 {
   "client.downloads.deleteSelected": Record<string, never>;
   "client.downloads.deleteSelectedCount": { "count": string | number };
   "client.downloads.deleteSelectedTitle": { "count": string | number };
+  "client.downloads.deselectAll": Record<string, never>;
   "client.downloads.download": { "name": string | number };
   "client.downloads.downloadFailed": Record<string, never>;
   "client.downloads.downloadHistoryIsFullRemoveRecordsYouNoLongerNeed": Record<string, never>;
@@ -148,6 +149,7 @@ export interface MessageParams10 {
   "client.downloads.saveToDevice": Record<string, never>;
   "client.downloads.saving": Record<string, never>;
   "client.downloads.savingHasStartedCheckYourBrowserDownloadsForCompletion": Record<string, never>;
+  "client.downloads.selectAll": Record<string, never>;
   "client.downloads.selectTask": { "name": string | number };
   "client.downloads.share": Record<string, never>;
   "client.downloads.shareFile": Record<string, never>;
@@ -198,6 +200,4 @@ export interface MessageParams10 {
   "client.errors.couldNotPrepareThisChatOpenCodexGuiOnYour": Record<string, never>;
   "client.errors.couldNotReadConnectionDetailsUpdateRemoteAiOnBoth": Record<string, never>;
   "client.errors.couldNotRefreshUsagePleaseTryAgainLater": Record<string, never>;
-  "client.errors.couldNotRemoveTheGoalPleaseTryAgainLater": Record<string, never>;
-  "client.errors.couldNotStartTheGoalWaitForTheCurrentTask": Record<string, never>;
 }

@@ -1,4 +1,6 @@
 {
+  "client.downloads.selectAll": "Выбрать всё",
+  "client.downloads.deselectAll": "Снять выделение",
   "client.downloads.deleteSelected": "Удалить выбранное",
   "client.downloads.deleteSelectedCount": "Удалить выбранное ({count})",
   "client.downloads.deleteSelectedTitle": "Удалить выбранные загрузки ({count})?",

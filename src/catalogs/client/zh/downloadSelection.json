@@ -1,4 +1,6 @@
 {
+  "client.downloads.selectAll": "全选",
+  "client.downloads.deselectAll": "取消全选",
   "client.downloads.deleteSelected": "批量删除",
   "client.downloads.deleteSelectedCount": "批量删除（{count}）",
   "client.downloads.deleteSelectedTitle": "删除这 {count} 项下载？",

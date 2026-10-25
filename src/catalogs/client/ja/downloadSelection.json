@@ -1,4 +1,6 @@
 {
+  "client.downloads.selectAll": "すべて選択",
+  "client.downloads.deselectAll": "選択を解除",
   "client.downloads.deleteSelected": "選択した項目を削除",
   "client.downloads.deleteSelectedCount": "選択した項目を削除（{count}）",
   "client.downloads.deleteSelectedTitle": "選択したダウンロード {count} 件を削除しますか？",

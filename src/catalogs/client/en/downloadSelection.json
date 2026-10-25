@@ -1,4 +1,6 @@
 {
+  "client.downloads.selectAll": "Select all",
+  "client.downloads.deselectAll": "Deselect all",
   "client.downloads.deleteSelected": "Delete selected",
   "client.downloads.deleteSelectedCount": "Delete selected ({count})",
   "client.downloads.deleteSelectedTitle": "Delete selected downloads ({count})?",
