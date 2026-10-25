@@ -55,6 +55,7 @@ export interface MessageParams4 {
   "client.chat.minimizeDetailsPanel": Record<string, never>;
   "client.chat.modelAndReasoningEffort": Record<string, never>;
   "client.chat.modelAndReasoningEffort.bae75e": { "effort": string | number; "model": string | number };
+  "client.chat.modelAtCapacity": Record<string, never>;
   "client.chat.modelUsageRanking": Record<string, never>;
   "client.chat.moreInformationNeeded": Record<string, never>;
   "client.chat.moveQueuedMessageDown": Record<string, never>;
@@ -199,5 +200,4 @@ export interface MessageParams4 {
   "client.chat.theRemoteTerminalDisconnectedOpenANewTerminalToTry": Record<string, never>;
   "client.chat.theToolFailedPleaseTryAgain": Record<string, never>;
   "client.chat.theToolReturnedNoText": Record<string, never>;
-  "client.chat.thisAccountIsUnavailable": Record<string, never>;
 }
