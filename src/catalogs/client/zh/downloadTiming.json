@@ -1,0 +1,10 @@
+{
+  "client.downloads.completedAt": "完成时间：{time}",
+  "client.downloads.totalDuration": "总用时：{duration}",
+  "client.downloads.completedAtUnavailable": "完成时间：未记录",
+  "client.downloads.totalDurationUnavailable": "总用时：未记录",
+  "client.downloads.durationLessThanSecond": "不到1秒",
+  "client.downloads.durationSeconds": "{seconds}秒",
+  "client.downloads.durationMinutes": "{minutes}分{seconds}秒",
+  "client.downloads.durationHours": "{hours}小时{minutes}分{seconds}秒"
+}

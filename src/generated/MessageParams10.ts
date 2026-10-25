@@ -61,6 +61,8 @@ export interface MessageParams10 {
   "client.downloads.cannotReadTheFileCheckThatItExistsAndIs": Record<string, never>;
   "client.downloads.cannotReadTheVideoCheckThatItIsReadableAnd": Record<string, never>;
   "client.downloads.compatibilityMode": Record<string, never>;
+  "client.downloads.completedAt": { "time": string | number };
+  "client.downloads.completedAtUnavailable": Record<string, never>;
   "client.downloads.compressedFiles": { "done": string | number; "total": string | number };
   "client.downloads.compressing": Record<string, never>;
   "client.downloads.compressionProgress": { "name": string | number };
@@ -103,6 +105,10 @@ export interface MessageParams10 {
   "client.downloads.downloadsContinueBetweenPagesReopenThisTabToResumeWhen": Record<string, never>;
   "client.downloads.downloadsContinueBetweenPagesSaveFilesToYourDeviceWhen": Record<string, never>;
   "client.downloads.downloadsContinueInTheBackgroundTrackProgressInDownloads": Record<string, never>;
+  "client.downloads.durationHours": { "hours": string | number; "minutes": string | number; "seconds": string | number };
+  "client.downloads.durationLessThanSecond": Record<string, never>;
+  "client.downloads.durationMinutes": { "minutes": string | number; "seconds": string | number };
+  "client.downloads.durationSeconds": { "seconds": string | number };
   "client.downloads.editedFiles": { "count": string | number };
   "client.downloads.fileDownload": Record<string, never>;
   "client.downloads.fileVerificationFailedPleaseTryAgain": Record<string, never>;
@@ -155,6 +161,8 @@ export interface MessageParams10 {
   "client.downloads.thisComputer": Record<string, never>;
   "client.downloads.thisFolderIsEmpty": Record<string, never>;
   "client.downloads.tooManyDownloadsPleaseTryAgainShortly": Record<string, never>;
+  "client.downloads.totalDuration": { "duration": string | number };
+  "client.downloads.totalDurationUnavailable": Record<string, never>;
   "client.downloads.updateDownloadedTapToOpenTheAppAndInstall": Record<string, never>;
   "client.downloads.verifying": Record<string, never>;
   "client.downloads.viewGroupedOperationsActivities": { "value1": string | number };
@@ -192,12 +200,4 @@ export interface MessageParams10 {
   "client.errors.couldNotRefreshUsagePleaseTryAgainLater": Record<string, never>;
   "client.errors.couldNotRemoveTheGoalPleaseTryAgainLater": Record<string, never>;
   "client.errors.couldNotStartTheGoalWaitForTheCurrentTask": Record<string, never>;
-  "client.errors.couldNotUpdateYouCanStillUseTheExistingList": Record<string, never>;
-  "client.errors.describeYourGoalIn4000CharactersOrFewerExit": Record<string, never>;
-  "client.errors.disconnected": Record<string, never>;
-  "client.errors.disconnectedOpenTheSkillsMenuAgain": Record<string, never>;
-  "client.errors.disconnectedReconnectBeforeSending": Record<string, never>;
-  "client.errors.downloadCodexFromTheCodexGuiPageOnYourComputer": Record<string, never>;
-  "client.errors.enterAContextCapacityBetween1And100000K": Record<string, never>;
-  "client.errors.handleQueuedMessagesBeforeArchivingThisChat": Record<string, never>;
 }

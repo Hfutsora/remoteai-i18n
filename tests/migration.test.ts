@@ -10,6 +10,7 @@ import deviceScreen from '../src/catalogs/client/zh/deviceScreen.json';
 import messageQueue from '../src/catalogs/client/zh/messageQueue.json';
 import ssh from '../src/catalogs/client/zh/ssh.json';
 import downloadSelection from '../src/catalogs/client/zh/downloadSelection.json';
+import downloadTiming from '../src/catalogs/client/zh/downloadTiming.json';
 import commandMetrics from '../src/catalogs/client/zh/commandMetrics.json';
 
 const baselines = {
@@ -25,6 +26,7 @@ const additions = new Set(['client.chat.usePlugin',
   ...Object.keys(messageQueue),
   ...Object.keys(ssh),
   ...Object.keys(downloadSelection),
+  ...Object.keys(downloadTiming),
   ...Object.keys(commandMetrics),
   'client.remoteDesktop.takeoverTitle', 'client.remoteDesktop.takeoverMessage',
   'client.remoteDesktop.takeoverConfirm', 'client.remoteDesktop.takeoverCancel',
