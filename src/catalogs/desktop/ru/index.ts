@@ -11,4 +11,5 @@ import part8 from './part6.json';
 import part9 from './part7.json';
 import part10 from './part8.json';
 import part11 from './part9.json';
-export default { ...part0, ...part1, ...part2, ...part3, ...part4, ...part5, ...part6, ...part7, ...part8, ...part9, ...part10, ...part11 };
+import part12 from './petDock.json';
+export default { ...part0, ...part1, ...part2, ...part3, ...part4, ...part5, ...part6, ...part7, ...part8, ...part9, ...part10, ...part11, ...part12 };

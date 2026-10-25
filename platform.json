@@ -138,6 +138,11 @@
       "source": "platform/desktop/overlays/usage-statusline.js",
       "target": "apps/desktop/src-tauri/src/dream_skin_native/usage_statusline.js",
       "name": "usage-statusline"
+    },
+    {
+      "source": "platform/desktop/overlays/pet-dock.js",
+      "target": "apps/desktop/src-tauri/src/dream_skin_native/pet_dock.js",
+      "name": "pet-dock"
     }
   ],
   "chrome": {
