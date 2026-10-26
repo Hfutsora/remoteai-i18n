@@ -96,6 +96,7 @@ export interface MessageParams24 {
   "client.ssh.credentialsHint": Record<string, never>;
   "client.ssh.credentialsRequired": Record<string, never>;
   "client.ssh.credentialsUnavailable": Record<string, never>;
+  "client.ssh.currentFingerprint": Record<string, never>;
   "client.ssh.delete": Record<string, never>;
   "client.ssh.deleteConfirm": { "name": string | number };
   "client.ssh.deleteFileHint": Record<string, never>;
@@ -121,6 +122,8 @@ export interface MessageParams24 {
   "client.ssh.home": Record<string, never>;
   "client.ssh.host": Record<string, never>;
   "client.ssh.hostChanged": Record<string, never>;
+  "client.ssh.hostKeyChangedHint": Record<string, never>;
+  "client.ssh.hostKeyChangedTitle": Record<string, never>;
   "client.ssh.hostPlaceholder": Record<string, never>;
   "client.ssh.importKeyFile": Record<string, never>;
   "client.ssh.invalid": Record<string, never>;
@@ -161,6 +164,7 @@ export interface MessageParams24 {
   "client.ssh.path": Record<string, never>;
   "client.ssh.pathCopied": Record<string, never>;
   "client.ssh.port": Record<string, never>;
+  "client.ssh.previousFingerprint": Record<string, never>;
   "client.ssh.privateKey": Record<string, never>;
   "client.ssh.profileChanged": Record<string, never>;
   "client.ssh.profileLimit": Record<string, never>;
@@ -190,14 +194,10 @@ export interface MessageParams24 {
   "client.ssh.trustHost": Record<string, never>;
   "client.ssh.unsavedHint": Record<string, never>;
   "client.ssh.unsavedTitle": Record<string, never>;
+  "client.ssh.updateFingerprint": Record<string, never>;
   "client.ssh.updateRequired": Record<string, never>;
   "client.ssh.upload": Record<string, never>;
   "client.ssh.uploadConflictHint": { "name": string | number };
   "client.ssh.uploadConflictTitle": Record<string, never>;
   "client.ssh.uploadDropHint": Record<string, never>;
-  "client.ssh.uploadingFile": { "name": string | number };
-  "client.ssh.username": Record<string, never>;
-  "client.ssh.usernamePlaceholder": Record<string, never>;
-  "client.ssh.x11Display": Record<string, never>;
-  "client.ssh.x11DisplayPlaceholder": Record<string, never>;
 }
