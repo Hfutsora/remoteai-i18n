@@ -33,6 +33,11 @@ export interface MessageParams9 {
   "client.conversation.webPage": Record<string, never>;
   "client.conversation.worktree": Record<string, never>;
   "client.conversation.youCanUpdateWhenTheCurrentTaskFinishes": Record<string, never>;
+  "client.conversationWorkspace.currentWorktree": Record<string, never>;
+  "client.conversationWorkspace.linkedWorktree": { "name": string | number };
+  "client.conversationWorkspace.loading": Record<string, never>;
+  "client.conversationWorkspace.mainWorktree": Record<string, never>;
+  "client.conversationWorkspace.unavailable": Record<string, never>;
   "client.coze.agents": Record<string, never>;
   "client.coze.anotherToolHasTheSameNameRemoveOrRenameIt": Record<string, never>;
   "client.coze.bringYourIdeasToLifeWithAi": Record<string, never>;
@@ -195,9 +200,4 @@ export interface MessageParams9 {
   "client.desktopRemoteSettings.enabledNotRunning": Record<string, never>;
   "client.desktopRemoteSettings.enableUnattendedAccess": Record<string, never>;
   "client.desktopRemoteSettings.linkedToYourCloudAccount": Record<string, never>;
-  "client.desktopRemoteSettings.manageHowOtherDevicesCanAccessThisComputer": Record<string, never>;
-  "client.desktopRemoteSettings.notEnabled": Record<string, never>;
-  "client.desktopRemoteSettings.onceEnabledYouCanAccessThisComputerFromYourPhone": Record<string, never>;
-  "client.desktopRemoteSettings.pasteTextAndFilesToTheComputer": Record<string, never>;
-  "client.desktopRemoteSettings.playTheComputerSAudioOnTheConnectedDevice": Record<string, never>;
 }
