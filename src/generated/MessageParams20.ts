@@ -33,6 +33,8 @@ export interface MessageParams20 {
   "client.projectBrowser.onlySomeResultsAreShownEnterAMoreSpecificName": Record<string, never>;
   "client.projectBrowser.openFiles": Record<string, never>;
   "client.projectBrowser.openIn": Record<string, never>;
+  "client.projectBrowser.openInExplorer": Record<string, never>;
+  "client.projectBrowser.openInTerminal": Record<string, never>;
   "client.projectBrowser.paste": Record<string, never>;
   "client.projectBrowser.pasted": Record<string, never>;
   "client.projectBrowser.pathCopied": Record<string, never>;
@@ -198,6 +200,4 @@ export interface MessageParams20 {
   "client.remoteDesktop.couldNotRestartQuitRemoteAiCompletelyThenOpenIt": Record<string, never>;
   "client.remoteDesktop.couldNotSwitchPrivacyScreenPleaseTryAgain": Record<string, never>;
   "client.remoteDesktop.couldNotSwitchPrivacyScreenReconnectAndTryAgain": Record<string, never>;
-  "client.remoteDesktop.customFrameRate": Record<string, never>;
-  "client.remoteDesktop.decode": Record<string, never>;
 }
