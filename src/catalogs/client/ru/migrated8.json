@@ -120,7 +120,7 @@
   "client.shared.contextUsedTokensCapacityUnknown": "Использовано токенов контекста: {used} (ёмкость неизвестна)",
   "client.shared.contextTokensUsed": "Токенов контекста: {used} / {capacity} (использовано {percent}%)",
   "client.shared.totalRemaining": "Всего осталось",
-  "client.shared.currentChat": "Текущий чат",
+  "client.shared.currentChat": "Текущий",
   "client.shared.currentAccountQuotaRemaining": "Остаток лимита текущего аккаунта",
   "client.shared.combinedAccountQuotaRemaining": "Общий остаток лимитов аккаунтов",
   "client.shared.estimatedCombinedApiCostToday": "Расчётная стоимость объединённого API за сегодня",

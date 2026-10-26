@@ -86,7 +86,7 @@
   "client.ssh.hostChanged": "The server fingerprint has changed. Connection stopped. Verify the server identity first.",
   "client.ssh.closed": "The SSH connection has ended. Connect again to continue.",
   "client.ssh.fileFailed": "File operation failed. Check permissions and the connection.",
-  "client.ssh.fileTooLarge": "Files up to 4 MB are supported. Choose a smaller file.",
+  "client.ssh.fileTooLarge": "Files up to 5 MB are supported. Choose a smaller file.",
   "client.ssh.conflict": "A file with this name already exists. Choose another name.",
   "client.ssh.limit": "You can open up to 8 SSH connections. Close one to continue.",
   "client.ssh.storageFailed": "Could not save the connection to your account. Please try again.",
@@ -123,12 +123,15 @@
   "client.ssh.x11Forwarding": "Enable X11 forwarding",
   "client.ssh.x11Display": "X11 display (optional)",
   "client.ssh.x11DisplayPlaceholder": "Automatic, e.g. :0",
-  "client.ssh.x11Hint": "Graphical windows open on the computer making the SSH connection. Start an X server there first. In remote mode, windows open on the connected computer.",
+  "client.ssh.x11Hint": "Saving, testing or connecting checks the X server and starts it on Windows and macOS. Graphics appear on the computer making the SSH connection, or on the connected computer in remote mode.",
   "client.ssh.x11InvalidDisplay": "Enter a local X11 display such as :0 or localhost:0, or leave it blank for automatic selection.",
   "client.ssh.x11Unavailable": "Could not connect to the X server. Check the X server and display on the computer making the SSH connection.",
   "client.ssh.x11Rejected": "The server did not allow X11 forwarding. Check its SSH settings.",
   "client.ssh.dropUpload": "Drop to upload to {path}",
   "client.ssh.dropFilesOnly": "Folder uploads are not supported here yet. Please choose files.",
   "client.ssh.uploadDropHint": "Drag files here to upload them to the current directory.",
-  "client.ssh.localFileUnavailable": "Could not read the dropped file. Please select it again."
+  "client.ssh.localFileUnavailable": "Could not read the dropped file. Please select it again.",
+  "client.ssh.x11Missing": "X server not found. On Windows, reinstall the full Remote AI app. On macOS, install XQuartz first.",
+  "client.ssh.x11StartFailed": "The X server could not start. Check the display address and try again.",
+  "client.ssh.x11Starting": "Preparing X server…"
 }

@@ -86,7 +86,7 @@
   "client.ssh.hostChanged": "サーバーのフィンガープリントが変わりました。接続を停止しました。サーバーの身元を確認してください。",
   "client.ssh.closed": "SSH 接続が終了しました。再接続してください。",
   "client.ssh.fileFailed": "ファイル操作に失敗しました。権限と接続を確認してください。",
-  "client.ssh.fileTooLarge": "4 MB 以下のファイルに対応しています。小さいファイルを選択してください。",
+  "client.ssh.fileTooLarge": "5 MB 以下のファイルに対応しています。小さいファイルを選択してください。",
   "client.ssh.conflict": "同名のファイルが存在します。別の名前を指定してください。",
   "client.ssh.limit": "SSH 接続は最大 8 件です。先にいずれかを閉じてください。",
   "client.ssh.storageFailed": "接続設定をアカウントに保存できませんでした。もう一度お試しください。",
@@ -123,12 +123,15 @@
   "client.ssh.x11Forwarding": "X11 転送を有効にする",
   "client.ssh.x11Display": "X11 ディスプレイ（任意）",
   "client.ssh.x11DisplayPlaceholder": "自動選択（例：:0）",
-  "client.ssh.x11Hint": "グラフィカルウィンドウは SSH 接続を開始するパソコンに表示されます。先にそのパソコンで X サーバーを起動してください。リモートモードでは接続先のパソコンに表示されます。",
+  "client.ssh.x11Hint": "保存、テスト、接続時に X サーバーを確認し、Windows と macOS では自動起動します。画面は SSH 接続を開始するパソコンに表示されます。リモートモードでは接続先のパソコンに表示されます。",
   "client.ssh.x11InvalidDisplay": ":0 や localhost:0 など、ローカルの X11 ディスプレイを入力してください。空欄の場合は自動選択されます。",
   "client.ssh.x11Unavailable": "X サーバーに接続できません。SSH 接続を開始するパソコンの X サーバーとディスプレイを確認してください。",
   "client.ssh.x11Rejected": "サーバーが X11 転送を許可しませんでした。サーバーの SSH 設定を確認してください。",
   "client.ssh.dropUpload": "ドロップして {path} にアップロード",
   "client.ssh.dropFilesOnly": "フォルダーのドラッグにはまだ対応していません。ファイルを選択してください。",
   "client.ssh.uploadDropHint": "ここにファイルをドラッグすると現在のディレクトリにアップロードできます。",
-  "client.ssh.localFileUnavailable": "ドロップされたファイルを読み込めませんでした。もう一度選択してください。"
+  "client.ssh.localFileUnavailable": "ドロップされたファイルを読み込めませんでした。もう一度選択してください。",
+  "client.ssh.x11Missing": "X サーバーが見つかりません。Windows では Remote AI の完全版を再インストールしてください。macOS では先に XQuartz をインストールしてください。",
+  "client.ssh.x11StartFailed": "X サーバーを起動できませんでした。ディスプレイのアドレスを確認して、もう一度お試しください。",
+  "client.ssh.x11Starting": "X サーバーを準備中…"
 }

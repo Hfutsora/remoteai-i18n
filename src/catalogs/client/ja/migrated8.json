@@ -120,7 +120,7 @@
   "client.shared.contextUsedTokensCapacityUnknown": "使用コンテキスト: {used} 個のトークン (容量不明)",
   "client.shared.contextTokensUsed": "コンテキスト {used} / {capacity} 個のトークン ({percent}% 使用)",
   "client.shared.totalRemaining": "残り合計",
-  "client.shared.currentChat": "現在のチャット",
+  "client.shared.currentChat": "現在",
   "client.shared.currentAccountQuotaRemaining": "現在のアカウントの残り使用枠",
   "client.shared.combinedAccountQuotaRemaining": "全アカウントの残り使用枠",
   "client.shared.estimatedCombinedApiCostToday": "今日の推定 API 費用合計",
