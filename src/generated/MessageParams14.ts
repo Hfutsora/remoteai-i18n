@@ -176,6 +176,9 @@ export interface MessageParams14 {
   "client.errorsConversations.theSourceConversationsWereNotChanged": Record<string, never>;
   "client.errorsConversations.theTemporaryBackupCouldNotBeRemoved": Record<string, never>;
   "client.errorsConversations.thisSessionPackageVersionIsNotSupported": Record<string, never>;
+  "client.filePreview.pdfUnavailable": Record<string, never>;
+  "client.filePreview.tooLarge": Record<string, never>;
+  "client.filePreview.unavailable": Record<string, never>;
   "client.fileReferences.closeFileList": Record<string, never>;
   "client.fileReferences.connectToReferenceFilesOrFolders": Record<string, never>;
   "client.fileReferences.describeATaskFilesConversationsCommandsAndSkills": Record<string, never>;
@@ -197,7 +200,4 @@ export interface MessageParams14 {
   "client.git.changed": Record<string, never>;
   "client.git.changedFiles": { "count": string | number };
   "client.git.changes": Record<string, never>;
-  "client.git.changesComparedWithTheFirstParent": Record<string, never>;
-  "client.git.checkedOutTheSelectedCommit": Record<string, never>;
-  "client.git.checkOut": Record<string, never>;
 }
