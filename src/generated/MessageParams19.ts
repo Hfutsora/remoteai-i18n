@@ -192,12 +192,12 @@ export interface MessageParams19 {
   "client.projectBrowser.goToLine": Record<string, never>;
   "client.projectBrowser.hiddenTabs": Record<string, never>;
   "client.projectBrowser.keepYourChanges": Record<string, never>;
+  "client.projectBrowser.largeImagePreview": Record<string, never>;
+  "client.projectBrowser.largePlainText": Record<string, never>;
   "client.projectBrowser.loading": Record<string, never>;
   "client.projectBrowser.matchCase": Record<string, never>;
   "client.projectBrowser.moreTabs": Record<string, never>;
   "client.projectBrowser.name": Record<string, never>;
   "client.projectBrowser.new": Record<string, never>;
   "client.projectBrowser.newFile": Record<string, never>;
-  "client.projectBrowser.newFolder": Record<string, never>;
-  "client.projectBrowser.next": Record<string, never>;
 }

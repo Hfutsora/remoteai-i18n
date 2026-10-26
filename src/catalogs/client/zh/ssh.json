@@ -86,7 +86,7 @@
   "client.ssh.hostChanged": "服务器指纹已改变，连接已停止。请先确认服务器身份。",
   "client.ssh.closed": "SSH 连接已结束，请重新连接。",
   "client.ssh.fileFailed": "文件操作失败，请检查权限和连接。",
-  "client.ssh.fileTooLarge": "暂时支持 4 MB 以内的文件，请选择较小的文件。",
+  "client.ssh.fileTooLarge": "暂时支持 5 MB 以内的文件，请选择较小的文件。",
   "client.ssh.conflict": "同名文件已存在，请换个名称后重试。",
   "client.ssh.limit": "最多可同时打开 8 个 SSH 连接，请先关闭一个。",
   "client.ssh.storageFailed": "连接配置未能保存到账号，请重试。",

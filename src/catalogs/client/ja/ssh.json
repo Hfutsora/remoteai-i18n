@@ -86,7 +86,7 @@
   "client.ssh.hostChanged": "サーバーのフィンガープリントが変わりました。接続を停止しました。サーバーの身元を確認してください。",
   "client.ssh.closed": "SSH 接続が終了しました。再接続してください。",
   "client.ssh.fileFailed": "ファイル操作に失敗しました。権限と接続を確認してください。",
-  "client.ssh.fileTooLarge": "4 MB 以下のファイルに対応しています。小さいファイルを選択してください。",
+  "client.ssh.fileTooLarge": "5 MB 以下のファイルに対応しています。小さいファイルを選択してください。",
   "client.ssh.conflict": "同名のファイルが存在します。別の名前を指定してください。",
   "client.ssh.limit": "SSH 接続は最大 8 件です。先にいずれかを閉じてください。",
   "client.ssh.storageFailed": "接続設定をアカウントに保存できませんでした。もう一度お試しください。",

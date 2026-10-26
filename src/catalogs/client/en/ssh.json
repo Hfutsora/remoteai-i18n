@@ -86,7 +86,7 @@
   "client.ssh.hostChanged": "The server fingerprint has changed. Connection stopped. Verify the server identity first.",
   "client.ssh.closed": "The SSH connection has ended. Connect again to continue.",
   "client.ssh.fileFailed": "File operation failed. Check permissions and the connection.",
-  "client.ssh.fileTooLarge": "Files up to 4 MB are supported. Choose a smaller file.",
+  "client.ssh.fileTooLarge": "Files up to 5 MB are supported. Choose a smaller file.",
   "client.ssh.conflict": "A file with this name already exists. Choose another name.",
   "client.ssh.limit": "You can open up to 8 SSH connections. Close one to continue.",
   "client.ssh.storageFailed": "Could not save the connection to your account. Please try again.",
