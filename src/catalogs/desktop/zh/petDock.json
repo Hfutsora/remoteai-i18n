@@ -2,6 +2,8 @@
   "settings.petDock.title": "宠物额度底座",
   "settings.petDock.description": "在官方宠物下显示额度，保留底座下方的对话卡片。底座随宠物大小调整并一起移动。",
   "settings.petDock.enabled": "显示额度底座",
+  "settings.petDock.showLabels": "显示文字标签",
+  "settings.petDock.labelsHint": "关闭“显示文字标签”后，仅显示放大的数值。",
   "settings.petDock.metrics": "官方账号显示五小时和周剩余；API 显示剩余额度和累计 Token。",
   "settings.petDock.disabled": "已关闭",
   "settings.petDock.waitingForCodex": "等待连接 Codex。请开启 ChatGPT 增强功能，并通过 Remote AI 启动或重启 Codex。",

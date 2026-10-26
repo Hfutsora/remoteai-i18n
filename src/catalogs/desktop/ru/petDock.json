@@ -2,6 +2,8 @@
   "settings.petDock.title": "Квота под питомцем",
   "settings.petDock.description": "Квота отображается под официальным питомцем, а карточки диалога — ниже. Подставка меняет размер и перемещается вместе с питомцем.",
   "settings.petDock.enabled": "Показывать квоту",
+  "settings.petDock.showLabels": "Показывать подписи",
+  "settings.petDock.labelsHint": "Отключите подписи, чтобы видеть только увеличенные значения.",
   "settings.petDock.metrics": "Для аккаунтов: остаток за пять часов и неделю. Для API: баланс и общее число токенов.",
   "settings.petDock.disabled": "Выключено",
   "settings.petDock.waitingForCodex": "Ожидание Codex. Включите улучшения ChatGPT и запустите или перезапустите Codex через Remote AI.",

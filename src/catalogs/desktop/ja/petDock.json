@@ -2,6 +2,8 @@
   "settings.petDock.title": "ペット使用量ドック",
   "settings.petDock.description": "公式ペットの下に残量、その下に会話カードを表示します。ドックはペットの大きさと移動に追従します。",
   "settings.petDock.enabled": "使用量ドックを表示",
+  "settings.petDock.showLabels": "文字ラベルを表示",
+  "settings.petDock.labelsHint": "文字ラベルをオフにすると、数値のみを大きく表示します。",
   "settings.petDock.metrics": "公式アカウントでは5時間と週間の残量、APIでは残高と累計トークンを表示します。",
   "settings.petDock.disabled": "オフ",
   "settings.petDock.waitingForCodex": "Codexの接続を待っています。ChatGPT拡張機能を有効にし、Remote AIからCodexを起動または再起動してください。",

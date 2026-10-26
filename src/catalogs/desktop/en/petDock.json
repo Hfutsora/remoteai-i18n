@@ -1,5 +1,7 @@
 {
   "settings.petDock.title": "Pet quota dock",
+  "settings.petDock.showLabels": "Show text labels",
+  "settings.petDock.labelsHint": "Turn off “Show text labels” to display larger values only.",
   "settings.petDock.description": "Show quota under the official pet, with conversation cards below the dock. The dock scales and moves with the pet.",
   "settings.petDock.enabled": "Show quota dock",
   "settings.petDock.metrics": "Accounts show five-hour and weekly quota left. API providers show balance and total tokens.",
