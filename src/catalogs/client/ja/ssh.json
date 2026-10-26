@@ -95,6 +95,7 @@
   "client.ssh.refresh": "更新",
   "client.ssh.newFolder": "新しいフォルダー",
   "client.ssh.upload": "ファイルをアップロード",
+  "client.ssh.uploadToFolder": "このフォルダーにアップロード",
   "client.ssh.download": "ダウンロード",
   "client.ssh.path": "リモートパス",
   "client.ssh.go": "移動",

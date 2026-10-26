@@ -95,6 +95,7 @@
   "client.ssh.refresh": "Refresh",
   "client.ssh.newFolder": "New folder",
   "client.ssh.upload": "Upload file",
+  "client.ssh.uploadToFolder": "Upload to this folder",
   "client.ssh.download": "Download",
   "client.ssh.path": "Remote path",
   "client.ssh.go": "Go",

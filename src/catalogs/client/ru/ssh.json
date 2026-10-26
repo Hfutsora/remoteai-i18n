@@ -95,6 +95,7 @@
   "client.ssh.refresh": "Обновить",
   "client.ssh.newFolder": "Новая папка",
   "client.ssh.upload": "Загрузить файл",
+  "client.ssh.uploadToFolder": "Загрузить в эту папку",
   "client.ssh.download": "Скачать",
   "client.ssh.path": "Удалённый путь",
   "client.ssh.go": "Перейти",

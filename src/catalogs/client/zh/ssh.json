@@ -95,6 +95,7 @@
   "client.ssh.refresh": "刷新",
   "client.ssh.newFolder": "新建文件夹",
   "client.ssh.upload": "上传文件",
+  "client.ssh.uploadToFolder": "上传到此文件夹",
   "client.ssh.download": "下载",
   "client.ssh.path": "远程路径",
   "client.ssh.go": "前往",
