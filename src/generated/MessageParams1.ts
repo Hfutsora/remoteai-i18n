@@ -105,6 +105,10 @@ export interface MessageParams1 {
   "client.accounts.accounts": Record<string, never>;
   "client.accounts.accounts.5088a9": Record<string, never>;
   "client.accounts.addAccount": Record<string, never>;
+  "client.accounts.alias": Record<string, never>;
+  "client.accounts.aliasHint": Record<string, never>;
+  "client.accounts.aliasInvalid": Record<string, never>;
+  "client.accounts.aliasPlaceholder": Record<string, never>;
   "client.accounts.available": Record<string, never>;
   "client.accounts.availableNow": Record<string, never>;
   "client.accounts.cancel": Record<string, never>;
@@ -196,8 +200,4 @@ export interface MessageParams1 {
   "client.accountUsage.thisAccountIsMissingOnTheComputerSyncAccountsAnd": Record<string, never>;
   "client.accountUsage.thisAccountIsUnavailableRefreshTheAccountList": Record<string, never>;
   "client.accountUsage.updateRemoteAiOnYourComputerToManageAccountUsage": Record<string, never>;
-  "client.accountUsage.usageCouldNotBeRefreshedForAccountsTryAgainLater": { "count": string | number };
-  "client.accountUsage.usageForThisAccountIsBeingProcessedPleaseWait": Record<string, never>;
-  "client.accountUsage.willAskEachSelectedAccountHowIsTheWeatherToday": { "device": string | number };
-  "client.aggregateRouting.balanceConversations": Record<string, never>;
 }
