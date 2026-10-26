@@ -11,6 +11,7 @@ import messageQueue from '../src/catalogs/client/zh/messageQueue.json';
 import ssh from '../src/catalogs/client/zh/ssh.json';
 import downloadSelection from '../src/catalogs/client/zh/downloadSelection.json';
 import downloadTiming from '../src/catalogs/client/zh/downloadTiming.json';
+import downloadWorkspace from '../src/catalogs/client/zh/downloadWorkspace.json';
 import commandMetrics from '../src/catalogs/client/zh/commandMetrics.json';
 import requestErrors from '../src/catalogs/client/zh/requestErrors.json';
 import chatQuota from '../src/catalogs/client/zh/chatQuota.json';
@@ -32,6 +33,7 @@ const additions = new Set(['client.chat.usePlugin',
   ...Object.keys(ssh),
   ...Object.keys(downloadSelection),
   ...Object.keys(downloadTiming),
+  ...Object.keys(downloadWorkspace),
   ...Object.keys(commandMetrics),
   ...Object.keys(requestErrors),
   ...Object.keys(chatQuota),
