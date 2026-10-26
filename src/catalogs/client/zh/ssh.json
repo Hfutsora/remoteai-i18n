@@ -123,12 +123,15 @@
   "client.ssh.x11Forwarding": "启用 X11 转发",
   "client.ssh.x11Display": "X11 显示地址（可选）",
   "client.ssh.x11DisplayPlaceholder": "自动选择，例如 :0",
-  "client.ssh.x11Hint": "图形窗口会显示在发起 SSH 连接的电脑上，请先在该电脑启动 X 服务。远程模式下，窗口显示在所连接的电脑上。",
+  "client.ssh.x11Hint": "保存、测试或连接时会检查 X 服务，并在 Windows 和 macOS 上自动启动。图形窗口显示在发起 SSH 连接的电脑上；远程模式下显示在所连接的电脑上。",
   "client.ssh.x11InvalidDisplay": "请填写本机 X11 显示地址，例如 :0 或 localhost:0，也可留空自动选择。",
   "client.ssh.x11Unavailable": "无法连接 X 服务，请检查发起 SSH 连接的电脑上的 X 服务和显示地址。",
   "client.ssh.x11Rejected": "服务器未允许 X11 转发，请检查服务器的 SSH 设置。",
   "client.ssh.dropUpload": "松开以上传到 {path}",
   "client.ssh.dropFilesOnly": "暂不支持拖入文件夹，请选择文件。",
   "client.ssh.uploadDropHint": "可将文件拖入此处上传到当前目录。",
-  "client.ssh.localFileUnavailable": "无法读取拖入的文件，请重新选择。"
+  "client.ssh.localFileUnavailable": "无法读取拖入的文件，请重新选择。",
+  "client.ssh.x11Missing": "未找到 X 服务。Windows 请重新安装完整版 Remote AI；macOS 请先安装 XQuartz。",
+  "client.ssh.x11StartFailed": "X 服务未能启动，请检查显示地址后重试。",
+  "client.ssh.x11Starting": "正在准备 X 服务…"
 }

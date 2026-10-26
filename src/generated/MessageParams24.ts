@@ -172,7 +172,10 @@ export interface MessageParams24 {
   "client.ssh.x11Forwarding": Record<string, never>;
   "client.ssh.x11Hint": Record<string, never>;
   "client.ssh.x11InvalidDisplay": Record<string, never>;
+  "client.ssh.x11Missing": Record<string, never>;
   "client.ssh.x11Rejected": Record<string, never>;
+  "client.ssh.x11StartFailed": Record<string, never>;
+  "client.ssh.x11Starting": Record<string, never>;
   "client.ssh.x11Unavailable": Record<string, never>;
   "client.taskReview.aProjectCheckIsAlreadyRunningWaitForItTo": Record<string, never>;
   "client.taskReview.baseBranchLeaveBlankForDefault": Record<string, never>;
@@ -197,7 +200,4 @@ export interface MessageParams24 {
   "client.taskReview.failed": Record<string, never>;
   "client.taskReview.feedbackSentToTheOriginalConversation": Record<string, never>;
   "client.taskReview.filesContainOtherChangesAndCannotBeRestoredSafelyReview": Record<string, never>;
-  "client.taskReview.hideCheckRecord": Record<string, never>;
-  "client.taskReview.howShouldThisLineChange": Record<string, never>;
-  "client.taskReview.leaveFeedbackBesideAChangedLineToContinueFixingIt": Record<string, never>;
 }
