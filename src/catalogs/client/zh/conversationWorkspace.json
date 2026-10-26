@@ -1,0 +1,7 @@
+{
+  "client.conversationWorkspace.currentWorktree": "当前工作树",
+  "client.conversationWorkspace.mainWorktree": "主工作树",
+  "client.conversationWorkspace.linkedWorktree": "工作树：{name}",
+  "client.conversationWorkspace.loading": "读取中…",
+  "client.conversationWorkspace.unavailable": "暂不可用"
+}

@@ -16,6 +16,7 @@ import requestErrors from '../src/catalogs/client/zh/requestErrors.json';
 import chatQuota from '../src/catalogs/client/zh/chatQuota.json';
 import sheet from '../src/catalogs/client/zh/sheet.json';
 import projectBrowserFiles from '../src/catalogs/client/zh/projectBrowserFiles.json';
+import conversationWorkspace from '../src/catalogs/client/zh/conversationWorkspace.json';
 
 const baselines = {
   "client": "751b7f50aca5a2ebf8976190600fd93ce74f94673b73390a87c6fc153bdc6e22",
@@ -36,6 +37,7 @@ const additions = new Set(['client.chat.usePlugin',
   ...Object.keys(chatQuota),
   ...Object.keys(sheet),
   ...Object.keys(projectBrowserFiles),
+  ...Object.keys(conversationWorkspace),
   'client.remoteDesktop.takeoverTitle', 'client.remoteDesktop.takeoverMessage',
   'client.remoteDesktop.takeoverConfirm', 'client.remoteDesktop.takeoverCancel',
   'client.remoteDesktop.connectionInUse', 'client.remoteDesktop.connectionCancelled',
