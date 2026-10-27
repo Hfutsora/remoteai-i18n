@@ -77,6 +77,7 @@ export interface MessageParams21 {
   "client.remoteDesktop.leftMouseButton": Record<string, never>;
   "client.remoteDesktop.letterKeys": Record<string, never>;
   "client.remoteDesktop.loadingTheDesktop": Record<string, never>;
+  "client.remoteDesktop.lockedRequiresUnattended": Record<string, never>;
   "client.remoteDesktop.lockScreen": Record<string, never>;
   "client.remoteDesktop.lockTheRemoteComputerWhenTheConnectionEndsOrIs": Record<string, never>;
   "client.remoteDesktop.lockWhenDisconnected": Record<string, never>;
@@ -101,7 +102,9 @@ export interface MessageParams21 {
   "client.remoteDesktop.permissionResetAllowAccessAgain": Record<string, never>;
   "client.remoteDesktop.permissionWasResetOpenSystemSettingsManuallyAndAllowAccess": Record<string, never>;
   "client.remoteDesktop.primary": Record<string, never>;
+  "client.remoteDesktop.privacyFailed": Record<string, never>;
   "client.remoteDesktop.privacyMode": Record<string, never>;
+  "client.remoteDesktop.privacyRequiresUnattended": Record<string, never>;
   "client.remoteDesktop.privacyScreen": Record<string, never>;
   "client.remoteDesktop.privacyScreenIsUnavailableOnThisComputer": Record<string, never>;
   "client.remoteDesktop.quality": Record<string, never>;
@@ -197,7 +200,4 @@ export interface MessageParams21 {
   "client.remoteDesktop.unableToExitFullscreenPleaseTryAgain": Record<string, never>;
   "client.remoteDesktop.unableToOpenTheRemoteDesktopPleaseTryAgain": Record<string, never>;
   "client.remoteDesktop.unableToReadDisplayInformationReconnectTheDisplayToThe": Record<string, never>;
-  "client.remoteDesktop.unableToReadRemoteDesktopSettingsReopenRemoteSettingsOn": Record<string, never>;
-  "client.remoteDesktop.unableToReadTheImagePleaseCopyItAgain": Record<string, never>;
-  "client.remoteDesktop.unableToRefreshTheUnlockStatusReconnectToCheckIt": Record<string, never>;
 }
