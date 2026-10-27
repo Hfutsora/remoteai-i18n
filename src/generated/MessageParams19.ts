@@ -177,6 +177,9 @@ export interface MessageParams19 {
   "client.portMappingEditing.thisMappingWasRemovedAddItAgainToContinue": Record<string, never>;
   "client.portMappingEditing.transportProtocol": Record<string, never>;
   "client.portMappingEditing.upTo8MappingsCanSyncExtraMappingsAreSaved": Record<string, never>;
+  "client.projectActions.longPressHint": Record<string, never>;
+  "client.projectActions.removeDescription": Record<string, never>;
+  "client.projectActions.removeTitle": Record<string, never>;
   "client.projectBrowser.10Seconds": Record<string, never>;
   "client.projectBrowser.1Second": Record<string, never>;
   "client.projectBrowser.2Seconds": Record<string, never>;
@@ -197,7 +200,4 @@ export interface MessageParams19 {
   "client.projectBrowser.closeTabsToTheRight": Record<string, never>;
   "client.projectBrowser.closeUnmodifiedTabs": Record<string, never>;
   "client.projectBrowser.copied": Record<string, never>;
-  "client.projectBrowser.copiedPasteIntoTheDestinationFolder": Record<string, never>;
-  "client.projectBrowser.currentMatch": Record<string, never>;
-  "client.projectBrowser.cut": Record<string, never>;
 }
