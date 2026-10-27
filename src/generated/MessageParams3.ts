@@ -187,6 +187,7 @@ export interface MessageParams3 {
   "client.chat.editFailed": Record<string, never>;
   "client.chat.editing": Record<string, never>;
   "client.chat.editQueuedMessage": Record<string, never>;
+  "client.chat.effortUnavailableForAccount": Record<string, never>;
   "client.chat.emptyFile": Record<string, never>;
   "client.chat.enlarge": { "value1": string | number };
   "client.chat.enterKeywordsToFindAChat": Record<string, never>;
@@ -199,5 +200,4 @@ export interface MessageParams3 {
   "client.chat.exitCode": Record<string, never>;
   "client.chat.exitGoalMode": Record<string, never>;
   "client.chat.expand": Record<string, never>;
-  "client.chat.expandActivity": Record<string, never>;
 }

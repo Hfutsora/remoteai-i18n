@@ -22,6 +22,7 @@ import accountAlias from '../src/catalogs/client/zh/accountAlias.json';
 import filePreview from '../src/catalogs/client/zh/filePreview.json';
 import projectActions from '../src/catalogs/client/zh/projectActions.json';
 import jsonPreview from '../src/catalogs/client/zh/jsonPreview.json';
+import modelSelection from '../src/catalogs/client/zh/modelSelection.json';
 
 const baselines = {
   "client": "751b7f50aca5a2ebf8976190600fd93ce74f94673b73390a87c6fc153bdc6e22",
@@ -48,6 +49,7 @@ const additions = new Set(['client.chat.usePlugin',
   ...Object.keys(filePreview),
   ...Object.keys(projectActions),
   ...Object.keys(jsonPreview),
+  ...Object.keys(modelSelection),
   'client.remoteDesktop.takeoverTitle', 'client.remoteDesktop.takeoverMessage',
   'client.remoteDesktop.takeoverConfirm', 'client.remoteDesktop.takeoverCancel',
   'client.remoteDesktop.connectionInUse', 'client.remoteDesktop.connectionCancelled',
