@@ -191,6 +191,7 @@ export interface MessageParams38 {
   "settings.networkProxy.title": Record<string, never>;
   "settings.openFolder": Record<string, never>;
   "settings.petDock.active": Record<string, never>;
+  "settings.petDock.averageHint": Record<string, never>;
   "settings.petDock.cloudHint": Record<string, never>;
   "settings.petDock.description": Record<string, never>;
   "settings.petDock.disabled": Record<string, never>;
@@ -199,5 +200,4 @@ export interface MessageParams38 {
   "settings.petDock.loadError": Record<string, never>;
   "settings.petDock.loading": Record<string, never>;
   "settings.petDock.metrics": Record<string, never>;
-  "settings.petDock.retry": Record<string, never>;
 }
