@@ -176,6 +176,10 @@ export interface MessageParams14 {
   "client.errorsConversations.theSourceConversationsWereNotChanged": Record<string, never>;
   "client.errorsConversations.theTemporaryBackupCouldNotBeRemoved": Record<string, never>;
   "client.errorsConversations.thisSessionPackageVersionIsNotSupported": Record<string, never>;
+  "client.filePreview.jsonHighlightHint": { "max": string | number; "min": string | number };
+  "client.filePreview.jsonHighlightLimit": Record<string, never>;
+  "client.filePreview.jsonLines": { "count": string | number };
+  "client.filePreview.jsonPlainText": { "limit": string | number };
   "client.filePreview.pdfUnavailable": Record<string, never>;
   "client.filePreview.tooLarge": Record<string, never>;
   "client.filePreview.unavailable": Record<string, never>;
@@ -196,8 +200,4 @@ export interface MessageParams14 {
   "client.git.branchSwitched": Record<string, never>;
   "client.git.cannotCheckOutThisCommitSaveUncommittedChangesAndTry": Record<string, never>;
   "client.git.cannotCreateThePatchCheckThatTheProjectAndCommit": Record<string, never>;
-  "client.git.cannotSwitchBranchesCheckLocalChangesAndWhetherAnotherWorktree": Record<string, never>;
-  "client.git.changed": Record<string, never>;
-  "client.git.changedFiles": { "count": string | number };
-  "client.git.changes": Record<string, never>;
 }
