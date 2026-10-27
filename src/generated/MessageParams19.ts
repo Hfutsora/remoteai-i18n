@@ -92,6 +92,9 @@ export interface MessageParams19 {
   "client.nativeChat.removeAttachment": { "value1": string | number };
   "client.nativeChat.removeConversationReference": { "value1": string | number };
   "client.nativeMisc.createdBy": { "email": string | number };
+  "client.npmScripts.invalid": Record<string, never>;
+  "client.npmScripts.run": { "name": string | number };
+  "client.npmScripts.stop": { "name": string | number };
   "client.portForwarding.accessAnIpAndPortThroughTheRemoteComputerLeave": Record<string, never>;
   "client.portForwarding.active": Record<string, never>;
   "client.portForwarding.addAndStart": Record<string, never>;
@@ -197,7 +200,4 @@ export interface MessageParams19 {
   "client.projectBrowser.backToFiles": Record<string, never>;
   "client.projectBrowser.browseFiles": Record<string, never>;
   "client.projectBrowser.chooseAFileOrFolderWithinThisProject": Record<string, never>;
-  "client.projectBrowser.clearSearch": Record<string, never>;
-  "client.projectBrowser.close": Record<string, never>;
-  "client.projectBrowser.closeAllTabs": Record<string, never>;
 }
