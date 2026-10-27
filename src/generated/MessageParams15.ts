@@ -139,6 +139,12 @@ export interface MessageParams15 {
   "client.git.usedByAnotherWorktree": Record<string, never>;
   "client.git.view": { "path": string | number };
   "client.git.writeACommitMessage": Record<string, never>;
+  "client.gitBlame.annotate": Record<string, never>;
+  "client.gitBlame.changed": Record<string, never>;
+  "client.gitBlame.loading": Record<string, never>;
+  "client.gitBlame.notRepository": Record<string, never>;
+  "client.gitBlame.unavailable": Record<string, never>;
+  "client.gitBlame.uncommitted": Record<string, never>;
   "client.gitConflict.banner": { "count": string | number };
   "client.gitConflict.changed": Record<string, never>;
   "client.gitConflict.closeConfirm": Record<string, never>;
@@ -194,10 +200,4 @@ export interface MessageParams15 {
   "client.guiSettings.changesSaveAutomaticallyAndApplyWhenYouNextSendOr": Record<string, never>;
   "client.guiSettings.clickSaveToApplyAccountChanges": Record<string, never>;
   "client.guiSettings.context": Record<string, never>;
-  "client.guiSettings.contextCapacity": { "value1": string | number };
-  "client.guiSettings.defaultContextByModel": Record<string, never>;
-  "client.guiSettings.defaultK": { "value1": string | number };
-  "client.guiSettings.defaultsCouldNotBeRefreshedPreviousSettingsAreRetainedTry": Record<string, never>;
-  "client.guiSettings.defaultUseModelCapacity": Record<string, never>;
-  "client.guiSettings.enterAModelName": Record<string, never>;
 }
