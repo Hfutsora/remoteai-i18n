@@ -1,4 +1,5 @@
 {
+  "client.settings.followSystem": "Follow system",
   "client.appearance.globalFontSize": "Global font size",
   "client.appearance.globalFontDescription": "Adjust text size across the app. Codex GUI follows this setting by default.",
   "client.appearance.followGlobalFont": "Follow global font size",
