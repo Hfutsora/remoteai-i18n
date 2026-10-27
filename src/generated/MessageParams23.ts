@@ -42,6 +42,7 @@ export interface MessageParams23 {
   "client.settings.enterAServiceNameAndKeyOrChooseAQr": Record<string, never>;
   "client.settings.enterAWholeNumberFrom1To1440Minutes": Record<string, never>;
   "client.settings.enterYourCurrentPasswordAndANewPasswordOfAt": Record<string, never>;
+  "client.settings.followSystem": Record<string, never>;
   "client.settings.forExampleOpenai": Record<string, never>;
   "client.settings.installAndRestart": Record<string, never>;
   "client.settings.installDesktopUpdate": Record<string, never>;
@@ -199,5 +200,4 @@ export interface MessageParams23 {
   "client.shared.maximum": Record<string, never>;
   "client.shared.medium": Record<string, never>;
   "client.shared.message": Record<string, never>;
-  "client.shared.minimal": Record<string, never>;
 }

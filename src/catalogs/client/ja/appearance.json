@@ -1,4 +1,5 @@
 {
+  "client.settings.followSystem": "システムに合わせる",
   "client.appearance.globalFontSize": "全体の文字サイズ",
   "client.appearance.globalFontDescription": "アプリ全体の文字サイズを調整します。Codex GUI も標準でこの設定に従います。",
   "client.appearance.followGlobalFont": "全体の文字サイズに合わせる",

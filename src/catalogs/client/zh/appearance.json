@@ -1,4 +1,5 @@
 {
+  "client.settings.followSystem": "跟随系统",
   "client.appearance.globalFontSize": "全局字号",
   "client.appearance.globalFontDescription": "调整应用内的文字大小，Codex GUI 默认跟随此设置。",
   "client.appearance.followGlobalFont": "跟随全局字号",
