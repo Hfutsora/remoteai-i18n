@@ -141,6 +141,7 @@ export interface MessageParams15 {
   "client.git.writeACommitMessage": Record<string, never>;
   "client.gitBlame.annotate": Record<string, never>;
   "client.gitBlame.changed": Record<string, never>;
+  "client.gitBlame.hideAnnotations": Record<string, never>;
   "client.gitBlame.loading": Record<string, never>;
   "client.gitBlame.notRepository": Record<string, never>;
   "client.gitBlame.unavailable": Record<string, never>;
@@ -199,5 +200,4 @@ export interface MessageParams15 {
   "client.guiSettings.changesOnThisPageSaveAutomatically": Record<string, never>;
   "client.guiSettings.changesSaveAutomaticallyAndApplyWhenYouNextSendOr": Record<string, never>;
   "client.guiSettings.clickSaveToApplyAccountChanges": Record<string, never>;
-  "client.guiSettings.context": Record<string, never>;
 }

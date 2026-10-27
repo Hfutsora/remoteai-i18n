@@ -1,5 +1,6 @@
 {
   "client.gitBlame.annotate": "Git Blame を表示",
+  "client.gitBlame.hideAnnotations": "Git Blame の注釈を非表示",
   "client.gitBlame.uncommitted": "未コミット",
   "client.gitBlame.loading": "Git Blame を読み込み中…",
   "client.gitBlame.unavailable": "Git Blame を読み込めませんでした。しばらくしてからもう一度お試しください。",

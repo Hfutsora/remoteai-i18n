@@ -1,5 +1,6 @@
 {
   "client.gitBlame.annotate": "Показать Git Blame",
+  "client.gitBlame.hideAnnotations": "Скрыть аннотации Git Blame",
   "client.gitBlame.uncommitted": "Не закоммичено",
   "client.gitBlame.loading": "Загрузка Git Blame…",
   "client.gitBlame.unavailable": "Не удалось загрузить Git Blame. Повторите попытку позже.",
