@@ -27,6 +27,8 @@ import modelSelection from '../src/catalogs/client/zh/modelSelection.json';
 import npmScripts from '../src/catalogs/client/zh/npmScripts.json';
 import gitBlame from '../src/catalogs/client/zh/gitBlame.json';
 import remoteDesktopAccess from '../src/catalogs/client/zh/remoteDesktopAccess.json';
+import lounge from '../src/catalogs/client/zh/lounge.json';
+import loungeModeration from '../src/catalogs/client/zh/loungeModeration.json';
 
 const baselines = {
   "client": "751b7f50aca5a2ebf8976190600fd93ce74f94673b73390a87c6fc153bdc6e22",
@@ -58,6 +60,8 @@ const additions = new Set(['client.chat.usePlugin',
   ...Object.keys(npmScripts),
   ...Object.keys(gitBlame),
   ...Object.keys(remoteDesktopAccess),
+  ...Object.keys(lounge),
+  ...Object.keys(loungeModeration),
   'client.remoteDesktop.takeoverTitle', 'client.remoteDesktop.takeoverMessage',
   'client.remoteDesktop.takeoverConfirm', 'client.remoteDesktop.takeoverCancel',
   'client.remoteDesktop.connectionInUse', 'client.remoteDesktop.connectionCancelled',
