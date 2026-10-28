@@ -1,7 +1,7 @@
 {
   "client.lounge.people": "Пользователи",
   "client.lounge.peopleSearch": "Поиск аккаунтов",
-  "client.lounge.noPeople": "Здесь появятся пользователи, чьи сообщения вы получили.",
+  "client.lounge.noPeople": "Личных чатов пока нет. Начните чат через меню сообщения в группе.",
   "client.lounge.groupChat": "Общий чат",
   "client.lounge.directChat": "Написать лично",
   "client.lounge.directWith": "Чат с {account}",

@@ -1,7 +1,7 @@
 {
   "client.lounge.people": "ユーザー一覧",
   "client.lounge.peopleSearch": "アカウントを検索",
-  "client.lounge.noPeople": "メッセージを受信すると、送信者がここに表示されます。",
+  "client.lounge.noPeople": "まだ個別チャットはありません。グループメッセージのメニューから開始できます。",
   "client.lounge.groupChat": "グループチャット",
   "client.lounge.directChat": "個別にメッセージを送る",
   "client.lounge.directWith": "{account} と個別チャット",

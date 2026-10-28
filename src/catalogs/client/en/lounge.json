@@ -1,7 +1,7 @@
 {
   "client.lounge.people": "People",
   "client.lounge.peopleSearch": "Search accounts",
-  "client.lounge.noPeople": "People appear here when you receive their messages.",
+  "client.lounge.noPeople": "No private chats yet. Start one from a group message's menu.",
   "client.lounge.groupChat": "Group chat",
   "client.lounge.directChat": "Send a private message",
   "client.lounge.directWith": "Chat with {account}",

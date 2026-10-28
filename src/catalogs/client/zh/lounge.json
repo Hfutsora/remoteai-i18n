@@ -1,7 +1,7 @@
 {
   "client.lounge.people": "用户列表",
   "client.lounge.peopleSearch": "搜索账户",
-  "client.lounge.noPeople": "收到消息后，用户会显示在这里。",
+  "client.lounge.noPeople": "暂无私聊，可从群聊消息菜单发起。",
   "client.lounge.groupChat": "群聊",
   "client.lounge.directChat": "发起私聊",
   "client.lounge.directWith": "与 {account} 私聊",
