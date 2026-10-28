@@ -1,4 +1,5 @@
 {
+  "client.lounge.awaitingReply": "相手から返信が届くと、続けて送信できます。",
   "client.lounge.awaitingReceipt": "相手の受信を待っています",
   "client.lounge.delivered": "相手が受信しました",
   "client.lounge.read": "既読",

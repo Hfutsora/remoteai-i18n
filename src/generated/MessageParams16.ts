@@ -74,6 +74,7 @@ export interface MessageParams16 {
   "client.lounge.avatarSaveFailed": Record<string, never>;
   "client.lounge.avatarSettings": Record<string, never>;
   "client.lounge.awaitingReceipt": Record<string, never>;
+  "client.lounge.awaitingReply": Record<string, never>;
   "client.lounge.backToChat": Record<string, never>;
   "client.lounge.blockConfirm": { "account": string | number };
   "client.lounge.blocked": Record<string, never>;
@@ -199,5 +200,4 @@ export interface MessageParams16 {
   "client.mobile.addedToDownloadsDownloadingContinuesAfterClosingThisWindow": Record<string, never>;
   "client.mobile.addOfficialAccount": Record<string, never>;
   "client.mobile.addUpToPhotosPerMessage": { "value1": string | number };
-  "client.mobile.addUser": Record<string, never>;
 }

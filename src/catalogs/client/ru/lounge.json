@@ -1,4 +1,5 @@
 {
+  "client.lounge.awaitingReply": "Вы сможете отправить новые сообщения после ответа собеседника.",
   "client.lounge.awaitingReceipt": "Ожидание доставки",
   "client.lounge.delivered": "Доставлено",
   "client.lounge.read": "Прочитано",

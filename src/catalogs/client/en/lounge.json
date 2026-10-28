@@ -1,4 +1,5 @@
 {
+  "client.lounge.awaitingReply": "You can send more messages after they reply.",
   "client.lounge.awaitingReceipt": "Waiting for delivery",
   "client.lounge.delivered": "Delivered",
   "client.lounge.read": "Read",
