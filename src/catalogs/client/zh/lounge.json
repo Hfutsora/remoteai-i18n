@@ -1,4 +1,7 @@
 {
+  "client.lounge.mobilePlaceholder": "说点什么吧…",
+  "client.lounge.mobileImageHint": "每条消息最多 3 张图片，超过 1 MB 会自动压缩。",
+  "client.lounge.backToChat": "返回聊天",
   "client.lounge.title": "闲聊摸鱼",
   "client.lounge.connected": "已连接",
   "client.lounge.connecting": "正在连接…",

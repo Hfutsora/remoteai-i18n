@@ -1,4 +1,7 @@
 {
+  "client.lounge.mobilePlaceholder": "気軽に話してみましょう…",
+  "client.lounge.mobileImageHint": "画像は1件につき3枚まで。1 MBを超える画像は自動で圧縮されます。",
+  "client.lounge.backToChat": "チャットに戻る",
   "client.lounge.title": "ひと息チャット",
   "client.lounge.connected": "接続済み",
   "client.lounge.connecting": "接続中…",

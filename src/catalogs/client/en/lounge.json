@@ -1,4 +1,7 @@
 {
+  "client.lounge.mobilePlaceholder": "Say something…",
+  "client.lounge.mobileImageHint": "Add up to 3 images per message. Images over 1 MB are compressed automatically.",
+  "client.lounge.backToChat": "Back to chat",
   "client.lounge.title": "Watercooler",
   "client.lounge.connected": "Connected",
   "client.lounge.connecting": "Connecting…",

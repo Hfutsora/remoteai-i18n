@@ -1,4 +1,7 @@
 {
+  "client.lounge.mobilePlaceholder": "Напишите что-нибудь…",
+  "client.lounge.mobileImageHint": "До 3 изображений в сообщении. Изображения больше 1 МБ сжимаются автоматически.",
+  "client.lounge.backToChat": "Вернуться в чат",
   "client.lounge.title": "Болталка",
   "client.lounge.connected": "Подключено",
   "client.lounge.connecting": "Подключение…",

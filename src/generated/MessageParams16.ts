@@ -71,6 +71,7 @@ export interface MessageParams16 {
   "client.lounge.avatarHint": Record<string, never>;
   "client.lounge.avatarSaveFailed": Record<string, never>;
   "client.lounge.avatarSettings": Record<string, never>;
+  "client.lounge.backToChat": Record<string, never>;
   "client.lounge.cancel": Record<string, never>;
   "client.lounge.chooseAvatar": Record<string, never>;
   "client.lounge.connected": Record<string, never>;
@@ -94,6 +95,8 @@ export interface MessageParams16 {
   "client.lounge.login": Record<string, never>;
   "client.lounge.manageUser": { "account": string | number };
   "client.lounge.message": Record<string, never>;
+  "client.lounge.mobileImageHint": Record<string, never>;
+  "client.lounge.mobilePlaceholder": Record<string, never>;
   "client.lounge.moderateTitle": Record<string, never>;
   "client.lounge.moderationFailed": Record<string, never>;
   "client.lounge.moderator": Record<string, never>;
@@ -197,7 +200,4 @@ export interface MessageParams16 {
   "client.mobile.batchQuotaConsumptionFailed": { "value1": string | number };
   "client.mobile.browseComputerFiles": Record<string, never>;
   "client.mobile.browseFilesAboveOrDownloadThemFromAChat": Record<string, never>;
-  "client.mobile.browseProjectFiles": Record<string, never>;
-  "client.mobile.buildVersion": Record<string, never>;
-  "client.mobile.by": Record<string, never>;
 }
