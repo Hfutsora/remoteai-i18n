@@ -67,12 +67,14 @@ export interface MessageParams16 {
   "client.lounge.actionFailed": Record<string, never>;
   "client.lounge.addImage": Record<string, never>;
   "client.lounge.adminDurationHint": Record<string, never>;
+  "client.lounge.adminOnlineCount": { "count": string | number };
   "client.lounge.adminSettings": Record<string, never>;
   "client.lounge.avatarHint": Record<string, never>;
   "client.lounge.avatarSaveFailed": Record<string, never>;
   "client.lounge.avatarSettings": Record<string, never>;
   "client.lounge.backToChat": Record<string, never>;
   "client.lounge.cancel": Record<string, never>;
+  "client.lounge.cancelReply": Record<string, never>;
   "client.lounge.chooseAvatar": Record<string, never>;
   "client.lounge.connected": Record<string, never>;
   "client.lounge.connecting": Record<string, never>;
@@ -101,6 +103,7 @@ export interface MessageParams16 {
   "client.lounge.login": Record<string, never>;
   "client.lounge.manageUser": { "account": string | number };
   "client.lounge.message": Record<string, never>;
+  "client.lounge.messageActions": Record<string, never>;
   "client.lounge.mobileImageHint": Record<string, never>;
   "client.lounge.mobilePlaceholder": Record<string, never>;
   "client.lounge.moderateTitle": Record<string, never>;
@@ -111,10 +114,16 @@ export interface MessageParams16 {
   "client.lounge.mute": Record<string, never>;
   "client.lounge.muted": Record<string, never>;
   "client.lounge.mutedUntil": { "time": string | number };
+  "client.lounge.onlineCount": { "count": string | number };
+  "client.lounge.onlineLoading": Record<string, never>;
+  "client.lounge.onlineUnavailable": Record<string, never>;
   "client.lounge.placeholder": Record<string, never>;
   "client.lounge.preparingImage": Record<string, never>;
   "client.lounge.previewImage": Record<string, never>;
+  "client.lounge.quotedImages": { "count": string | number };
+  "client.lounge.quoteReply": Record<string, never>;
   "client.lounge.removeImage": Record<string, never>;
+  "client.lounge.replyingTo": { "account": string | number };
   "client.lounge.resetAvatar": Record<string, never>;
   "client.lounge.save": Record<string, never>;
   "client.lounge.searchHistory": Record<string, never>;
@@ -191,13 +200,4 @@ export interface MessageParams16 {
   "client.mobile.authorizeAgain": Record<string, never>;
   "client.mobile.auto": Record<string, never>;
   "client.mobile.automaticCloudSync": Record<string, never>;
-  "client.mobile.availableCreditsWillBeCheckedBeforeUse": Record<string, never>;
-  "client.mobile.availableVersionV": Record<string, never>;
-  "client.mobile.averageOutputSpeedForThisConversationOutputTokensDividedBy": Record<string, never>;
-  "client.mobile.averageTimeFromSendingARequestToReceivingTheFirst": Record<string, never>;
-  "client.mobile.awaitingReply": Record<string, never>;
-  "client.mobile.back": Record<string, never>;
-  "client.mobile.backgroundChatIsUnavailableReopenTheAppAndTryAgain": Record<string, never>;
-  "client.mobile.backgroundDownloadsAreUnavailableInThisBuildInstallTheLatest": Record<string, never>;
-  "client.mobile.backToAdminConsole": Record<string, never>;
 }
