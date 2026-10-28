@@ -1,4 +1,5 @@
 {
+  "client.conversationWorkspace.more": "更多项目选项",
   "client.conversationWorkspace.currentWorktree": "当前工作树",
   "client.conversationWorkspace.mainWorktree": "主工作树",
   "client.conversationWorkspace.linkedWorktree": "工作树：{name}",

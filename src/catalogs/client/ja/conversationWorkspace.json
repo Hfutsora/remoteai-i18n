@@ -1,4 +1,5 @@
 {
+  "client.conversationWorkspace.more": "その他のプロジェクト設定",
   "client.conversationWorkspace.currentWorktree": "現在のワークツリー",
   "client.conversationWorkspace.mainWorktree": "メインワークツリー",
   "client.conversationWorkspace.linkedWorktree": "ワークツリー：{name}",

@@ -1,4 +1,5 @@
 {
+  "client.conversationWorkspace.more": "Другие параметры проекта",
   "client.conversationWorkspace.currentWorktree": "Текущее рабочее дерево",
   "client.conversationWorkspace.mainWorktree": "Основное рабочее дерево",
   "client.conversationWorkspace.linkedWorktree": "Рабочее дерево: {name}",

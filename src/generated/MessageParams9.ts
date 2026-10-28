@@ -43,6 +43,7 @@ export interface MessageParams9 {
   "client.conversationWorkspace.linkedWorktree": { "name": string | number };
   "client.conversationWorkspace.loading": Record<string, never>;
   "client.conversationWorkspace.mainWorktree": Record<string, never>;
+  "client.conversationWorkspace.more": Record<string, never>;
   "client.conversationWorkspace.unavailable": Record<string, never>;
   "client.coze.agents": Record<string, never>;
   "client.coze.anotherToolHasTheSameNameRemoveOrRenameIt": Record<string, never>;
@@ -199,5 +200,4 @@ export interface MessageParams9 {
   "client.desktopRemoteSettings.copyTextAndFilesFromTheComputer": Record<string, never>;
   "client.desktopRemoteSettings.couldNotFinishSettingUpUnattendedAccessTryAgain": Record<string, never>;
   "client.desktopRemoteSettings.couldNotReadRemoteDesktopSettingsReopenTheSettingsPage": Record<string, never>;
-  "client.desktopRemoteSettings.couldNotReadTheDeviceFingerprintRestartTheAppAnd": Record<string, never>;
 }
