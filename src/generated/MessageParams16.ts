@@ -73,6 +73,7 @@ export interface MessageParams16 {
   "client.lounge.avatarHint": Record<string, never>;
   "client.lounge.avatarSaveFailed": Record<string, never>;
   "client.lounge.avatarSettings": Record<string, never>;
+  "client.lounge.awaitingReceipt": Record<string, never>;
   "client.lounge.backToChat": Record<string, never>;
   "client.lounge.blockConfirm": { "account": string | number };
   "client.lounge.blocked": Record<string, never>;
@@ -84,6 +85,7 @@ export interface MessageParams16 {
   "client.lounge.closePeople": Record<string, never>;
   "client.lounge.connected": Record<string, never>;
   "client.lounge.connecting": Record<string, never>;
+  "client.lounge.delivered": Record<string, never>;
   "client.lounge.directChat": Record<string, never>;
   "client.lounge.directEmpty": Record<string, never>;
   "client.lounge.directHint": Record<string, never>;
@@ -140,6 +142,7 @@ export interface MessageParams16 {
   "client.lounge.previewImage": Record<string, never>;
   "client.lounge.quotedImages": { "count": string | number };
   "client.lounge.quoteReply": Record<string, never>;
+  "client.lounge.read": Record<string, never>;
   "client.lounge.removeImage": Record<string, never>;
   "client.lounge.replyingTo": { "account": string | number };
   "client.lounge.resetAvatar": Record<string, never>;
@@ -197,7 +200,4 @@ export interface MessageParams16 {
   "client.mobile.addOfficialAccount": Record<string, never>;
   "client.mobile.addUpToPhotosPerMessage": { "value1": string | number };
   "client.mobile.addUser": Record<string, never>;
-  "client.mobile.aDisabledUserCannotSignIn": Record<string, never>;
-  "client.mobile.adminConsole": Record<string, never>;
-  "client.mobile.adminOnline": Record<string, never>;
 }
