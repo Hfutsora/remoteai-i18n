@@ -85,7 +85,13 @@ export interface MessageParams16 {
   "client.lounge.historyCount": { "count": string | number };
   "client.lounge.historyEmpty": Record<string, never>;
   "client.lounge.historyHint": Record<string, never>;
+  "client.lounge.historyLoadFailed": Record<string, never>;
+  "client.lounge.historyLoading": Record<string, never>;
+  "client.lounge.historyNext": Record<string, never>;
   "client.lounge.historyNoResults": Record<string, never>;
+  "client.lounge.historyPrevious": Record<string, never>;
+  "client.lounge.historyRetry": Record<string, never>;
+  "client.lounge.historySaveFailed": Record<string, never>;
   "client.lounge.image": Record<string, never>;
   "client.lounge.imageFailed": Record<string, never>;
   "client.lounge.imageFormat": Record<string, never>;
@@ -194,10 +200,4 @@ export interface MessageParams16 {
   "client.mobile.backgroundChatIsUnavailableReopenTheAppAndTryAgain": Record<string, never>;
   "client.mobile.backgroundDownloadsAreUnavailableInThisBuildInstallTheLatest": Record<string, never>;
   "client.mobile.backToAdminConsole": Record<string, never>;
-  "client.mobile.backToChat": Record<string, never>;
-  "client.mobile.base32Key": Record<string, never>;
-  "client.mobile.base32KeyOrOtpauthUrl": Record<string, never>;
-  "client.mobile.batchQuotaConsumptionFailed": { "value1": string | number };
-  "client.mobile.browseComputerFiles": Record<string, never>;
-  "client.mobile.browseFilesAboveOrDownloadThemFromAChat": Record<string, never>;
 }
