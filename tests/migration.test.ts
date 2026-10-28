@@ -5,6 +5,7 @@ import { resources as coze } from '../src/catalogs/coze';
 import { createI18n } from '../src/engine';
 import { createErrorFormatter } from '../src/errors';
 import gitConflicts from '../src/catalogs/client/zh/git-conflicts.json';
+import gitActivity from '../src/catalogs/client/zh/gitActivity.json';
 import discovery from '../src/catalogs/client/zh/discovery.json';
 import deviceScreen from '../src/catalogs/client/zh/deviceScreen.json';
 import messageQueue from '../src/catalogs/client/zh/messageQueue.json';
@@ -35,6 +36,7 @@ const baselines = {
 // New complete templates added after migration are covered by the catalog completeness checks.
 const additions = new Set(['client.chat.usePlugin',
   ...Object.keys(gitConflicts),
+  ...Object.keys(gitActivity),
   ...Object.keys(discovery),
   ...Object.keys(deviceScreen),
   ...Object.keys(messageQueue),

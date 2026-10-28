@@ -9,6 +9,18 @@ export interface DisplayError {
   message?: string;
 }
 
+function structuredText(message: string): DisplayError | undefined {
+  if (!message.startsWith('{')) return;
+  try {
+    const value: unknown = JSON.parse(message);
+    if (!value || typeof value !== 'object' || !('code' in value) || typeof value.code !== 'string') return;
+    const params = 'params' in value ? value.params : undefined;
+    if (params !== undefined && (!params || typeof params !== 'object' || Array.isArray(params)
+      || Object.values(params).some(item => typeof item !== 'string' && typeof item !== 'number'))) return;
+    return { code: value.code, params: params as TranslationValues | undefined };
+  } catch { return; }
+}
+
 /** Decode text responses at the transport boundary; application copy uses semantic keys directly. */
 export function createErrorFormatter(resources: Resources, templateKeys?: readonly string[]) {
   const engine = createI18n({ locale: 'zh', resources });
@@ -33,6 +45,11 @@ export function createErrorFormatter(resources: Resources, templateKeys?: readon
       return decodeText(language, display.message ?? display.code);
     }
     const message = error instanceof Error ? error.message : safeString(error);
+    // Tauri and remote chat both transport safe errors as strings. Decode only known semantic keys.
+    const structured = structuredText(message);
+    if (structured && typeof sources[structured.code] === 'string' && Object.hasOwn(sources, structured.code)) {
+      return engine.text(structured.code, structured.params, language);
+    }
     if (Object.hasOwn(sources, message)) return engine.text(message, {}, language);
     return decodeText(language, message);
   };

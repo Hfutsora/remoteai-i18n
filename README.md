@@ -90,6 +90,8 @@ translations must have correct parameters. CI also rejects retired imports and C
 dictionaries. Prefer `t` for application copy. Presentation models carry semantic keys; user names, paths, model
 IDs and editable content remain literal values. `createErrorFormatter(resources)` accepts `{ code, params, message? }`.
 It also decodes existing service text responses against the Chinese resource values at the display boundary.
+String transports may JSON-encode the same `{ code, params }` shape. The formatter decodes recognized string
+templates with string/number parameters; unrelated or malformed JSON remains ordinary error text.
 This decoder is separate from ordinary translation; `i18n.text('复制')` does not translate source text.
 
 ## Adding a language (Japanese acceptance example)

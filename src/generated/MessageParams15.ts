@@ -139,6 +139,10 @@ export interface MessageParams15 {
   "client.git.usedByAnotherWorktree": Record<string, never>;
   "client.git.view": { "path": string | number };
   "client.git.writeACommitMessage": Record<string, never>;
+  "client.gitActivity.filesBusy": { "details": string | number };
+  "client.gitActivity.operationBusy": Record<string, never>;
+  "client.gitActivity.preparing": Record<string, never>;
+  "client.gitActivity.tasksBusy": { "details": string | number };
   "client.gitBlame.annotate": Record<string, never>;
   "client.gitBlame.changed": Record<string, never>;
   "client.gitBlame.hideAnnotations": Record<string, never>;
@@ -196,8 +200,4 @@ export interface MessageParams15 {
   "client.gitMessage.writeACommitMessageOrTapGenerateWithAi": Record<string, never>;
   "client.guiSettings.1K1000TokensAvailableCapacityExcludesReservedSpace": Record<string, never>;
   "client.guiSettings.accountSettingsHaveUnsavedChanges": Record<string, never>;
-  "client.guiSettings.capacity": Record<string, never>;
-  "client.guiSettings.changesOnThisPageSaveAutomatically": Record<string, never>;
-  "client.guiSettings.changesSaveAutomaticallyAndApplyWhenYouNextSendOr": Record<string, never>;
-  "client.guiSettings.clickSaveToApplyAccountChanges": Record<string, never>;
 }
