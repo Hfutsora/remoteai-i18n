@@ -30,6 +30,8 @@ export interface MessageParams20 {
   "client.projectBrowser.editorPane": Record<string, never>;
   "client.projectBrowser.editorTools": Record<string, never>;
   "client.projectBrowser.enterAValidNameWithoutPathSeparatorsOrSpecialCharacters": Record<string, never>;
+  "client.projectBrowser.enterFullscreen": Record<string, never>;
+  "client.projectBrowser.exitFullscreen": Record<string, never>;
   "client.projectBrowser.expandFileBrowser": Record<string, never>;
   "client.projectBrowser.fileActions": Record<string, never>;
   "client.projectBrowser.fileBrowserSettings": Record<string, never>;
@@ -198,6 +200,4 @@ export interface MessageParams20 {
   "client.remoteDesktop.clipboardActionFailedPleaseTryAgain": Record<string, never>;
   "client.remoteDesktop.clipboardTransferFailedPleaseTryAgain": Record<string, never>;
   "client.remoteDesktop.closeConnectionStats": Record<string, never>;
-  "client.remoteDesktop.closeResolutionList": Record<string, never>;
-  "client.remoteDesktop.closeSecurityOptions": Record<string, never>;
 }
