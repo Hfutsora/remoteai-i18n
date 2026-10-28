@@ -68,7 +68,11 @@ export interface MessageParams16 {
   "client.lounge.addImage": Record<string, never>;
   "client.lounge.adminDurationHint": Record<string, never>;
   "client.lounge.adminSettings": Record<string, never>;
+  "client.lounge.avatarHint": Record<string, never>;
+  "client.lounge.avatarSaveFailed": Record<string, never>;
+  "client.lounge.avatarSettings": Record<string, never>;
   "client.lounge.cancel": Record<string, never>;
+  "client.lounge.chooseAvatar": Record<string, never>;
   "client.lounge.connected": Record<string, never>;
   "client.lounge.connecting": Record<string, never>;
   "client.lounge.duration": Record<string, never>;
@@ -76,6 +80,11 @@ export interface MessageParams16 {
   "client.lounge.emoji": Record<string, never>;
   "client.lounge.empty": Record<string, never>;
   "client.lounge.ephemeral": Record<string, never>;
+  "client.lounge.history": Record<string, never>;
+  "client.lounge.historyCount": { "count": string | number };
+  "client.lounge.historyEmpty": Record<string, never>;
+  "client.lounge.historyHint": Record<string, never>;
+  "client.lounge.historyNoResults": Record<string, never>;
   "client.lounge.image": Record<string, never>;
   "client.lounge.imageFailed": Record<string, never>;
   "client.lounge.imageFormat": Record<string, never>;
@@ -97,7 +106,9 @@ export interface MessageParams16 {
   "client.lounge.preparingImage": Record<string, never>;
   "client.lounge.previewImage": Record<string, never>;
   "client.lounge.removeImage": Record<string, never>;
+  "client.lounge.resetAvatar": Record<string, never>;
   "client.lounge.save": Record<string, never>;
+  "client.lounge.searchHistory": Record<string, never>;
   "client.lounge.send": Record<string, never>;
   "client.lounge.sendFailed": Record<string, never>;
   "client.lounge.sendHint": Record<string, never>;
@@ -189,15 +200,4 @@ export interface MessageParams16 {
   "client.mobile.browseProjectFiles": Record<string, never>;
   "client.mobile.buildVersion": Record<string, never>;
   "client.mobile.by": Record<string, never>;
-  "client.mobile.callingTool": Record<string, never>;
-  "client.mobile.camera": Record<string, never>;
-  "client.mobile.cameraAccessIsOffEnableItInSystemSettings": Record<string, never>;
-  "client.mobile.cameraAccessRequired": Record<string, never>;
-  "client.mobile.cancelling": Record<string, never>;
-  "client.mobile.cancelScan": Record<string, never>;
-  "client.mobile.cancelUpdate": Record<string, never>;
-  "client.mobile.cannotConnectToCodexFromYourPhoneCheckYourNetwork": Record<string, never>;
-  "client.mobile.cannotConnectToTheServerCheckTheUrlAndYour": Record<string, never>;
-  "client.mobile.cannotConnectToTheServerCheckYourConnection": Record<string, never>;
-  "client.mobile.cannotDetermineThePhoneSOrientation": Record<string, never>;
 }

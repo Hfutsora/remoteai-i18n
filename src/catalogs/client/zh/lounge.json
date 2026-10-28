@@ -26,5 +26,16 @@
   "client.lounge.imageFormat": "请选择 JPG、PNG、GIF 或 WebP 图片。",
   "client.lounge.tooManyImages": "每条消息最多添加 3 张图片。",
   "client.lounge.tooLong": "每条消息最多 4000 个字符。",
-  "client.lounge.stillImage": "需要转换的动图会作为静态图片发送。"
+  "client.lounge.stillImage": "需要转换的动图会作为静态图片发送。",
+  "client.lounge.avatarSettings": "设置头像",
+  "client.lounge.avatarHint": "图片会自动裁剪为 48×48，头像设置仅保存在本机。",
+  "client.lounge.chooseAvatar": "选择图片",
+  "client.lounge.resetAvatar": "恢复默认头像",
+  "client.lounge.avatarSaveFailed": "头像保存失败，请稍后重试。",
+  "client.lounge.history": "历史记录",
+  "client.lounge.searchHistory": "搜索消息或账户",
+  "client.lounge.historyHint": "可搜索本次运行中保留的最近消息，离线消息不会补发。",
+  "client.lounge.historyCount": "共 {count} 条记录",
+  "client.lounge.historyNoResults": "没有找到匹配的记录",
+  "client.lounge.historyEmpty": "暂时没有聊天记录"
 }
