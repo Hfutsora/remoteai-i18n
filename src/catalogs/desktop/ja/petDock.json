@@ -15,5 +15,6 @@
   "settings.petDock.loading": "設定を読み込み中…",
   "settings.petDock.cloudHint": "ペットを表示するパソコンでRemote AIの「設定 → 使用量」から有効にしてください。",
   "settings.petDock.loadError": "設定を読み込めませんでした。もう一度お試しください。",
-  "settings.petDock.retry": "再試行"
+  "settings.petDock.retry": "再試行",
+  "settings.petDock.averageHint": "そのパソコンのペット残量台座の設定で全アカウント平均を有効にすると、両方の表示が切り替わります。"
 }

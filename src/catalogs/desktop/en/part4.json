@@ -242,7 +242,7 @@
   "settings.accountAutoRefresh.concurrent": "{count} enabled accounts (concurrent mode)",
   "settings.accountAutoRefresh.none": "No refreshable current account or Provider",
   "settings.floatingBubble.title": "Floating usage bubble",
-  "settings.floatingBubble.description": "Show the current account's 5-hour quota in an always-on-top bubble. Hover for details and drag to reposition it.",
+  "settings.floatingBubble.description": "View 5-hour and weekly remaining quota for the current account or the average across all accounts. Drag the always-on-top bubble to reposition it.",
   "settings.floatingBubble.enabled": "Floating bubble",
   "settings.floatingBubble.resetDisplay": "Reset time display",
   "settings.floatingBubble.countdown": "Countdown",
