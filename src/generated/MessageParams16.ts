@@ -73,6 +73,7 @@ export interface MessageParams16 {
   "client.lounge.accountLookupLabel": Record<string, never>;
   "client.lounge.accountLookupNotFound": Record<string, never>;
   "client.lounge.accountLookupSelf": Record<string, never>;
+  "client.lounge.accountSettings": Record<string, never>;
   "client.lounge.actionFailed": Record<string, never>;
   "client.lounge.addImage": Record<string, never>;
   "client.lounge.adminDurationHint": Record<string, never>;
@@ -161,6 +162,7 @@ export interface MessageParams16 {
   "client.lounge.mute": Record<string, never>;
   "client.lounge.muted": Record<string, never>;
   "client.lounge.mutedUntil": { "time": string | number };
+  "client.lounge.myAccount": Record<string, never>;
   "client.lounge.nameInvalid": { "limit": string | number };
   "client.lounge.nameLimit": { "limit": string | number };
   "client.lounge.nameNotSet": Record<string, never>;
@@ -198,6 +200,4 @@ export interface MessageParams16 {
   "client.lounge.recentSpeakers": Record<string, never>;
   "client.lounge.remark": Record<string, never>;
   "client.lounge.remarkHint": Record<string, never>;
-  "client.lounge.remarkSaveFailed": Record<string, never>;
-  "client.lounge.removeImage": Record<string, never>;
 }

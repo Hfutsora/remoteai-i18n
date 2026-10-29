@@ -1,4 +1,6 @@
 {
+  "client.lounge.myAccount": "Мой аккаунт",
+  "client.lounge.accountSettings": "Настройки",
   "client.lounge.nickname": "Никнейм",
   "client.lounge.remark": "Имя контакта",
   "client.lounge.nameNotSet": "Не задано",

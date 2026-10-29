@@ -1,4 +1,6 @@
 {
+  "client.lounge.myAccount": "マイアカウント",
+  "client.lounge.accountSettings": "設定",
   "client.lounge.nickname": "ニックネーム",
   "client.lounge.remark": "表示名の設定",
   "client.lounge.nameNotSet": "未設定",

@@ -1,4 +1,6 @@
 {
+  "client.lounge.myAccount": "我的账号",
+  "client.lounge.accountSettings": "设置",
   "client.lounge.nickname": "昵称",
   "client.lounge.remark": "备注",
   "client.lounge.nameNotSet": "未设置",
