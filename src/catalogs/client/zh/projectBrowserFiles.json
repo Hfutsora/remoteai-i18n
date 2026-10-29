@@ -1,5 +1,5 @@
 {
-  "client.projectBrowser.openInExplorer": "在资源管理器打开",
+  "client.projectBrowser.openInExplorer": "在资源管理器中打开",
   "client.projectBrowser.openInTerminal": "在终端中打开",
   "client.projectBrowser.largePlainText": "大文件已切换为纯文本模式，仍可搜索、替换和保存。",
   "client.projectBrowser.largeImagePreview": "图片超过 5 MB，暂不支持预览。",
