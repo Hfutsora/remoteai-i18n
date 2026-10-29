@@ -184,6 +184,7 @@ export interface MessageParams14 {
   "client.filePreview.jsonLines": { "count": string | number };
   "client.filePreview.jsonPlainText": { "limit": string | number };
   "client.filePreview.pdfUnavailable": Record<string, never>;
+  "client.filePreview.someHtmlAssetsUnavailable": Record<string, never>;
   "client.filePreview.tooLarge": Record<string, never>;
   "client.filePreview.unavailable": Record<string, never>;
   "client.fileReferences.closeFileList": Record<string, never>;
@@ -199,5 +200,4 @@ export interface MessageParams14 {
   "client.fileReferences.showingPartialResultsEnterAMoreSpecificNameOrPath": Record<string, never>;
   "client.git.addARemoteRepositoryOnYourComputerFirst": Record<string, never>;
   "client.git.added": Record<string, never>;
-  "client.git.backToHistory": Record<string, never>;
 }
