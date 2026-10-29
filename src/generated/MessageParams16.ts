@@ -161,7 +161,15 @@ export interface MessageParams16 {
   "client.lounge.mute": Record<string, never>;
   "client.lounge.muted": Record<string, never>;
   "client.lounge.mutedUntil": { "time": string | number };
+  "client.lounge.nameInvalid": { "limit": string | number };
+  "client.lounge.nameLimit": { "limit": string | number };
+  "client.lounge.nameNotSet": Record<string, never>;
+  "client.lounge.nameSaved": Record<string, never>;
+  "client.lounge.namesUnavailable": Record<string, never>;
   "client.lounge.newChat": Record<string, never>;
+  "client.lounge.nickname": Record<string, never>;
+  "client.lounge.nicknameHint": Record<string, never>;
+  "client.lounge.nicknameSaveFailed": Record<string, never>;
   "client.lounge.noChats": Record<string, never>;
   "client.lounge.noMembers": Record<string, never>;
   "client.lounge.noPeople": Record<string, never>;
@@ -188,16 +196,8 @@ export interface MessageParams16 {
   "client.lounge.quoteReply": Record<string, never>;
   "client.lounge.read": Record<string, never>;
   "client.lounge.recentSpeakers": Record<string, never>;
+  "client.lounge.remark": Record<string, never>;
+  "client.lounge.remarkHint": Record<string, never>;
+  "client.lounge.remarkSaveFailed": Record<string, never>;
   "client.lounge.removeImage": Record<string, never>;
-  "client.lounge.replyingTo": { "account": string | number };
-  "client.lounge.resetAvatar": Record<string, never>;
-  "client.lounge.retention": Record<string, never>;
-  "client.lounge.save": Record<string, never>;
-  "client.lounge.searchChats": Record<string, never>;
-  "client.lounge.searchHistory": Record<string, never>;
-  "client.lounge.send": Record<string, never>;
-  "client.lounge.sendFailed": Record<string, never>;
-  "client.lounge.sendHint": Record<string, never>;
-  "client.lounge.sending": Record<string, never>;
-  "client.lounge.sendMessage": Record<string, never>;
 }
