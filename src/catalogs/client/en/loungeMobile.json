@@ -13,13 +13,13 @@
   "client.lounge.greeting": "Hi everyone 👋",
   "client.lounge.directGreeting": "Hello there 👋",
   "client.lounge.about": "About chat",
-  "client.lounge.retention": "Saved on this device · Missed group messages aren't replayed",
-  "client.lounge.directRetention": "Saved on this device · Undelivered messages retry automatically",
-  "client.lounge.localTitle": "Messages stay on this device",
-  "client.lounge.localHint": "Received messages are saved on this device and remain available after restarting.",
+  "client.lounge.retention": "Saved on this device · Syncs when your devices are online",
+  "client.lounge.directRetention": "Saved on this device · Syncs when your devices are online",
+  "client.lounge.localTitle": "Messages stay on your devices",
+  "client.lounge.localHint": "Records remain on this device after a restart. Devices signed into the same account sync when online together. At least one device must still have the records.",
   "client.lounge.serverTitle": "The server does not store chat content",
-  "client.lounge.groupOfflineHint": "Group messages sent while you are offline will not be replayed.",
-  "client.lounge.directOfflineHint": "Only you and the recipient can see private messages. Undelivered messages retry when the recipient is online.",
+  "client.lounge.groupOfflineHint": "Group messages received by another of your online devices can sync here later. Messages missed by all your devices cannot be recovered.",
+  "client.lounge.directOfflineHint": "Private messages are visible only to both participants and their signed-in devices. Undelivered messages retry when the recipient is online.",
   "client.lounge.more": "Add content",
   "client.lounge.done": "Got it",
   "client.lounge.draftPreview": "[Draft] {text}",
@@ -37,5 +37,6 @@
   "client.lounge.editAvatar": "Change avatar",
   "client.lounge.viewOriginal": "View original message",
   "client.lounge.originalMissing": "The original message isn't saved on this device.",
-  "client.lounge.originalLoadFailed": "Couldn't find the original message. Please try again."
+  "client.lounge.originalLoadFailed": "Couldn't find the original message. Please try again.",
+  "client.lounge.deviceSyncFailed": "Message sync between devices was interrupted. Retrying."
 }
