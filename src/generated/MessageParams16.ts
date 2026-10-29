@@ -80,6 +80,10 @@ export interface MessageParams16 {
   "client.lounge.adminDurationHint": Record<string, never>;
   "client.lounge.adminOnlineCount": { "count": string | number };
   "client.lounge.adminSettings": Record<string, never>;
+  "client.lounge.assistance.confirm": { "email": string | number };
+  "client.lounge.assistance.desktopRequired": Record<string, never>;
+  "client.lounge.assistance.recipient": { "email": string | number };
+  "client.lounge.assistance.understood": Record<string, never>;
   "client.lounge.avatarHint": Record<string, never>;
   "client.lounge.avatarSaveFailed": Record<string, never>;
   "client.lounge.avatarSettings": Record<string, never>;
@@ -169,6 +173,7 @@ export interface MessageParams16 {
   "client.lounge.mute": Record<string, never>;
   "client.lounge.muted": Record<string, never>;
   "client.lounge.mutedUntil": { "time": string | number };
+  "client.lounge.muteNotifications": Record<string, never>;
   "client.lounge.myAccount": Record<string, never>;
   "client.lounge.nameInvalid": { "limit": string | number };
   "client.lounge.nameLimit": { "limit": string | number };
@@ -190,14 +195,9 @@ export interface MessageParams16 {
   "client.lounge.noMembers": Record<string, never>;
   "client.lounge.noPeople": Record<string, never>;
   "client.lounge.noRecentSpeakers": Record<string, never>;
+  "client.lounge.notificationSaveFailed": Record<string, never>;
+  "client.lounge.notificationsMuted": Record<string, never>;
   "client.lounge.onlineCount": { "count": string | number };
   "client.lounge.onlineLoading": Record<string, never>;
   "client.lounge.onlineUnavailable": Record<string, never>;
-  "client.lounge.originalLoadFailed": Record<string, never>;
-  "client.lounge.originalMissing": Record<string, never>;
-  "client.lounge.people": Record<string, never>;
-  "client.lounge.peopleSearch": Record<string, never>;
-  "client.lounge.pinChat": Record<string, never>;
-  "client.lounge.pinned": Record<string, never>;
-  "client.lounge.placeholder": Record<string, never>;
 }
