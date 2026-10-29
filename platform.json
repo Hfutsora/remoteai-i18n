@@ -1,6 +1,10 @@
 {
   "mirrors": [
     {
+      "source": "platform/desktop/src-tauri/src/third_party_apps/messages.rs",
+      "target": "apps/desktop/src-tauri/src/third_party_apps/messages.rs"
+    },
+    {
       "source": "platform/desktop/src-tauri/resources/chrome-extension/_locales/zh_CN/messages.json",
       "target": "apps/desktop/src-tauri/resources/chrome-extension/_locales/zh_CN/messages.json"
     },

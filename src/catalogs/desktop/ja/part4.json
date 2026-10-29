@@ -242,7 +242,7 @@
   "settings.accountAutoRefresh.concurrent": "{count} 有効なアカウント (並行モード)",
   "settings.accountAutoRefresh.none": "更新できる現在のアカウントまたはプロバイダーがありません",
   "settings.floatingBubble.title": "使用量のフローティングバブル",
-  "settings.floatingBubble.description": "現在のアカウントの 5 時間の割り当てを常に上のバブルに表示します。詳細はマウスを移動して、ドラッグして置き換えます。",
+  "settings.floatingBubble.description": "最前面のウィジェットで、現在のアカウントまたは全アカウントの平均の5時間・週間残量を確認できます。ドラッグして位置を調整できます。",
   "settings.floatingBubble.enabled": "フローティングバブル",
   "settings.floatingBubble.resetDisplay": "リセット時刻の表示",
   "settings.floatingBubble.countdown": "カウントダウン",
