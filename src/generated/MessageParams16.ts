@@ -79,6 +79,10 @@ export interface MessageParams16 {
   "client.lounge.adminDurationHint": Record<string, never>;
   "client.lounge.adminOnlineCount": { "count": string | number };
   "client.lounge.adminSettings": Record<string, never>;
+  "client.lounge.assistance.confirm": { "email": string | number };
+  "client.lounge.assistance.desktopRequired": Record<string, never>;
+  "client.lounge.assistance.recipient": { "email": string | number };
+  "client.lounge.assistance.understood": Record<string, never>;
   "client.lounge.avatarHint": Record<string, never>;
   "client.lounge.avatarSaveFailed": Record<string, never>;
   "client.lounge.avatarSettings": Record<string, never>;
@@ -196,8 +200,4 @@ export interface MessageParams16 {
   "client.lounge.onlineLoading": Record<string, never>;
   "client.lounge.onlineUnavailable": Record<string, never>;
   "client.lounge.originalLoadFailed": Record<string, never>;
-  "client.lounge.originalMissing": Record<string, never>;
-  "client.lounge.people": Record<string, never>;
-  "client.lounge.peopleSearch": Record<string, never>;
-  "client.lounge.pinChat": Record<string, never>;
 }

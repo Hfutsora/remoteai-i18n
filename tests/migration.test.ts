@@ -34,6 +34,7 @@ import loungeNewChat from '../src/catalogs/client/zh/loungeNewChat.json';
 import loungeOrdering from '../src/catalogs/client/zh/loungeOrdering.json';
 import loungeNames from '../src/catalogs/client/zh/loungeNames.json';
 import loungeMenus from '../src/catalogs/client/zh/loungeMenus.json';
+import loungeAssistance from '../src/catalogs/client/zh/loungeAssistance.json';
 import loungeNotifications from '../src/catalogs/client/zh/loungeNotifications.json';
 
 const baselines = {
@@ -73,6 +74,7 @@ const additions = new Set(['client.chat.usePlugin',
   ...Object.keys(loungeOrdering),
   ...Object.keys(loungeNames),
   ...Object.keys(loungeMenus),
+  ...Object.keys(loungeAssistance),
   ...Object.keys(loungeNotifications),
   'client.remoteDesktop.takeoverTitle', 'client.remoteDesktop.takeoverMessage',
   'client.remoteDesktop.takeoverConfirm', 'client.remoteDesktop.takeoverCancel',
