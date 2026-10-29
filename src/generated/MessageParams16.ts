@@ -97,7 +97,6 @@ export interface MessageParams16 {
   "client.lounge.connected": Record<string, never>;
   "client.lounge.connecting": Record<string, never>;
   "client.lounge.conversationReset": Record<string, never>;
-  "client.lounge.current": Record<string, never>;
   "client.lounge.deleteChat": Record<string, never>;
   "client.lounge.deleteConfirm": Record<string, never>;
   "client.lounge.deleteFailed": Record<string, never>;
@@ -200,4 +199,5 @@ export interface MessageParams16 {
   "client.lounge.sending": Record<string, never>;
   "client.lounge.sendMessage": Record<string, never>;
   "client.lounge.serverTitle": Record<string, never>;
+  "client.lounge.signed-out": Record<string, never>;
 }
