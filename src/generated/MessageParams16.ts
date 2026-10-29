@@ -168,6 +168,7 @@ export interface MessageParams16 {
   "client.lounge.mute": Record<string, never>;
   "client.lounge.muted": Record<string, never>;
   "client.lounge.mutedUntil": { "time": string | number };
+  "client.lounge.muteNotifications": Record<string, never>;
   "client.lounge.myAccount": Record<string, never>;
   "client.lounge.nameInvalid": { "limit": string | number };
   "client.lounge.nameLimit": { "limit": string | number };
@@ -189,6 +190,8 @@ export interface MessageParams16 {
   "client.lounge.noMembers": Record<string, never>;
   "client.lounge.noPeople": Record<string, never>;
   "client.lounge.noRecentSpeakers": Record<string, never>;
+  "client.lounge.notificationSaveFailed": Record<string, never>;
+  "client.lounge.notificationsMuted": Record<string, never>;
   "client.lounge.onlineCount": { "count": string | number };
   "client.lounge.onlineLoading": Record<string, never>;
   "client.lounge.onlineUnavailable": Record<string, never>;
@@ -197,7 +200,4 @@ export interface MessageParams16 {
   "client.lounge.people": Record<string, never>;
   "client.lounge.peopleSearch": Record<string, never>;
   "client.lounge.pinChat": Record<string, never>;
-  "client.lounge.pinned": Record<string, never>;
-  "client.lounge.placeholder": Record<string, never>;
-  "client.lounge.preparingImage": Record<string, never>;
 }
