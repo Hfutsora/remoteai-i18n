@@ -13,13 +13,13 @@
   "client.lounge.greeting": "大家好呀 👋",
   "client.lounge.directGreeting": "你好呀 👋",
   "client.lounge.about": "关于聊天",
-  "client.lounge.retention": "消息保存在本机 · 群聊离线消息不补发",
-  "client.lounge.directRetention": "消息保存在本机 · 未送达时自动重试",
-  "client.lounge.localTitle": "消息保存在本机",
-  "client.lounge.localHint": "收到的消息保存在当前设备，重启后仍可查看。",
+  "client.lounge.retention": "消息保存在本机 · 同账号设备在线时同步",
+  "client.lounge.directRetention": "消息保存在本机 · 同账号设备在线时同步",
+  "client.lounge.localTitle": "消息保存在各设备",
+  "client.lounge.localHint": "记录保存在当前设备，重启后仍可查看。同账号设备同时在线时会自动同步，需要至少一台设备保留原记录。",
   "client.lounge.serverTitle": "服务器不保存聊天内容",
-  "client.lounge.groupOfflineHint": "离线期间的群聊消息不会补发。",
-  "client.lounge.directOfflineHint": "私聊消息仅双方可见。未送达时，会在对方在线后自动重试。",
+  "client.lounge.groupOfflineHint": "离线期间，自己其他在线设备收到的群聊消息可以同步回来。所有设备都未收到的消息无法补回。",
+  "client.lounge.directOfflineHint": "私聊消息仅双方及各自登录的设备可见。未送达时，会在对方在线后自动重试。",
   "client.lounge.more": "添加内容",
   "client.lounge.done": "知道了",
   "client.lounge.draftPreview": "[草稿] {text}",
@@ -37,5 +37,6 @@
   "client.lounge.editAvatar": "修改头像",
   "client.lounge.viewOriginal": "查看原消息",
   "client.lounge.originalMissing": "原消息未保存在本机，暂时无法定位。",
-  "client.lounge.originalLoadFailed": "未能找到原消息，请稍后重试。"
+  "client.lounge.originalLoadFailed": "未能找到原消息，请稍后重试。",
+  "client.lounge.deviceSyncFailed": "设备间消息同步暂时中断，正在重试。"
 }

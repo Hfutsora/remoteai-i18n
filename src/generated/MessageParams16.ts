@@ -106,6 +106,7 @@ export interface MessageParams16 {
   "client.lounge.deleteFailed": Record<string, never>;
   "client.lounge.deleteTitle": Record<string, never>;
   "client.lounge.delivered": Record<string, never>;
+  "client.lounge.deviceSyncFailed": Record<string, never>;
   "client.lounge.directChat": Record<string, never>;
   "client.lounge.directEmpty": Record<string, never>;
   "client.lounge.directGreeting": Record<string, never>;
@@ -199,5 +200,4 @@ export interface MessageParams16 {
   "client.lounge.pinChat": Record<string, never>;
   "client.lounge.pinned": Record<string, never>;
   "client.lounge.placeholder": Record<string, never>;
-  "client.lounge.preparingImage": Record<string, never>;
 }
