@@ -242,7 +242,7 @@
   "settings.accountAutoRefresh.concurrent": "Включённых аккаунтов: {count} (параллельный режим)",
   "settings.accountAutoRefresh.none": "Аккаунт или провайдер для обновления не выбран",
   "settings.floatingBubble.title": "Плавающий индикатор лимитов",
-  "settings.floatingBubble.description": "Показывать 5-часовой лимит текущего аккаунта поверх других окон. Наведите указатель для подробностей, перетащите индикатор, чтобы переместить.",
+  "settings.floatingBubble.description": "Просматривайте остаток за 5 часов и неделю для текущего аккаунта или среднее всех аккаунтов. Виджет поверх окон можно перемещать.",
   "settings.floatingBubble.enabled": "Показывать индикатор",
   "settings.floatingBubble.resetDisplay": "Отображение времени сброса",
   "settings.floatingBubble.countdown": "Обратный отсчет",

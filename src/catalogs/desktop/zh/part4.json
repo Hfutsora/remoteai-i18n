@@ -242,7 +242,7 @@
   "settings.accountAutoRefresh.concurrent": "{count} 个已启用账号（并发模式）",
   "settings.accountAutoRefresh.none": "暂无可刷新的当前账户或 Provider",
   "settings.floatingBubble.title": "悬浮用量球",
-  "settings.floatingBubble.description": "在置顶悬浮球中显示当前账号的 5 小时用量。悬停可查看详情，也可以拖动调整位置。",
+  "settings.floatingBubble.description": "在置顶悬浮球中查看 5 小时和周剩余额度，支持当前账号或全部账号平均值。可拖动调整位置。",
   "settings.floatingBubble.enabled": "显示悬浮球",
   "settings.floatingBubble.resetDisplay": "重置时间显示",
   "settings.floatingBubble.countdown": "倒计时",

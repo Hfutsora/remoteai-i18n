@@ -15,5 +15,6 @@
   "settings.petDock.loading": "Loading settings…",
   "settings.petDock.cloudHint": "On the computer with the pet, open Remote AI → Settings → Usage to enable this feature.",
   "settings.petDock.loadError": "Could not load settings. Please retry.",
-  "settings.petDock.retry": "Retry"
+  "settings.petDock.retry": "Retry",
+  "settings.petDock.averageHint": "Enable All-account average in the pet dock settings on that computer to switch both widgets."
 }

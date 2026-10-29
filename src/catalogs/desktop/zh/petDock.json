@@ -15,5 +15,6 @@
   "settings.petDock.loading": "正在读取设置…",
   "settings.petDock.cloudHint": "请在需要显示宠物的电脑上，打开 Remote AI 的“设置 → 用量”启用此功能。",
   "settings.petDock.loadError": "未能读取设置，请重试。",
-  "settings.petDock.retry": "重试"
+  "settings.petDock.retry": "重试",
+  "settings.petDock.averageHint": "在该电脑的“宠物额度底座”设置中开启“全部账号平均”，可同时切换悬浮球和宠物底座。"
 }

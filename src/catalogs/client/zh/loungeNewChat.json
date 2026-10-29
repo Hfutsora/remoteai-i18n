@@ -1,0 +1,11 @@
+{
+  "client.lounge.recentSpeakers": "最近发言用户",
+  "client.lounge.noRecentSpeakers": "暂无最近发言用户，可输入邮箱查找。",
+  "client.lounge.accountLookupLabel": "完整邮箱前缀或邮箱",
+  "client.lounge.accountLookupHint": "选择最近发言用户，或输入完整邮箱前缀（@ 前的全部字符）、完整邮箱，发起私聊。",
+  "client.lounge.accountLookupInvalid": "请输入完整邮箱前缀或完整邮箱。",
+  "client.lounge.accountLookupNotFound": "未找到该用户，请检查输入后重试。",
+  "client.lounge.accountLookupAmbiguous": "多个用户使用此前缀，请输入完整邮箱。",
+  "client.lounge.accountLookupSelf": "这是你自己的账号，请输入对方的邮箱。",
+  "client.lounge.accountLookupFailed": "暂时无法查找用户，请稍后重试。"
+}

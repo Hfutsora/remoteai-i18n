@@ -15,5 +15,6 @@
   "settings.petDock.loading": "Загрузка настроек…",
   "settings.petDock.cloudHint": "На компьютере с питомцем откройте Remote AI → Настройки → Использование и включите эту функцию.",
   "settings.petDock.loadError": "Не удалось загрузить настройки. Повторите попытку.",
-  "settings.petDock.retry": "Повторить"
+  "settings.petDock.retry": "Повторить",
+  "settings.petDock.averageHint": "Включите среднее всех аккаунтов в настройках питомца на этом компьютере, чтобы переключить оба виджета."
 }
