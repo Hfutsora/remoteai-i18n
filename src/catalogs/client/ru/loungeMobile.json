@@ -25,5 +25,14 @@
   "client.lounge.done": "Понятно",
   "client.lounge.draftPreview": "[Черновик] {text}",
   "client.lounge.mobileOnlineCount": "В сети: {count}",
-  "client.lounge.backToChats": "Назад к чатам"
+  "client.lounge.backToChats": "Назад к чатам",
+  "client.lounge.profile": "Профиль",
+  "client.lounge.viewProfile": "Профиль {account}",
+  "client.lounge.profileBack": "Назад",
+  "client.lounge.sendMessage": "Написать",
+  "client.lounge.deleteChat": "Удалить",
+  "client.lounge.deleteTitle": "Удалить этот личный чат?",
+  "client.lounge.deleteConfirm": "Собеседник и история чата будут удалены с этого устройства. Чтобы продолжить общение снова, каждый из вас должен отправить по одному сообщению.",
+  "client.lounge.deleteFailed": "Не удалось удалить чат. Попробуйте ещё раз.",
+  "client.lounge.conversationReset": "Чат сброшен. Отправьте сообщение ещё раз."
 }

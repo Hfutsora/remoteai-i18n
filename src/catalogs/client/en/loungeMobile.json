@@ -25,5 +25,14 @@
   "client.lounge.done": "Got it",
   "client.lounge.draftPreview": "[Draft] {text}",
   "client.lounge.mobileOnlineCount": "{count} online",
-  "client.lounge.backToChats": "Back to chats"
+  "client.lounge.backToChats": "Back to chats",
+  "client.lounge.profile": "Profile",
+  "client.lounge.viewProfile": "View {account}'s profile",
+  "client.lounge.profileBack": "Back",
+  "client.lounge.sendMessage": "Message",
+  "client.lounge.deleteChat": "Delete",
+  "client.lounge.deleteTitle": "Delete this private chat?",
+  "client.lounge.deleteConfirm": "This removes the person and chat history from this device. To chat again, you must each send one message before continuing the conversation.",
+  "client.lounge.deleteFailed": "Couldn't delete the chat. Please try again.",
+  "client.lounge.conversationReset": "This chat has been reset. Please send your message again."
 }

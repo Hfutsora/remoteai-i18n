@@ -25,5 +25,14 @@
   "client.lounge.done": "わかりました",
   "client.lounge.draftPreview": "[下書き] {text}",
   "client.lounge.mobileOnlineCount": "{count} 人がオンライン",
-  "client.lounge.backToChats": "チャット一覧に戻る"
+  "client.lounge.backToChats": "チャット一覧に戻る",
+  "client.lounge.profile": "プロフィール",
+  "client.lounge.viewProfile": "{account}のプロフィールを表示",
+  "client.lounge.profileBack": "戻る",
+  "client.lounge.sendMessage": "メッセージを送る",
+  "client.lounge.deleteChat": "削除",
+  "client.lounge.deleteTitle": "この個別チャットを削除しますか？",
+  "client.lounge.deleteConfirm": "この端末から相手とチャット履歴を削除します。再び会話を続けるには、お互いに1通ずつメッセージを送る必要があります。",
+  "client.lounge.deleteFailed": "削除できませんでした。もう一度お試しください。",
+  "client.lounge.conversationReset": "チャットがリセットされました。メッセージをもう一度送ってください。"
 }

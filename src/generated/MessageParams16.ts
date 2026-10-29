@@ -89,7 +89,12 @@ export interface MessageParams16 {
   "client.lounge.closePeople": Record<string, never>;
   "client.lounge.connected": Record<string, never>;
   "client.lounge.connecting": Record<string, never>;
+  "client.lounge.conversationReset": Record<string, never>;
   "client.lounge.current": Record<string, never>;
+  "client.lounge.deleteChat": Record<string, never>;
+  "client.lounge.deleteConfirm": Record<string, never>;
+  "client.lounge.deleteFailed": Record<string, never>;
+  "client.lounge.deleteTitle": Record<string, never>;
   "client.lounge.delivered": Record<string, never>;
   "client.lounge.directChat": Record<string, never>;
   "client.lounge.directEmpty": Record<string, never>;
@@ -164,6 +169,8 @@ export interface MessageParams16 {
   "client.lounge.presencePending": Record<string, never>;
   "client.lounge.previewImage": Record<string, never>;
   "client.lounge.privateChats": Record<string, never>;
+  "client.lounge.profile": Record<string, never>;
+  "client.lounge.profileBack": Record<string, never>;
   "client.lounge.publicRoom": Record<string, never>;
   "client.lounge.quotedImages": { "count": string | number };
   "client.lounge.quoteReply": Record<string, never>;
@@ -179,6 +186,7 @@ export interface MessageParams16 {
   "client.lounge.sendFailed": Record<string, never>;
   "client.lounge.sendHint": Record<string, never>;
   "client.lounge.sending": Record<string, never>;
+  "client.lounge.sendMessage": Record<string, never>;
   "client.lounge.serverTitle": Record<string, never>;
   "client.lounge.signed-out": Record<string, never>;
   "client.lounge.signIn": Record<string, never>;
@@ -192,12 +200,4 @@ export interface MessageParams16 {
   "client.lounge.userOffline": Record<string, never>;
   "client.lounge.userOnline": Record<string, never>;
   "client.lounge.userUnavailable": Record<string, never>;
-  "client.messageEditing.deleteMessage": Record<string, never>;
-  "client.messageEditing.deleteThisMessage": Record<string, never>;
-  "client.messageEditing.thisFollowUpCannotBeDeletedSeparatelyWithoutRemovingEarlier": Record<string, never>;
-  "client.messageEditing.thisMessageAndAllFollowingMessagesWillBeDeletedThis": Record<string, never>;
-  "client.messageEditing.waitForTheCurrentActionToFinishThenRefreshAnd": Record<string, never>;
-  "client.messageQueue.description": Record<string, never>;
-  "client.messageQueue.enabled": Record<string, never>;
-  "client.messageQueue.hint": Record<string, never>;
 }

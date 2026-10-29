@@ -25,5 +25,14 @@
   "client.lounge.done": "知道了",
   "client.lounge.draftPreview": "[草稿] {text}",
   "client.lounge.mobileOnlineCount": "{count} 人在线",
-  "client.lounge.backToChats": "返回聊天列表"
+  "client.lounge.backToChats": "返回聊天列表",
+  "client.lounge.profile": "个人资料",
+  "client.lounge.viewProfile": "查看 {account} 的资料",
+  "client.lounge.profileBack": "返回",
+  "client.lounge.sendMessage": "发消息",
+  "client.lounge.deleteChat": "删除",
+  "client.lounge.deleteTitle": "删除这段私聊？",
+  "client.lounge.deleteConfirm": "将移除该用户和本机聊天记录。再次私聊时，需要双方各发一条消息才能继续聊天。",
+  "client.lounge.deleteFailed": "删除失败，请稍后重试。",
+  "client.lounge.conversationReset": "聊天已重置，请重新发送。"
 }
