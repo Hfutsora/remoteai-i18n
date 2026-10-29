@@ -173,6 +173,8 @@ export interface MessageParams16 {
   "client.lounge.originalMissing": Record<string, never>;
   "client.lounge.people": Record<string, never>;
   "client.lounge.peopleSearch": Record<string, never>;
+  "client.lounge.pinChat": Record<string, never>;
+  "client.lounge.pinned": Record<string, never>;
   "client.lounge.placeholder": Record<string, never>;
   "client.lounge.preparingImage": Record<string, never>;
   "client.lounge.presenceHidden": Record<string, never>;
@@ -198,6 +200,4 @@ export interface MessageParams16 {
   "client.lounge.sendHint": Record<string, never>;
   "client.lounge.sending": Record<string, never>;
   "client.lounge.sendMessage": Record<string, never>;
-  "client.lounge.serverTitle": Record<string, never>;
-  "client.lounge.signed-out": Record<string, never>;
 }
