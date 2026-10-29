@@ -66,6 +66,13 @@ export interface MessageParams16 {
   "client.interface.remoteAi": Record<string, never>;
   "client.interface.token": Record<string, never>;
   "client.lounge.about": Record<string, never>;
+  "client.lounge.accountLookupAmbiguous": Record<string, never>;
+  "client.lounge.accountLookupFailed": Record<string, never>;
+  "client.lounge.accountLookupHint": Record<string, never>;
+  "client.lounge.accountLookupInvalid": Record<string, never>;
+  "client.lounge.accountLookupLabel": Record<string, never>;
+  "client.lounge.accountLookupNotFound": Record<string, never>;
+  "client.lounge.accountLookupSelf": Record<string, never>;
   "client.lounge.actionFailed": Record<string, never>;
   "client.lounge.addImage": Record<string, never>;
   "client.lounge.adminDurationHint": Record<string, never>;
@@ -159,6 +166,7 @@ export interface MessageParams16 {
   "client.lounge.noChats": Record<string, never>;
   "client.lounge.noMembers": Record<string, never>;
   "client.lounge.noPeople": Record<string, never>;
+  "client.lounge.noRecentSpeakers": Record<string, never>;
   "client.lounge.onlineCount": { "count": string | number };
   "client.lounge.onlineLoading": Record<string, never>;
   "client.lounge.onlineUnavailable": Record<string, never>;
@@ -178,6 +186,7 @@ export interface MessageParams16 {
   "client.lounge.quotedImages": { "count": string | number };
   "client.lounge.quoteReply": Record<string, never>;
   "client.lounge.read": Record<string, never>;
+  "client.lounge.recentSpeakers": Record<string, never>;
   "client.lounge.removeImage": Record<string, never>;
   "client.lounge.replyingTo": { "account": string | number };
   "client.lounge.resetAvatar": Record<string, never>;
@@ -191,13 +200,4 @@ export interface MessageParams16 {
   "client.lounge.sending": Record<string, never>;
   "client.lounge.sendMessage": Record<string, never>;
   "client.lounge.serverTitle": Record<string, never>;
-  "client.lounge.signed-out": Record<string, never>;
-  "client.lounge.signIn": Record<string, never>;
-  "client.lounge.stillImage": Record<string, never>;
-  "client.lounge.title": Record<string, never>;
-  "client.lounge.tooLong": Record<string, never>;
-  "client.lounge.tooManyImages": Record<string, never>;
-  "client.lounge.unavailable": Record<string, never>;
-  "client.lounge.unblockUser": Record<string, never>;
-  "client.lounge.unmute": Record<string, never>;
 }
