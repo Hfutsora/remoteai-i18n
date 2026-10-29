@@ -97,7 +97,9 @@ export interface MessageParams16 {
   "client.lounge.closePeople": Record<string, never>;
   "client.lounge.connected": Record<string, never>;
   "client.lounge.connecting": Record<string, never>;
+  "client.lounge.contactsSyncFailed": Record<string, never>;
   "client.lounge.conversationReset": Record<string, never>;
+  "client.lounge.copyMessage": Record<string, never>;
   "client.lounge.deleteChat": Record<string, never>;
   "client.lounge.deleteConfirm": Record<string, never>;
   "client.lounge.deleteFailed": Record<string, never>;
@@ -148,8 +150,11 @@ export interface MessageParams16 {
   "client.lounge.members": Record<string, never>;
   "client.lounge.membersHint": Record<string, never>;
   "client.lounge.membersShort": Record<string, never>;
+  "client.lounge.mentionUser": Record<string, never>;
   "client.lounge.message": Record<string, never>;
   "client.lounge.messageActions": Record<string, never>;
+  "client.lounge.messageCopied": Record<string, never>;
+  "client.lounge.messageCopyFailed": Record<string, never>;
   "client.lounge.mobileImageHint": Record<string, never>;
   "client.lounge.mobileOnlineCount": { "count": string | number };
   "client.lounge.mobilePlaceholder": Record<string, never>;
@@ -169,6 +174,13 @@ export interface MessageParams16 {
   "client.lounge.nameSaved": Record<string, never>;
   "client.lounge.namesUnavailable": Record<string, never>;
   "client.lounge.newChat": Record<string, never>;
+  "client.lounge.newChatClearRecent": Record<string, never>;
+  "client.lounge.newChatDesktopHint": Record<string, never>;
+  "client.lounge.newChatNoMatches": Record<string, never>;
+  "client.lounge.newChatNoRecent": Record<string, never>;
+  "client.lounge.newChatRecentUsers": Record<string, never>;
+  "client.lounge.newChatSearchPlaceholder": Record<string, never>;
+  "client.lounge.newChatSelectUser": Record<string, never>;
   "client.lounge.nickname": Record<string, never>;
   "client.lounge.nicknameHint": Record<string, never>;
   "client.lounge.nicknameSaveFailed": Record<string, never>;
@@ -188,16 +200,4 @@ export interface MessageParams16 {
   "client.lounge.placeholder": Record<string, never>;
   "client.lounge.preparingImage": Record<string, never>;
   "client.lounge.presenceHidden": Record<string, never>;
-  "client.lounge.presencePending": Record<string, never>;
-  "client.lounge.previewImage": Record<string, never>;
-  "client.lounge.privateChats": Record<string, never>;
-  "client.lounge.profile": Record<string, never>;
-  "client.lounge.profileBack": Record<string, never>;
-  "client.lounge.publicRoom": Record<string, never>;
-  "client.lounge.quotedImages": { "count": string | number };
-  "client.lounge.quoteReply": Record<string, never>;
-  "client.lounge.read": Record<string, never>;
-  "client.lounge.recentSpeakers": Record<string, never>;
-  "client.lounge.remark": Record<string, never>;
-  "client.lounge.remarkHint": Record<string, never>;
 }
