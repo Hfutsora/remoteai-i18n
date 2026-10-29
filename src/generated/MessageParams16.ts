@@ -109,6 +109,7 @@ export interface MessageParams16 {
   "client.lounge.draftPreview": { "text": string | number };
   "client.lounge.duration": Record<string, never>;
   "client.lounge.durationHint": Record<string, never>;
+  "client.lounge.editAvatar": Record<string, never>;
   "client.lounge.emoji": Record<string, never>;
   "client.lounge.empty": Record<string, never>;
   "client.lounge.emptyHint": Record<string, never>;
@@ -161,6 +162,8 @@ export interface MessageParams16 {
   "client.lounge.onlineCount": { "count": string | number };
   "client.lounge.onlineLoading": Record<string, never>;
   "client.lounge.onlineUnavailable": Record<string, never>;
+  "client.lounge.originalLoadFailed": Record<string, never>;
+  "client.lounge.originalMissing": Record<string, never>;
   "client.lounge.people": Record<string, never>;
   "client.lounge.peopleSearch": Record<string, never>;
   "client.lounge.placeholder": Record<string, never>;
@@ -197,7 +200,4 @@ export interface MessageParams16 {
   "client.lounge.unavailable": Record<string, never>;
   "client.lounge.unblockUser": Record<string, never>;
   "client.lounge.unmute": Record<string, never>;
-  "client.lounge.userOffline": Record<string, never>;
-  "client.lounge.userOnline": Record<string, never>;
-  "client.lounge.userUnavailable": Record<string, never>;
 }

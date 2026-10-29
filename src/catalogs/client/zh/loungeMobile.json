@@ -34,5 +34,9 @@
   "client.lounge.deleteTitle": "删除这段私聊？",
   "client.lounge.deleteConfirm": "将移除该用户和本机聊天记录。再次私聊时，需要双方各发一条消息才能继续聊天。",
   "client.lounge.deleteFailed": "删除失败，请稍后重试。",
-  "client.lounge.conversationReset": "聊天已重置，请重新发送。"
+  "client.lounge.conversationReset": "聊天已重置，请重新发送。",
+  "client.lounge.editAvatar": "修改头像",
+  "client.lounge.viewOriginal": "查看原消息",
+  "client.lounge.originalMissing": "原消息未保存在本机，暂时无法定位。",
+  "client.lounge.originalLoadFailed": "未能找到原消息，请稍后重试。"
 }

@@ -34,5 +34,9 @@
   "client.lounge.deleteTitle": "Удалить этот личный чат?",
   "client.lounge.deleteConfirm": "Собеседник и история чата будут удалены с этого устройства. Чтобы продолжить общение снова, каждый из вас должен отправить по одному сообщению.",
   "client.lounge.deleteFailed": "Не удалось удалить чат. Попробуйте ещё раз.",
-  "client.lounge.conversationReset": "Чат сброшен. Отправьте сообщение ещё раз."
+  "client.lounge.conversationReset": "Чат сброшен. Отправьте сообщение ещё раз.",
+  "client.lounge.editAvatar": "Изменить аватар",
+  "client.lounge.viewOriginal": "Показать исходное сообщение",
+  "client.lounge.originalMissing": "Исходное сообщение не сохранено на этом устройстве.",
+  "client.lounge.originalLoadFailed": "Не удалось найти исходное сообщение. Попробуйте ещё раз."
 }

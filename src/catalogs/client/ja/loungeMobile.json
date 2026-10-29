@@ -34,5 +34,9 @@
   "client.lounge.deleteTitle": "この個別チャットを削除しますか？",
   "client.lounge.deleteConfirm": "この端末から相手とチャット履歴を削除します。再び会話を続けるには、お互いに1通ずつメッセージを送る必要があります。",
   "client.lounge.deleteFailed": "削除できませんでした。もう一度お試しください。",
-  "client.lounge.conversationReset": "チャットがリセットされました。メッセージをもう一度送ってください。"
+  "client.lounge.conversationReset": "チャットがリセットされました。メッセージをもう一度送ってください。",
+  "client.lounge.editAvatar": "アバターを変更",
+  "client.lounge.viewOriginal": "元のメッセージを表示",
+  "client.lounge.originalMissing": "元のメッセージがこの端末に保存されていないため、表示できません。",
+  "client.lounge.originalLoadFailed": "元のメッセージが見つかりませんでした。もう一度お試しください。"
 }
