@@ -8,7 +8,7 @@ TypeScript declarations, with the same public entries and optional React adapter
 ## Install a release
 
 ```sh
-npm install https://github.com/piperhex/remoteai-i18n/releases/download/i18n-v0.1.1/remoteai-i18n-0.1.1.tgz
+npm install https://github.com/piperhex/remoteai-i18n/releases/download/i18n-v0.1.2/remoteai-i18n-0.1.2.tgz
 ```
 
 GitHub Releases publish the npm-compatible archive and `SHA256SUMS`; no npm registry login is required.
@@ -140,7 +140,7 @@ IDs and editable content remain literal values. `createErrorFormatter(resources)
 It also decodes existing service text responses against the Chinese resource values at the display boundary.
 String transports may JSON-encode the same `{ code, params }` shape. The formatter decodes recognized string
 templates with string/number parameters; unrelated or malformed JSON remains ordinary error text.
-This decoder is separate from ordinary translation; `i18n.text('复制')` does not translate source text.
+This decoder is separate from ordinary translation; `i18n.text('澶嶅埗')` does not translate source text.
 
 ## Adding a language (Japanese acceptance example)
 
@@ -207,3 +207,5 @@ Web chat views embedded in desktop inherit and follow the host selection without
 The migration regression test fingerprints the original Chinese, English and Russian copy, including explicit
 fallback text, independently of the new keys. Update that baseline deliberately when changing existing wording.
 The offline native file browser receives its host's language with each settings update, including live switches.
+
+Go platform sources use `.go.txt` template names so Go consumers never treat `node_modules` as source packages.

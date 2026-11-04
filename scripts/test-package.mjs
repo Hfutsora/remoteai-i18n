@@ -18,6 +18,9 @@ try {
   { cwd: root, stdio: 'inherit' });
   const installed = JSON.parse(fs.readFileSync(path.join(root, 'node_modules/@remoteai/i18n/package.json'), 'utf8'));
   assert.equal(installed.version, metadata.version);
+  const platformFiles = fs.readdirSync(path.join(root, 'node_modules/@remoteai/i18n/platform'), { recursive: true });
+  assert.ok(platformFiles.every(file => !file.endsWith('.go')),
+    'Go templates in node_modules must not become compilation units in a consuming Go module');
   const cli = path.join(root, 'node_modules/@remoteai/i18n', installed.bin['remoteai-i18n']);
   execFileSync(process.execPath, [cli, 'integrate', '--root', root, '--profile', 'admin'],
     { cwd: root, stdio: 'inherit' });
