@@ -106,6 +106,10 @@ export interface MessageParams34 {
   "market.browserBack": Record<string, never>;
   "market.browserBlank": Record<string, never>;
   "market.browserCaptureUnsupported": Record<string, never>;
+  "market.browserCloseAllTabs": Record<string, never>;
+  "market.browserCloseLeftTabs": Record<string, never>;
+  "market.browserCloseOtherTabs": Record<string, never>;
+  "market.browserCloseRightTabs": Record<string, never>;
   "market.browserCloseTab": { "name": string | number };
   "market.browserFailed": Record<string, never>;
   "market.browserForward": Record<string, never>;
@@ -120,6 +124,7 @@ export interface MessageParams34 {
   "market.browserReload": Record<string, never>;
   "market.browserRestore": Record<string, never>;
   "market.browserStaleReference": Record<string, never>;
+  "market.browserTabActions": Record<string, never>;
   "market.browserTabs": Record<string, never>;
   "market.browserTabUnavailable": Record<string, never>;
   "market.browserTitle": Record<string, never>;
@@ -195,9 +200,4 @@ export interface MessageParams34 {
   "market.permissionOrderDescription": Record<string, never>;
   "market.permissionPromote": Record<string, never>;
   "market.permissionPromoteDescription": Record<string, never>;
-  "market.permissionRead": Record<string, never>;
-  "market.permissionReadDescription": Record<string, never>;
-  "market.permissionReview": Record<string, never>;
-  "market.permissionReviewDescription": Record<string, never>;
-  "market.previous": Record<string, never>;
 }
