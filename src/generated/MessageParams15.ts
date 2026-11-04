@@ -8,6 +8,7 @@ export interface MessageParams15 {
   "client.filePreview.jsonHighlightLimit": Record<string, never>;
   "client.filePreview.jsonLines": { "count": string | number };
   "client.filePreview.jsonPlainText": { "limit": string | number };
+  "client.filePreview.openInBuiltInBrowser": Record<string, never>;
   "client.filePreview.pdfUnavailable": Record<string, never>;
   "client.filePreview.someHtmlAssetsUnavailable": Record<string, never>;
   "client.filePreview.tooLarge": Record<string, never>;
@@ -199,5 +200,4 @@ export interface MessageParams15 {
   "client.gitConflict.rebaseRight": Record<string, never>;
   "client.gitConflict.reload": Record<string, never>;
   "client.gitConflict.reloadConfirm": Record<string, never>;
-  "client.gitConflict.remaining": { "count": string | number };
 }
