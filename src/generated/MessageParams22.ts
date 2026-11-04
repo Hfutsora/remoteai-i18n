@@ -99,6 +99,7 @@ export interface MessageParams22 {
   "client.projectExplorer.type": Record<string, never>;
   "client.projectExplorer.up": Record<string, never>;
   "client.projectExplorer.view": Record<string, never>;
+  "client.projectPicker.workWithoutProject": Record<string, never>;
   "client.remoteAssistance.acceptAndConnect": Record<string, never>;
   "client.remoteAssistance.acceptTheInvitationOnAComputerWhereYouAreSigned": Record<string, never>;
   "client.remoteAssistance.acceptToOpenTheirDesktopEitherPersonCanEndAssistance": Record<string, never>;
@@ -199,5 +200,4 @@ export interface MessageParams22 {
   "client.remoteDesktop.couldNotSwitchPrivacyScreenPleaseTryAgain": Record<string, never>;
   "client.remoteDesktop.couldNotSwitchPrivacyScreenReconnectAndTryAgain": Record<string, never>;
   "client.remoteDesktop.customFrameRate": Record<string, never>;
-  "client.remoteDesktop.decode": Record<string, never>;
 }

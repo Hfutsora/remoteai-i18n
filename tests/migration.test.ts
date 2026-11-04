@@ -30,6 +30,7 @@ import filePreview from '../src/catalogs/client/zh/filePreview.json';
 import projectActions from '../src/catalogs/client/zh/projectActions.json';
 import groups from '../src/catalogs/client/zh/groups.json';
 import projectExplorer from '../src/catalogs/client/zh/projectExplorer.json';
+import projectPicker from '../src/catalogs/client/zh/projectPicker.json';
 import mappingHub from '../src/catalogs/client/zh/mappingHub.json';
 import mappingEditor from '../src/catalogs/client/zh/mappingEditor.json';
 import jsonPreview from '../src/catalogs/client/zh/jsonPreview.json';
@@ -79,6 +80,7 @@ const additions = new Set(['client.chat.usePlugin',
   ...Object.keys(projectActions),
   ...Object.keys(groups),
   ...Object.keys(projectExplorer),
+  ...Object.keys(projectPicker),
   ...Object.keys(mappingHub),
   ...Object.keys(mappingEditor),
   ...Object.keys(jsonPreview),
