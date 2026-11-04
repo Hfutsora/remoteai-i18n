@@ -1,17 +1,20 @@
 ﻿import fs from 'node:fs';
 import path from 'node:path';
-import { fileURLToPath } from 'node:url';
 import { execFileSync } from 'node:child_process';
 import ts from 'typescript';
+import { integrationOptions } from './paths.mjs';
 import {
   keyArguments, mappedKeyViolations, nativeTranslationTables, presentationViolations, translationViolations,
 } from './ownership.mjs';
 
-const root = fileURLToPath(new URL('../../../', import.meta.url));
+const options = integrationOptions();
+const root = options.root;
 const errors = [];
 const han = /\p{Script=Han}/u;
-const manifest = JSON.parse(fs.readFileSync(new URL('../platform.json', import.meta.url), 'utf8'));
-const generated = new Set([...manifest.mirrors.map(entry => entry.target), manifest.chrome.module]);
+const manifest = JSON.parse(fs.readFileSync(options.manifest, 'utf8'));
+const generated = new Set([...(manifest.mirrors ?? []).map(entry => entry.target), manifest.chrome?.module]);
+const ownership = manifest.ownership ?? { include: ['apps', 'shared', 'scripts'], exclude: ['apps/admin'] };
+const inDirectory = (file, directory) => file.startsWith(`${directory}/`);
 
 function literalKeys(node) {
   if (!node) return [];
@@ -28,7 +31,7 @@ function literalKeys(node) {
 function applicationCode(file) {
   let code = fs.readFileSync(file, 'utf8');
   const relative = path.relative(root, file).replaceAll('\\', '/');
-  for (const section of manifest.sections.filter(entry => entry.target === relative)) {
+  for (const section of (manifest.sections ?? []).filter(entry => entry.target === relative)) {
     code = code.replace(new RegExp(`// i18n:${section.name}:start[\\s\\S]*?// i18n:${section.name}:end`), '');
   }
   return code;
@@ -69,8 +72,8 @@ function checkFile(file) {
 // Include build tooling and platform JS, plus new files awaiting their first commit.
 const repositoryFiles = execFileSync('git', ['ls-files', '--cached', '--others', '--exclude-standard', '-z'],
   { cwd: root, encoding: 'utf8' }).split('\0').filter(Boolean);
-const candidates = [...new Set(repositoryFiles)].filter(file => /^(apps|shared|scripts)\//.test(file)
-  && !/^(apps\/admin\/)/.test(file)
+const candidates = [...new Set(repositoryFiles)].filter(file => ownership.include.some(dir => inDirectory(file, dir))
+  && !ownership.exclude.some(dir => inDirectory(file, dir))
   && !/(?:^|\/)(?:vendor|fixtures|__tests__|e2e|gen)\/|\.(?:test|spec|pw|generated)\./.test(file)
   && !generated.has(file) && fs.existsSync(path.join(root, file)));
 for (const file of candidates.filter(file => /\.strings$|\/(?:_locales|locales)\/.*\.json$/.test(file))) {

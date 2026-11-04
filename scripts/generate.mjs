@@ -2,7 +2,8 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { messageParams, validateCatalog } from './validation.mjs';
-import { generatePlatformResources } from './platform.mjs';
+import { validatePlatformManifest } from './platform.mjs';
+import { writeGenerated } from './paths.mjs';
 
 const root = fileURLToPath(new URL('..', import.meta.url));
 const check = process.argv.includes('--check');
@@ -53,7 +54,9 @@ function readCatalog(module, language) {
   if (files.length) {
     const imports = files.map((file, index) => `import part${index} from './${file}';`);
     const merge = files.map((_, index) => `...part${index}`).join(', ');
-    generated.set(`${directory}/index.ts`, `${banner}${imports.join('\n')}\nexport default { ${merge} };\n`);
+    const type = files.map((_, index) => `typeof part${index}`).join(' & ');
+    generated.set(`${directory}/index.ts`, `${banner}${imports.join('\n')}\n`
+      + `const messages: ${type} = { ${merge} };\nexport default messages;\n`);
   }
   return { messages, exists: files.length > 0 };
 }
@@ -79,7 +82,9 @@ function generateCatalog(module, policy) {
   }
   const available = locales.filter(id => resources[id].exists);
   const imports = available.map(id => `import ${id} from './${id}';`).join('\n');
-  generated.set(`src/catalogs/${module}/index.ts`, `${banner}${imports}\nexport const resources = { ${available.join(', ')} };\n`);
+  const type = available.map(id => `${id}: typeof ${id}`).join('; ');
+  generated.set(`src/catalogs/${module}/index.ts`, `${banner}${imports}\n`
+    + `export const resources: { ${type} } = { ${available.join(', ')} };\n`);
   return { base, available };
 }
 
@@ -113,9 +118,7 @@ function generateRust() {
   const declaration = 'pub(super) const SUPPORTED_LANGUAGES: &[(&str, u8)] = &';
   const singleLine = `${declaration}[${entries.join(', ')}];`;
   const table = singleLine.length <= 100 ? singleLine : `${declaration}[\n${entries.map(row => `    ${row},`).join('\n')}\n];`;
-  const content = '// Generated from packages/i18n/languages.json. Do not edit.\n'
-    + `${table}\n`;
-  generated.set('../../apps/desktop/src-tauri/src/storage/supported_languages.rs', content);
+  generated.set('platform/generated/supported_languages.rs', `${table}\n`);
 }
 
 validateRegistry();
@@ -132,19 +135,12 @@ for (const [module, policy] of Object.entries(catalogs)) {
 if (errors.length) { console.error(errors.join('\n')); process.exit(1); }
 generateTypes(messages);
 generateRust();
-generatePlatformResources(root, generated);
 generated.set('src/catalogs/loader.ts', `${banner}import type { Messages, ResourceLoader } from '../messages';\n`
   + `const loaders: Record<string, () => Promise<Messages>> = {\n${loaders.join('\n')}\n};\n`
   + 'export const loadResource: ResourceLoader = async (language, module) => loaders[`${module}/${language}`]?.();\n');
 
 if (errors.length) { console.error(errors.join('\n')); process.exit(1); }
-for (const [file, content] of generated) {
-  const absolute = path.join(root, file);
-  const actual = fs.existsSync(absolute) ? fs.readFileSync(absolute, 'utf8').replace(/\r\n/g, '\n') : undefined;
-  if (actual === content) continue;
-  if (check) { errors.push(`Outdated generated file: ${file}`); continue; }
-  fs.mkdirSync(path.dirname(absolute), { recursive: true });
-  fs.writeFileSync(absolute, content);
-}
+writeGenerated(root, generated, check);
+validatePlatformManifest(root, read('platform.json'));
 if (errors.length) { console.error(errors.join('\n')); process.exit(1); }
 console.log(`i18n: verified ${ids.length} languages, ${Object.keys(catalogs).length} modules and ${Object.keys(messages).length} keys`);

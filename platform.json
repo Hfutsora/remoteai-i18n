@@ -123,6 +123,11 @@
     {
       "source": "platform/desktop/src-tauri/src/local_proxy/error_messages/known.rs",
       "target": "apps/desktop/src-tauri/src/local_proxy/error_messages/known.rs"
+    },
+    {
+      "source": "platform/generated/supported_languages.rs",
+      "target": "apps/desktop/src-tauri/src/storage/supported_languages.rs",
+      "notice": "Generated from packages/i18n/languages.json. Do not edit."
     }
   ],
   "sections": [
@@ -159,6 +164,16 @@
       "apps/desktop/src-tauri/resources/chrome-extension/popup.html",
       "apps/desktop/src-tauri/resources/chrome-extension/sidepanel.html",
       "apps/desktop/src-tauri/resources/chrome-extension/approval.html"
+    ]
+  },
+  "ownership": {
+    "include": [
+      "apps",
+      "shared",
+      "scripts"
+    ],
+    "exclude": [
+      "apps/admin"
     ]
   }
 }

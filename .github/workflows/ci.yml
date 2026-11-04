@@ -1,0 +1,82 @@
+name: i18n CI and Release
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+    tags: ['i18n-v*']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: i18n-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  check:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: ubuntu-latest
+            node: 22
+          - os: windows-latest
+            node: 22
+          - os: ubuntu-latest
+            node: 20
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v6
+        with:
+          node-version: ${{ matrix.node }}
+          cache: npm
+      - run: npm ci
+      - run: npm run check
+      - run: npm run pack:release
+      - run: npm run test:package
+      - name: Check release identity
+        shell: bash
+        run: |
+          if [[ "$GITHUB_REF_TYPE" == "tag" ]]; then
+            test "$GITHUB_REF_NAME" = "i18n-v$(node -p "require('./package.json').version")"
+          fi
+          git diff --exit-code
+      - uses: actions/upload-artifact@v4
+        if: matrix.os == 'ubuntu-latest' && matrix.node == 22
+        with:
+          name: i18n-package
+          path: |
+            dist/*.tgz
+            dist/SHA256SUMS
+          if-no-files-found: error
+
+  publish:
+    if: startsWith(github.ref, 'refs/tags/i18n-v')
+    needs: check
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/download-artifact@v4
+        with:
+          name: i18n-package
+          path: release
+      - name: Publish immutable installation package
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd release
+          sha256sum --check SHA256SUMS
+          if gh release view "$GITHUB_REF_NAME" >/dev/null 2>&1; then
+            echo 'This version already has a release; publish changes with a new version.'
+            exit 1
+          fi
+          gh release create "$GITHUB_REF_NAME" --verify-tag --title "@remoteai/i18n ${GITHUB_REF_NAME#i18n-v}" \
+            --notes 'Independent Remote AI translations, typed ESM package and platform integration tools.' \
+            ./*.tgz SHA256SUMS

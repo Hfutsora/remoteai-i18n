@@ -15,4 +15,5 @@ import part12 from './part9.json';
 import part13 from './petDock.json';
 import part14 from './quotaDisplay.json';
 import part15 from './quotaWindowSync.json';
-export default { ...part0, ...part1, ...part2, ...part3, ...part4, ...part5, ...part6, ...part7, ...part8, ...part9, ...part10, ...part11, ...part12, ...part13, ...part14, ...part15 };
+const messages: typeof part0 & typeof part1 & typeof part2 & typeof part3 & typeof part4 & typeof part5 & typeof part6 & typeof part7 & typeof part8 & typeof part9 & typeof part10 & typeof part11 & typeof part12 & typeof part13 & typeof part14 & typeof part15 = { ...part0, ...part1, ...part2, ...part3, ...part4, ...part5, ...part6, ...part7, ...part8, ...part9, ...part10, ...part11, ...part12, ...part13, ...part14, ...part15 };
+export default messages;

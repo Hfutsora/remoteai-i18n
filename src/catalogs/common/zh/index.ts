@@ -2,4 +2,5 @@
 import part0 from './browserAutomation.json';
 import part1 from './messages.json';
 import part2 from './providerMarket.json';
-export default { ...part0, ...part1, ...part2 };
+const messages: typeof part0 & typeof part1 & typeof part2 = { ...part0, ...part1, ...part2 };
+export default messages;

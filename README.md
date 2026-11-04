@@ -1,7 +1,53 @@
 # @remoteai/i18n
 
-Private npm workspace package. Source exports are compiled by each application's Vite, Metro or TypeScript toolchain;
-there is no npm publication or separate build step. The root entry has no React, browser, storage or dictionary imports.
+Independent language package, maintained at https://github.com/piperhex/remoteai-i18n and used as Remote AI's
+`packages/i18n` Git submodule. The root entry has no React, browser, storage or dictionary imports.
+Development checkouts retain source exports for Vite and Metro. Release packages provide compiled ESM and
+TypeScript declarations, with the same public entries and optional React adapter.
+
+## Install a release
+
+```sh
+npm install https://github.com/piperhex/remoteai-i18n/releases/download/i18n-v0.1.0/remoteai-i18n-0.1.0.tgz
+```
+
+GitHub Releases publish the npm-compatible archive and `SHA256SUMS`; no npm registry login is required.
+Pin the exact URL in consumers and keep their lockfiles. Release versions and their assets are immutable.
+The package is not automatically published to npmjs.org.
+
+## Build and release independently
+
+Requires Node.js 20.19 or later. No parent checkout or application files are needed:
+
+```sh
+npm ci
+npm run generate
+npm run check
+npm run pack:release
+npm run test:package
+```
+
+The last command installs the archive in a temporary consumer and tests ESM imports, lazy resources,
+React server rendering, tooling and NodeNext type declarations. Pushes and PRs run this sequence on Linux
+and Windows; tags `i18n-v<package.json version>` publish after all jobs pass. Update the version and lockfile
+before publishing a new tag. Commit and push this repository before updating a parent submodule pointer.
+
+## Application integration
+
+Package checks validate its own resources and tests. Consumers must also validate generated platform files
+and translation ownership. The CLI requires an explicit application root and never guesses a parent directory:
+
+```sh
+npx remoteai-i18n integrate --root /path/to/remoteai
+npx remoteai-i18n integrate --root /path/to/remoteai --check
+npx remoteai-i18n scan --root /path/to/remoteai
+```
+
+The ownership scan requires TypeScript as a development dependency. `platform.json` is the default Remote AI
+mapping. Independent apps can pass `--manifest /path/to/integration.json` with their own `mirrors`, `sections`,
+optional `chrome`, and `ownership: { include: ["src"], exclude: [] }`. Sources remain relative to this package;
+targets remain inside the selected application. Symlinks and directory junctions below either root are rejected.
+The root application's `npm run generate:i18n` and `npm run check:i18n` commands run both halves.
 
 ## Entries
 

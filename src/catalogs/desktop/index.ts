@@ -3,4 +3,4 @@ import zh from './zh';
 import en from './en';
 import ru from './ru';
 import ja from './ja';
-export const resources = { zh, en, ru, ja };
+export const resources: { zh: typeof zh; en: typeof en; ru: typeof ru; ja: typeof ja } = { zh, en, ru, ja };

@@ -24,14 +24,21 @@
   },
   "scripts": {
     "generate": "node scripts/generate.mjs",
-    "check": "node scripts/generate.mjs --check && node scripts/check-usage.mjs && tsc --noEmit && vitest run",
-    "test": "vitest run"
+    "check": "node scripts/generate.mjs --check && tsc --noEmit && vitest run",
+    "test": "vitest run",
+    "build": "node scripts/build.mjs",
+    "pack:release": "node scripts/pack.mjs",
+    "test:package": "node scripts/test-package.mjs"
   },
   "peerDependencies": {
-    "react": "^18.3.1 || ^19.0.0"
+    "react": "^18.3.1 || ^19.0.0",
+    "typescript": ">=5.6 <6"
   },
   "peerDependenciesMeta": {
     "react": {
+      "optional": true
+    },
+    "typescript": {
       "optional": true
     }
   },
@@ -42,6 +49,19 @@
     "react-dom": "^18.3.1",
     "typescript": "~5.6.3",
     "vitest": "^4.1.9",
-    "jsdom": "^26.1.0"
+    "jsdom": "^26.1.0",
+    "@types/node": "^22.20.5",
+    "esbuild": "0.25.12"
+  },
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/piperhex/remoteai-i18n.git"
+  },
+  "engines": {
+    "node": ">=20.19"
+  },
+  "bin": {
+    "remoteai-i18n": "scripts/cli.mjs"
   }
 }
