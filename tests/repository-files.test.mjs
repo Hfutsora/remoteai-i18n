@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import { execFileSync } from 'node:child_process';
+import { fileURLToPath } from 'node:url';
 import { afterEach, expect, it } from 'vitest';
 import { repositoryFiles } from '../scripts/repository-files.mjs';
 
@@ -47,4 +48,19 @@ it('also supports hosts that still track shared sources in the parent', () => {
   fs.mkdirSync(normal);
   fs.writeFileSync(path.join(normal, 'source.ts'), 'export {};');
   expect(repositoryFiles(root, ['normal'])).toContain('normal/source.ts');
+});
+
+it('rejects untranslated UI in a new shared file through the actual ownership scanner', () => {
+  const { root, child } = fixture();
+  const source = path.join(child, 'new.tsx');
+  fs.writeFileSync(source, 'const screen = <button>保存</button>;');
+  const manifest = path.join(root, 'i18n.json');
+  fs.writeFileSync(manifest, JSON.stringify({
+    ownership: { include: ['shared'], exclude: [], submodules: ['shared'] },
+  }));
+  const args = [fileURLToPath(new URL('../scripts/check-usage.mjs', import.meta.url)),
+    '--root', root, '--manifest', manifest];
+  expect(() => execFileSync(process.execPath, args, { stdio: 'pipe' })).toThrow();
+  fs.writeFileSync(source, 'const screen = <button>{t("common.actions.save")}</button>;');
+  expect(() => execFileSync(process.execPath, args, { stdio: 'pipe' })).not.toThrow();
 });
