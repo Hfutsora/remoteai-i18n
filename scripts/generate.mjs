@@ -142,5 +142,8 @@ generated.set('src/catalogs/loader.ts', `${banner}import type { Messages, Resour
 if (errors.length) { console.error(errors.join('\n')); process.exit(1); }
 writeGenerated(root, generated, check);
 validatePlatformManifest(root, read('platform.json'));
+for (const file of fs.readdirSync(path.join(root, 'integrations')).filter(file => file.endsWith('.json'))) {
+  validatePlatformManifest(root, read(`integrations/${file}`));
+}
 if (errors.length) { console.error(errors.join('\n')); process.exit(1); }
 console.log(`i18n: verified ${ids.length} languages, ${Object.keys(catalogs).length} modules and ${Object.keys(messages).length} keys`);

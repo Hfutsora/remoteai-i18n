@@ -1,0 +1,8 @@
+{
+  "mirrors": [],
+  "sections": [],
+  "ownership": {
+    "include": ["src", "scripts"],
+    "exclude": []
+  }
+}

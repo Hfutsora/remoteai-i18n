@@ -8,7 +8,7 @@ TypeScript declarations, with the same public entries and optional React adapter
 ## Install a release
 
 ```sh
-npm install https://github.com/piperhex/remoteai-i18n/releases/download/i18n-v0.1.0/remoteai-i18n-0.1.0.tgz
+npm install https://github.com/piperhex/remoteai-i18n/releases/download/i18n-v0.1.1/remoteai-i18n-0.1.1.tgz
 ```
 
 GitHub Releases publish the npm-compatible archive and `SHA256SUMS`; no npm registry login is required.
@@ -46,10 +46,10 @@ npx remoteai-i18n scan --root /path/to/remoteai
 The ownership scan requires TypeScript as a development dependency. `platform.json` is the default Remote AI
 mapping. Independent apps can pass `--manifest /path/to/integration.json` with their own `mirrors`, `sections`,
 optional `chrome`, and `ownership: { include: ["src"], exclude: [] }`. Sources remain relative to this package;
-targets remain inside the selected application. Symlinks and directory junctions below either root are rejected.
+targets remain inside the selected application. Use `--profile admin` or `--profile admin-ui` for those repositories. Symlinks and directory junctions below either root are rejected.
 The root application's `npm run generate:i18n` and `npm run check:i18n` commands run both halves.
-The independent admin backend and Coze keep their own platform resources and integration checks;
-this package owns the shared client, website and admin UI resources.
+The independent admin backend uses `--profile admin` to generate and verify its Go messages from this
+package. Admin UI uses `--profile admin-ui` to enforce translation ownership. Coze retains its own language package.
 
 ## Entries
 

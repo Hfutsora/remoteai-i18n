@@ -36,7 +36,8 @@ function releaseManifest(entries) {
     return [key, { types: `./types/${relative}.d.ts`, import: `./js/${relative}.js`, default: `./js/${relative}.js` }];
   }));
   const { scripts, devDependencies, private: privatePackage, ...published } = metadata;
-  return { ...published, exports, types: './types/index.d.ts', main: './js/index.js' };
+  return { ...published, bin: { 'remoteai-i18n': 'scripts/cli.mjs' },
+    exports, types: './types/index.d.ts', main: './js/index.js' };
 }
 
 execFileSync(process.execPath, ['scripts/generate.mjs', '--check'], { cwd: root, stdio: 'inherit' });
@@ -44,7 +45,7 @@ execFileSync(process.execPath, ['scripts/generate.mjs', '--check'], { cwd: root,
 const output = inside(root, 'dist/package');
 fs.rmSync(output, { recursive: true, force: true });
 fs.mkdirSync(output, { recursive: true });
-for (const file of ['src', 'platform', 'scripts', 'tooling', 'languages.json', 'catalogs.json', 'platform.json',
+for (const file of ['src', 'platform', 'integrations', 'scripts', 'tooling', 'languages.json', 'catalogs.json', 'platform.json',
   'README.md', 'LICENSE']) {
   fs.cpSync(path.join(root, file), path.join(destination, file), { recursive: true });
 }

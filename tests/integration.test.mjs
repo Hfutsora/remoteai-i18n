@@ -22,6 +22,8 @@ it('requires an explicit host root and rejects escaping paths, including directo
   expect(() => inside(root, '../escape')).toThrow('inside');
   fs.symlinkSync(outside, path.join(root, 'linked'), 'junction');
   expect(() => inside(root, 'linked/file')).toThrow('outside');
+  expect(integrationOptions(['--root', root, '--profile', 'admin']).manifest).toMatch(/integrations[\\/]admin.json$/);
+  expect(() => integrationOptions(['--root', root, '--profile', '../escape'])).toThrow('Invalid integration profile');
 });
 
 it('generates mirrors and embedded sections in the selected consumer while checking drift', () => {

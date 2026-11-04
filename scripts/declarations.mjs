@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { createRequire } from 'node:module';
 import { execFileSync } from 'node:child_process';
+import { inside } from './paths.mjs';
 
 function walk(directory) {
   return fs.readdirSync(directory, { withFileTypes: true }).flatMap(entry => {
@@ -12,7 +13,8 @@ function walk(directory) {
 
 function declarationSources(root) {
   const source = path.join(root, 'src');
-  const staging = path.join(root, 'dist/declaration-source');
+  const staging = inside(root, 'dist/declaration-source');
+  fs.rmSync(staging, { recursive: true, force: true });
   fs.cpSync(source, staging, { recursive: true });
   for (const file of walk(staging)) {
     if (file.endsWith('.json')) {

@@ -31,7 +31,11 @@ export function integrationOptions(args = process.argv.slice(2)) {
   for (let index = 0; index < args.length; index += 1) {
     const flag = args[index];
     if (flag === '--check') options.check = true;
-    else if (['--root', '--manifest'].includes(flag) && args[index + 1]) {
+    else if (flag === '--profile' && args[index + 1]) {
+      const profile = args[++index];
+      if (!/^[a-z][a-z-]*$/.test(profile)) throw new Error('Invalid integration profile.');
+      options.manifest = inside(packageRoot, `integrations/${profile}.json`);
+    } else if (['--root', '--manifest'].includes(flag) && args[index + 1]) {
       options[flag.slice(2)] = path.resolve(args[++index]);
     } else throw new Error(`Unknown or incomplete option: ${flag}`);
   }

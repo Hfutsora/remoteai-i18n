@@ -1,6 +1,6 @@
 {
   "name": "@remoteai/i18n",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "type": "module",
   "sideEffects": false,
@@ -60,8 +60,5 @@
   },
   "engines": {
     "node": ">=20.19"
-  },
-  "bin": {
-    "remoteai-i18n": "scripts/cli.mjs"
   }
 }

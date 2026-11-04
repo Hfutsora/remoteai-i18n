@@ -18,6 +18,13 @@ try {
   { cwd: root, stdio: 'inherit' });
   const installed = JSON.parse(fs.readFileSync(path.join(root, 'node_modules/@remoteai/i18n/package.json'), 'utf8'));
   assert.equal(installed.version, metadata.version);
+  const cli = path.join(root, 'node_modules/@remoteai/i18n', installed.bin['remoteai-i18n']);
+  execFileSync(process.execPath, [cli, 'integrate', '--root', root, '--profile', 'admin'],
+    { cwd: root, stdio: 'inherit' });
+  execFileSync(process.execPath, [cli, 'integrate', '--root', root, '--profile', 'admin', '--check'],
+    { cwd: root, stdio: 'inherit' });
+  assert.ok(fs.readFileSync(path.join(root, 'internal/devices/remote_command_messages.go'), 'utf8')
+    .includes('Generated from @remoteai/i18n/'));
   fs.writeFileSync(path.join(root, 'runtime.mjs'), `
 import assert from 'node:assert/strict';
 import { createI18n } from '@remoteai/i18n';
