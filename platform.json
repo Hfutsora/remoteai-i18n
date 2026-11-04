@@ -163,6 +163,7 @@
     ]
   },
   "ownership": {
+    "submodules": ["shared"],
     "include": [
       "apps",
       "shared",

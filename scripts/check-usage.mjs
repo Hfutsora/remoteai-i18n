@@ -1,8 +1,8 @@
 ﻿import fs from 'node:fs';
 import path from 'node:path';
-import { execFileSync } from 'node:child_process';
 import ts from 'typescript';
 import { integrationOptions } from './paths.mjs';
+import { repositoryFiles } from './repository-files.mjs';
 import {
   keyArguments, mappedKeyViolations, nativeTranslationTables, presentationViolations, translationViolations,
 } from './ownership.mjs';
@@ -70,9 +70,8 @@ function checkFile(file) {
 }
 
 // Include build tooling and platform JS, plus new files awaiting their first commit.
-const repositoryFiles = execFileSync('git', ['ls-files', '--cached', '--others', '--exclude-standard', '-z'],
-  { cwd: root, encoding: 'utf8' }).split('\0').filter(Boolean);
-const candidates = [...new Set(repositoryFiles)].filter(file => ownership.include.some(dir => inDirectory(file, dir))
+const candidates = repositoryFiles(root, ownership.submodules).filter(file =>
+  ownership.include.some(dir => inDirectory(file, dir))
   && !ownership.exclude.some(dir => inDirectory(file, dir))
   && !/(?:^|\/)(?:vendor|fixtures|__tests__|e2e|gen)\/|\.(?:test|spec|pw|generated)\./.test(file)
   && !generated.has(file) && fs.existsSync(path.join(root, file)));
