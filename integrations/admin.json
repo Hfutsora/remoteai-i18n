@@ -1,14 +1,17 @@
 {
   "mirrors": [
     {
-      "source": "platform/admin/remote_command_messages.go",
+      "source": "platform/admin/remote_command_messages.go.txt",
       "target": "internal/devices/remote_command_messages.go",
-      "notice": "Generated from @remoteai/i18n/platform/admin/remote_command_messages.go. Do not edit."
+      "notice": "Generated from @remoteai/i18n/platform/admin/remote_command_messages.go.txt. Do not edit."
     }
   ],
   "sections": [],
   "ownership": {
-    "include": ["internal", "scripts"],
+    "include": [
+      "internal",
+      "scripts"
+    ],
     "exclude": []
   }
 }
