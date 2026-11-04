@@ -48,6 +48,8 @@ mapping. Independent apps can pass `--manifest /path/to/integration.json` with t
 optional `chrome`, and `ownership: { include: ["src"], exclude: [] }`. Sources remain relative to this package;
 targets remain inside the selected application. Symlinks and directory junctions below either root are rejected.
 The root application's `npm run generate:i18n` and `npm run check:i18n` commands run both halves.
+The independent admin backend and Coze keep their own platform resources and integration checks;
+this package owns the shared client, website and admin UI resources.
 
 ## Entries
 
@@ -182,7 +184,7 @@ The ownership scan includes application/shared TypeScript, platform JavaScript a
 tuples, concatenated or nested language branches (including English-only leftovers), raw translated JSX text,
 accessibility labels, translation parameter fragments, mapped Chinese message keys and unregistered permission resources.
 Protocol error matching, user content, theme artwork/provenance metadata and test expectations are not translation
-sources. Frozen `apps/admin` and vendored implementations are excluded. Generated platform outputs can still contain
+sources. Independent application submodules and vendored implementations have their own ownership checks. Generated platform outputs can still contain
 translated text; edit their package sources instead.
 
 Default Rust proxy renderers and canonical client status/error tables are package resources too. Classifiers,
