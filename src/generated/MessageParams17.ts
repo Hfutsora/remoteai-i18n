@@ -18,6 +18,9 @@ export interface MessageParams17 {
   "client.lounge.greeting": Record<string, never>;
   "client.lounge.groupChat": Record<string, never>;
   "client.lounge.groupOfflineHint": Record<string, never>;
+  "client.lounge.groupReadCount": { "count": string | number };
+  "client.lounge.groupReadersEmpty": Record<string, never>;
+  "client.lounge.groupReadersTitle": Record<string, never>;
   "client.lounge.history": Record<string, never>;
   "client.lounge.historyCount": { "count": string | number };
   "client.lounge.historyEmpty": Record<string, never>;
@@ -197,7 +200,4 @@ export interface MessageParams17 {
   "client.mobile.addUpToPhotosPerMessage": { "value1": string | number };
   "client.mobile.addUser": Record<string, never>;
   "client.mobile.aDisabledUserCannotSignIn": Record<string, never>;
-  "client.mobile.adminConsole": Record<string, never>;
-  "client.mobile.adminOnline": Record<string, never>;
-  "client.mobile.afterRevokingEnableUnattendedAccessAgainOnTheComputerTo": Record<string, never>;
 }
