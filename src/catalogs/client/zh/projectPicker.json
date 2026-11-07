@@ -1,3 +1,7 @@
 {
-  "client.projectPicker.workWithoutProject": "不在项目中工作"
+  "client.projectPicker.workWithoutProject": "未归属项目",
+  "client.projectPicker.chooseLocation": "选择项目位置",
+  "client.projectPicker.currentPath": "当前路径",
+  "client.projectPicker.useFolder": "使用此文件夹",
+  "client.projectPicker.documents": "文档"
 }

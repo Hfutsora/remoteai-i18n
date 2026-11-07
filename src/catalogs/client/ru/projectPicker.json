@@ -1,3 +1,7 @@
 {
-  "client.projectPicker.workWithoutProject": "Работать без проекта"
+  "client.projectPicker.workWithoutProject": "Без проекта",
+  "client.projectPicker.chooseLocation": "Выберите расположение проекта",
+  "client.projectPicker.currentPath": "Текущий путь",
+  "client.projectPicker.useFolder": "Использовать эту папку",
+  "client.projectPicker.documents": "Документы"
 }

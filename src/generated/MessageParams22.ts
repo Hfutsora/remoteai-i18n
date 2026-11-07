@@ -102,6 +102,10 @@ export interface MessageParams22 {
   "client.projectExplorer.type": Record<string, never>;
   "client.projectExplorer.up": Record<string, never>;
   "client.projectExplorer.view": Record<string, never>;
+  "client.projectPicker.chooseLocation": Record<string, never>;
+  "client.projectPicker.currentPath": Record<string, never>;
+  "client.projectPicker.documents": Record<string, never>;
+  "client.projectPicker.useFolder": Record<string, never>;
   "client.projectPicker.workWithoutProject": Record<string, never>;
   "client.remoteAssistance.acceptAndConnect": Record<string, never>;
   "client.remoteAssistance.acceptTheInvitationOnAComputerWhereYouAreSigned": Record<string, never>;
@@ -196,8 +200,4 @@ export interface MessageParams22 {
   "client.remoteDesktop.copySomeTextOnTheRemoteComputerFirst": Record<string, never>;
   "client.remoteDesktop.copySomeTextOnThisDeviceFirst": Record<string, never>;
   "client.remoteDesktop.copyToThisDevice": Record<string, never>;
-  "client.remoteDesktop.couldNotCaptureTheMacScreenMakeSureYouAre": Record<string, never>;
-  "client.remoteDesktop.couldNotChangeResolutionTryAnotherResolution": Record<string, never>;
-  "client.remoteDesktop.couldNotResetPermissionRemoveTheOldAppFromPrivacy": Record<string, never>;
-  "client.remoteDesktop.couldNotRestartQuitRemoteAiCompletelyThenOpenIt": Record<string, never>;
 }

@@ -1,3 +1,7 @@
 {
-  "client.projectPicker.workWithoutProject": "プロジェクトを指定せずに作業"
+  "client.projectPicker.workWithoutProject": "プロジェクト未所属",
+  "client.projectPicker.chooseLocation": "プロジェクトの場所を選択",
+  "client.projectPicker.currentPath": "現在のパス",
+  "client.projectPicker.useFolder": "このフォルダーを使用",
+  "client.projectPicker.documents": "ドキュメント"
 }
