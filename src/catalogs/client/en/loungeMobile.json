@@ -31,7 +31,7 @@
   "client.lounge.sendMessage": "Message",
   "client.lounge.deleteChat": "Delete",
   "client.lounge.deleteTitle": "Delete this private chat?",
-  "client.lounge.deleteConfirm": "This removes the person and chat history from this device. To chat again, you must each send one message before continuing the conversation.",
+  "client.lounge.deleteConfirm": "This deletes this private chat’s history from all your devices. The other person’s history stays. Your next chat starts fresh.",
   "client.lounge.deleteFailed": "Couldn't delete the chat. Please try again.",
   "client.lounge.conversationReset": "This chat has been reset. Please send your message again.",
   "client.lounge.editAvatar": "Change avatar",

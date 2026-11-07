@@ -31,7 +31,7 @@
   "client.lounge.sendMessage": "发消息",
   "client.lounge.deleteChat": "删除",
   "client.lounge.deleteTitle": "删除这段私聊？",
-  "client.lounge.deleteConfirm": "将移除该用户和本机聊天记录。再次私聊时，需要双方各发一条消息才能继续聊天。",
+  "client.lounge.deleteConfirm": "将删除你所有设备上的这段私聊记录，对方的记录会保留。再次私聊时将开始新的聊天。",
   "client.lounge.deleteFailed": "删除失败，请稍后重试。",
   "client.lounge.conversationReset": "聊天已重置，请重新发送。",
   "client.lounge.editAvatar": "修改头像",
