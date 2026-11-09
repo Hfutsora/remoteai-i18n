@@ -1,0 +1,12 @@
+{
+  "client.filePreview.pdfNavigation": "PDF navigation",
+  "client.filePreview.pdfZoomIn": "Zoom in",
+  "client.filePreview.pdfZoomOut": "Zoom out",
+  "client.filePreview.pdfThumbnails": "Page thumbnails",
+  "client.filePreview.pdfOutline": "Outline",
+  "client.filePreview.pdfNoOutline": "This PDF has no outline.",
+  "client.filePreview.pdfOutlineUnavailable": "The outline could not be loaded.",
+  "client.filePreview.pdfPage": "Page {page}",
+  "client.filePreview.pdfPageNumber": "Page number",
+  "client.filePreview.pdfDocumentPage": "{name}, page {page}"
+}

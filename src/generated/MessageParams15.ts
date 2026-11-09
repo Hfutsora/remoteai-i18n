@@ -39,7 +39,17 @@ export interface MessageParams15 {
   "client.filePreview.jsonLines": { "count": string | number };
   "client.filePreview.jsonPlainText": { "limit": string | number };
   "client.filePreview.openInBuiltInBrowser": Record<string, never>;
+  "client.filePreview.pdfDocumentPage": { "name": string | number; "page": string | number };
+  "client.filePreview.pdfNavigation": Record<string, never>;
+  "client.filePreview.pdfNoOutline": Record<string, never>;
+  "client.filePreview.pdfOutline": Record<string, never>;
+  "client.filePreview.pdfOutlineUnavailable": Record<string, never>;
+  "client.filePreview.pdfPage": { "page": string | number };
+  "client.filePreview.pdfPageNumber": Record<string, never>;
+  "client.filePreview.pdfThumbnails": Record<string, never>;
   "client.filePreview.pdfUnavailable": Record<string, never>;
+  "client.filePreview.pdfZoomIn": Record<string, never>;
+  "client.filePreview.pdfZoomOut": Record<string, never>;
   "client.filePreview.someHtmlAssetsUnavailable": Record<string, never>;
   "client.filePreview.tooLarge": Record<string, never>;
   "client.filePreview.unavailable": Record<string, never>;
@@ -190,14 +200,4 @@ export interface MessageParams15 {
   "client.git.unableToLoadGitPleaseTryAgain": Record<string, never>;
   "client.git.unableToRunGitCheckThatGitIsInstalled": Record<string, never>;
   "client.git.unstaged": Record<string, never>;
-  "client.git.untracked": Record<string, never>;
-  "client.git.updateIncompleteCheckForConflictsOrAnUnfinishedMergeOr": Record<string, never>;
-  "client.git.updateMethod": Record<string, never>;
-  "client.git.updateProject": Record<string, never>;
-  "client.git.usedByAnotherWorktree": Record<string, never>;
-  "client.git.view": { "path": string | number };
-  "client.git.writeACommitMessage": Record<string, never>;
-  "client.gitActivity.filesBusy": { "details": string | number };
-  "client.gitActivity.operationBusy": Record<string, never>;
-  "client.gitActivity.preparing": Record<string, never>;
 }

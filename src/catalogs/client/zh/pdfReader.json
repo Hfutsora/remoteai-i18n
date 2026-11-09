@@ -1,0 +1,12 @@
+{
+  "client.filePreview.pdfNavigation": "PDF 导航",
+  "client.filePreview.pdfZoomIn": "放大",
+  "client.filePreview.pdfZoomOut": "缩小",
+  "client.filePreview.pdfThumbnails": "页面缩略图",
+  "client.filePreview.pdfOutline": "目录大纲",
+  "client.filePreview.pdfNoOutline": "此 PDF 没有目录大纲。",
+  "client.filePreview.pdfOutlineUnavailable": "暂时无法读取目录大纲。",
+  "client.filePreview.pdfPage": "第 {page} 页",
+  "client.filePreview.pdfPageNumber": "页码",
+  "client.filePreview.pdfDocumentPage": "{name}，第 {page} 页"
+}

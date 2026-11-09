@@ -1,0 +1,12 @@
+{
+  "client.filePreview.pdfNavigation": "PDF ナビゲーション",
+  "client.filePreview.pdfZoomIn": "拡大",
+  "client.filePreview.pdfZoomOut": "縮小",
+  "client.filePreview.pdfThumbnails": "ページ一覧",
+  "client.filePreview.pdfOutline": "目次",
+  "client.filePreview.pdfNoOutline": "この PDF には目次がありません。",
+  "client.filePreview.pdfOutlineUnavailable": "目次を読み込めませんでした。",
+  "client.filePreview.pdfPage": "{page} ページ",
+  "client.filePreview.pdfPageNumber": "ページ番号",
+  "client.filePreview.pdfDocumentPage": "{name}、{page} ページ"
+}

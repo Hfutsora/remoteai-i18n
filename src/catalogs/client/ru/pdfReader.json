@@ -1,0 +1,12 @@
+{
+  "client.filePreview.pdfNavigation": "Навигация по PDF",
+  "client.filePreview.pdfZoomIn": "Увеличить",
+  "client.filePreview.pdfZoomOut": "Уменьшить",
+  "client.filePreview.pdfThumbnails": "Миниатюры страниц",
+  "client.filePreview.pdfOutline": "Оглавление",
+  "client.filePreview.pdfNoOutline": "В этом PDF нет оглавления.",
+  "client.filePreview.pdfOutlineUnavailable": "Не удалось загрузить оглавление.",
+  "client.filePreview.pdfPage": "Страница {page}",
+  "client.filePreview.pdfPageNumber": "Номер страницы",
+  "client.filePreview.pdfDocumentPage": "{name}, страница {page}"
+}

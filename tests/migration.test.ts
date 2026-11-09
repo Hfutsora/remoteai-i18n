@@ -27,6 +27,7 @@ import projectEditorWindow from '../src/catalogs/client/zh/projectEditorWindow.j
 import conversationWorkspace from '../src/catalogs/client/zh/conversationWorkspace.json';
 import accountAlias from '../src/catalogs/client/zh/accountAlias.json';
 import filePreview from '../src/catalogs/client/zh/filePreview.json';
+import pdfReader from '../src/catalogs/client/zh/pdfReader.json';
 import projectActions from '../src/catalogs/client/zh/projectActions.json';
 import groups from '../src/catalogs/client/zh/groups.json';
 import projectExplorer from '../src/catalogs/client/zh/projectExplorer.json';
@@ -79,6 +80,7 @@ const additions = new Set(['client.chat.usePlugin',
   ...Object.keys(conversationWorkspace),
   ...Object.keys(accountAlias),
   ...Object.keys(filePreview),
+  ...Object.keys(pdfReader),
   ...Object.keys(projectActions),
   ...Object.keys(groups),
   ...Object.keys(projectExplorer),
