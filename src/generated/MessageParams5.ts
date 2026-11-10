@@ -181,6 +181,7 @@ export interface MessageParams5 {
   "client.chatSettings.quotaRemaining": Record<string, never>;
   "client.chatSettings.speed": Record<string, never>;
   "client.chatSettings.ultrafast": Record<string, never>;
+  "client.cliGui.accountUnavailable": Record<string, never>;
   "client.cliGui.allow": Record<string, never>;
   "client.cliGui.approval": Record<string, never>;
   "client.cliGui.approvalExpired": Record<string, never>;
@@ -199,5 +200,4 @@ export interface MessageParams5 {
   "client.cliGui.gemini": Record<string, never>;
   "client.cliGui.historyFailed": Record<string, never>;
   "client.cliGui.install": Record<string, never>;
-  "client.cliGui.installFailed": Record<string, never>;
 }
