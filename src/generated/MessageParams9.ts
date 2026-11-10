@@ -63,6 +63,8 @@ export interface MessageParams9 {
   "client.conversation.webPage": Record<string, never>;
   "client.conversation.worktree": Record<string, never>;
   "client.conversation.youCanUpdateWhenTheCurrentTaskFinishes": Record<string, never>;
+  "client.conversationSync.archiveSize": Record<string, never>;
+  "client.conversationSync.background": Record<string, never>;
   "client.conversationSync.cancel": Record<string, never>;
   "client.conversationSync.changed": Record<string, never>;
   "client.conversationSync.completed": { "count": string | number; "skipped": string | number };
@@ -74,6 +76,9 @@ export interface MessageParams9 {
   "client.conversationSync.duplicates": { "count": string | number };
   "client.conversationSync.empty": Record<string, never>;
   "client.conversationSync.failed": Record<string, never>;
+  "client.conversationSync.imported": Record<string, never>;
+  "client.conversationSync.importing": Record<string, never>;
+  "client.conversationSync.inDownloads": Record<string, never>;
   "client.conversationSync.kind": Record<string, never>;
   "client.conversationSync.kind.all": Record<string, never>;
   "client.conversationSync.kind.conversation": Record<string, never>;
@@ -90,6 +95,7 @@ export interface MessageParams9 {
   "client.conversationSync.speed": Record<string, never>;
   "client.conversationSync.start": Record<string, never>;
   "client.conversationSync.titleColumn": Record<string, never>;
+  "client.conversationSync.totalSize": Record<string, never>;
   "client.conversationSync.unavailable": { "names": string | number };
   "client.conversationSync.untitled": Record<string, never>;
   "client.conversationSync.updated": Record<string, never>;
@@ -194,10 +200,4 @@ export interface MessageParams9 {
   "client.desktopComposerExtras.eachMessageCanReferenceUpTo8Conversations": Record<string, never>;
   "client.desktopComposerExtras.image": { "value1": string | number };
   "client.desktopComposerExtras.loadingCozeContent": Record<string, never>;
-  "client.desktopComposerExtras.noMatchingPublishedContentPublishItInCozeFirst": Record<string, never>;
-  "client.desktopComposerExtras.openCozeFromTheSidebarFirstThenPublishTheContent": Record<string, never>;
-  "client.desktopComposerExtras.publishedInCoze": Record<string, never>;
-  "client.desktopComposerExtras.thisQuoteIsTooLongSelectAShorterPassage": Record<string, never>;
-  "client.desktopGuiErrors.couldNotConfirmWhetherTheLastMessageWasSentCheck": Record<string, never>;
-  "client.desktopGuiErrors.couldNotLoadScheduledTasksTryAgainLater": Record<string, never>;
 }

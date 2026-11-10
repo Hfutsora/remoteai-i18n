@@ -1,4 +1,10 @@
 {
+  "client.conversationSync.totalSize": "Total conversation size",
+  "client.conversationSync.archiveSize": "Compressed size",
+  "client.conversationSync.background": "Continue in background",
+  "client.conversationSync.inDownloads": "Added to Downloads. You can pause or resume at any time. Conversations will be imported automatically when the download finishes.",
+  "client.conversationSync.importing": "Verifying and importing conversations…",
+  "client.conversationSync.imported": "Imported",
   "client.workspaceSettings.conversationSync": "Conversation sync",
   "client.conversationSync.connection": "Connection",
   "client.conversationSync.speed": "Transfer speed",

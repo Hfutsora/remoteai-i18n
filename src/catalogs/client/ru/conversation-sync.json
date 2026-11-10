@@ -1,4 +1,10 @@
 {
+  "client.conversationSync.totalSize": "Общий размер диалогов",
+  "client.conversationSync.archiveSize": "Размер после сжатия",
+  "client.conversationSync.background": "Продолжить в фоне",
+  "client.conversationSync.inDownloads": "Добавлено в загрузки. Можно приостановить и продолжить в любое время. После загрузки диалоги будут импортированы автоматически.",
+  "client.conversationSync.importing": "Проверка и импорт диалогов…",
+  "client.conversationSync.imported": "Импортировано",
   "client.workspaceSettings.conversationSync": "Синхронизация чатов",
   "client.conversationSync.connection": "Подключение",
   "client.conversationSync.speed": "Скорость передачи",

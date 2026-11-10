@@ -1,4 +1,10 @@
 {
+  "client.conversationSync.totalSize": "会話の合計サイズ",
+  "client.conversationSync.archiveSize": "圧縮後のサイズ",
+  "client.conversationSync.background": "バックグラウンドで続行",
+  "client.conversationSync.inDownloads": "ダウンロード管理に追加しました。いつでも一時停止・再開できます。完了後、会話を自動的にインポートします。",
+  "client.conversationSync.importing": "会話を検証してインポート中…",
+  "client.conversationSync.imported": "インポート済み",
   "client.workspaceSettings.conversationSync": "会話の同期",
   "client.conversationSync.connection": "接続方式",
   "client.conversationSync.speed": "転送速度",
