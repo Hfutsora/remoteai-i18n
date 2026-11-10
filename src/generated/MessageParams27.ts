@@ -84,6 +84,14 @@ export interface MessageParams27 {
   "client.ssh.zmodemReceiveTooLarge": Record<string, never>;
   "client.ssh.zmodemSelect": Record<string, never>;
   "client.ssh.zmodemSendTooLarge": Record<string, never>;
+  "client.taskRecovery.changed": Record<string, never>;
+  "client.taskRecovery.description": Record<string, never>;
+  "client.taskRecovery.dismiss": Record<string, never>;
+  "client.taskRecovery.failed": Record<string, never>;
+  "client.taskRecovery.openThread": Record<string, never>;
+  "client.taskRecovery.resume": Record<string, never>;
+  "client.taskRecovery.title": { "count": string | number };
+  "client.taskRecovery.unavailable": Record<string, never>;
   "client.taskReview.aProjectCheckIsAlreadyRunningWaitForItTo": Record<string, never>;
   "client.taskReview.baseBranchLeaveBlankForDefault": Record<string, never>;
   "client.taskReview.changedFiles": { "value1": string | number };
@@ -192,12 +200,4 @@ export interface MessageParams27 {
   "client.usage.dailyTokenUsageByCategoryUseTheLegendToToggle": Record<string, never>;
   "client.usage.darkerColorsIndicateHigherDailyTokenUsageTheDarkestShade": Record<string, never>;
   "client.usage.days": { "value1": string | number };
-  "client.usage.dragTheSliderBelowToViewOtherPeriodsOrZoom": Record<string, never>;
-  "client.usage.hours": { "value1": string | number };
-  "client.usage.lastWeeks": { "value1": string | number };
-  "client.usage.loadingQuotaHistory": Record<string, never>;
-  "client.usage.lowQuota": Record<string, never>;
-  "client.usage.noOfficialAccountsYet": Record<string, never>;
-  "client.usage.noQuotaChangesToDisplay": Record<string, never>;
-  "client.usage.notRefreshedYet": Record<string, never>;
 }

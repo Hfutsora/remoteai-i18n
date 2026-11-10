@@ -1,0 +1,10 @@
+{
+  "client.taskRecovery.title": "恢复 {count} 个任务？",
+  "client.taskRecovery.description": "上次关闭时，这些任务仍在进行。",
+  "client.taskRecovery.resume": "全部恢复",
+  "client.taskRecovery.dismiss": "保持暂停",
+  "client.taskRecovery.failed": "部分任务的恢复结果未能确认，请打开会话查看。",
+  "client.taskRecovery.unavailable": "暂时无法检查待恢复任务，请稍后重新连接。",
+  "client.taskRecovery.changed": "任务状态已变化，请打开会话查看。",
+  "client.taskRecovery.openThread": "查看会话"
+}

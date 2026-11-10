@@ -1,0 +1,10 @@
+{
+  "client.taskRecovery.title": "Возобновить задачи ({count})?",
+  "client.taskRecovery.description": "Эти задачи выполнялись при закрытии приложения.",
+  "client.taskRecovery.resume": "Возобновить все",
+  "client.taskRecovery.dismiss": "Оставить на паузе",
+  "client.taskRecovery.failed": "Не удалось подтвердить возобновление некоторых задач. Откройте их чаты для проверки.",
+  "client.taskRecovery.unavailable": "Не удалось проверить прерванные задачи. Подключитесь повторно позже.",
+  "client.taskRecovery.changed": "Состояние задачи изменилось. Откройте её чат для проверки.",
+  "client.taskRecovery.openThread": "Открыть чат"
+}
