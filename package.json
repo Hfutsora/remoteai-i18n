@@ -1,6 +1,6 @@
 {
   "name": "@remoteai/i18n",
-  "version": "0.1.13-recovery.1",
+  "version": "0.1.11",
   "private": true,
   "type": "module",
   "sideEffects": false,
