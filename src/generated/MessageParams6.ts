@@ -10,6 +10,11 @@ export interface MessageParams6 {
   "client.cliGui.nodeRequired": Record<string, never>;
   "client.cliGui.officialInstall": { "cli": string | number };
   "client.cliGui.older": Record<string, never>;
+  "client.cliGui.permissionMode.acceptEdits": Record<string, never>;
+  "client.cliGui.permissionMode.ask": Record<string, never>;
+  "client.cliGui.permissionMode.auto": Record<string, never>;
+  "client.cliGui.permissionMode.bypass": Record<string, never>;
+  "client.cliGui.permissionMode.plan": Record<string, never>;
   "client.cliGui.reasoning": Record<string, never>;
   "client.cliGui.refresh": Record<string, never>;
   "client.cliGui.requestFailed": Record<string, never>;
@@ -195,9 +200,4 @@ export interface MessageParams6 {
   "client.computerUseAdmin.inactive": Record<string, never>;
   "client.computerUseAdmin.inherited": Record<string, never>;
   "client.computerUseAdmin.retry": Record<string, never>;
-  "client.computerUseAdmin.revoke": Record<string, never>;
-  "client.computerUseAdmin.title": Record<string, never>;
-  "client.configEditor.addItem": Record<string, never>;
-  "client.configEditor.addSetting": Record<string, never>;
-  "client.configEditor.addSettingsSupportedByOtherVersions": Record<string, never>;
 }
