@@ -5,6 +5,7 @@ import remoteCommand from '../src/catalogs/client/zh/remoteCommand.json';
 import computerUseAdmin from '../src/catalogs/client/zh/computerUseAdmin.json';
 import toolResults from '../src/catalogs/client/zh/toolResults.json';
 import { createHash } from 'node:crypto';
+import taskRecovery from '../src/catalogs/client/zh/taskRecovery.json';
 import { expect, it } from 'vitest';
 import { resources as client } from '../src/catalogs/client';
 import { createI18n } from '../src/engine';
@@ -60,6 +61,7 @@ const baselines = {
 // New complete templates added after migration are covered by the catalog completeness checks.
 const additions = new Set(['client.chat.usePlugin',
   ...Object.keys(officialAccounts),
+  ...Object.keys(taskRecovery),
   ...Object.keys(cliGui),
   ...Object.keys(conversationSync),
   ...Object.keys(remoteCommand),

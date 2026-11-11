@@ -185,6 +185,14 @@ export interface MessageParams27 {
   "client.ssh.zmodemReceiveTooLarge": Record<string, never>;
   "client.ssh.zmodemSelect": Record<string, never>;
   "client.ssh.zmodemSendTooLarge": Record<string, never>;
+  "client.taskRecovery.changed": Record<string, never>;
+  "client.taskRecovery.description": Record<string, never>;
+  "client.taskRecovery.dismiss": Record<string, never>;
+  "client.taskRecovery.failed": Record<string, never>;
+  "client.taskRecovery.openThread": Record<string, never>;
+  "client.taskRecovery.resume": Record<string, never>;
+  "client.taskRecovery.title": { "count": string | number };
+  "client.taskRecovery.unavailable": Record<string, never>;
   "client.taskReview.aProjectCheckIsAlreadyRunningWaitForItTo": Record<string, never>;
   "client.taskReview.baseBranchLeaveBlankForDefault": Record<string, never>;
   "client.taskReview.changedFiles": { "value1": string | number };
@@ -192,12 +200,4 @@ export interface MessageParams27 {
   "client.taskReview.checksRunAgainstTheCurrentProjectClaimsInChatDo": Record<string, never>;
   "client.taskReview.ciRefersToADifferentCodeVersionCommitAndPush": Record<string, never>;
   "client.taskReview.codeVersion": Record<string, never>;
-  "client.taskReview.comment": Record<string, never>;
-  "client.taskReview.commentOnLine": { "value1": string | number };
-  "client.taskReview.commitAndPushYourChangesFromGitBeforeCreatingA": Record<string, never>;
-  "client.taskReview.confirmCheck": Record<string, never>;
-  "client.taskReview.confirmDraftPr": Record<string, never>;
-  "client.taskReview.confirmRestore": Record<string, never>;
-  "client.taskReview.connectToYourComputerToRunChecksSendFeedbackOr": Record<string, never>;
-  "client.taskReview.couldNotOpenTheLinkTryAgain": Record<string, never>;
 }

@@ -1,0 +1,10 @@
+{
+  "client.taskRecovery.title": "{count} 件のタスクを再開しますか？",
+  "client.taskRecovery.description": "前回アプリを閉じたとき、これらのタスクは実行中でした。",
+  "client.taskRecovery.resume": "すべて再開",
+  "client.taskRecovery.dismiss": "一時停止を維持",
+  "client.taskRecovery.failed": "一部のタスクの再開を確認できませんでした。チャットを開いてご確認ください。",
+  "client.taskRecovery.unavailable": "中断されたタスクを確認できませんでした。後でもう一度接続してください。",
+  "client.taskRecovery.changed": "タスクの状態が変わりました。チャットを開いてご確認ください。",
+  "client.taskRecovery.openThread": "チャットを表示"
+}

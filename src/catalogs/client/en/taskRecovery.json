@@ -1,0 +1,10 @@
+{
+  "client.taskRecovery.title": "Resume tasks ({count})?",
+  "client.taskRecovery.description": "These tasks were running when the app closed.",
+  "client.taskRecovery.resume": "Resume all",
+  "client.taskRecovery.dismiss": "Keep paused",
+  "client.taskRecovery.failed": "Some tasks could not be confirmed as resumed. Open their chats to check.",
+  "client.taskRecovery.unavailable": "Could not check for interrupted tasks. Please reconnect later.",
+  "client.taskRecovery.changed": "The task has changed. Open its chat to check.",
+  "client.taskRecovery.openThread": "View chat"
+}
