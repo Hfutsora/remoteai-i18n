@@ -1,4 +1,5 @@
 import loungeAttachments from '../src/catalogs/client/zh/loungeAttachments.json';
+import officialAccounts from '../src/catalogs/client/zh/officialAccounts.json';
 import cliGui from '../src/catalogs/client/zh/cliGui.json';
 import remoteCommand from '../src/catalogs/client/zh/remoteCommand.json';
 import computerUseAdmin from '../src/catalogs/client/zh/computerUseAdmin.json';
@@ -58,6 +59,7 @@ const baselines = {
 
 // New complete templates added after migration are covered by the catalog completeness checks.
 const additions = new Set(['client.chat.usePlugin',
+  ...Object.keys(officialAccounts),
   ...Object.keys(cliGui),
   ...Object.keys(conversationSync),
   ...Object.keys(remoteCommand),
