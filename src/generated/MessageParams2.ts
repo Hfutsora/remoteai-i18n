@@ -3,6 +3,8 @@ export interface MessageParams2 {
   "client.accountUsage.usageCouldNotBeRefreshedForAccountsTryAgainLater": { "count": string | number };
   "client.accountUsage.usageForThisAccountIsBeingProcessedPleaseWait": Record<string, never>;
   "client.accountUsage.willAskEachSelectedAccountHowIsTheWeatherToday": { "device": string | number };
+  "client.agentHub.title": Record<string, never>;
+  "client.agentHub.workspace": { "device": string | number };
   "client.aggregateRouting.balanceConversations": Record<string, never>;
   "client.aggregateRouting.chooseAModelForThisService": Record<string, never>;
   "client.aggregateRouting.chooseServicesFromTopToBottomExistingConversationsKeepTheir": Record<string, never>;
@@ -198,6 +200,4 @@ export interface MessageParams2 {
   "client.app.theServerAddressMustUseHttpOrHttps": Record<string, never>;
   "client.app.theServerReturnedInvalidSignInDetails": Record<string, never>;
   "client.app.thirdPartyProvider": Record<string, never>;
-  "client.app.tryAnotherServiceOrAccountOrClearTheSearchTo": Record<string, never>;
-  "client.app.unknownPlatform": Record<string, never>;
 }

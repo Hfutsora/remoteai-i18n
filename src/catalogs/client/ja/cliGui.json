@@ -1,4 +1,6 @@
 {
+  "client.agentHub.title": "Agent Hub",
+  "client.agentHub.workspace": "Agent Hub ? {device}",
   "client.cliGui.codex": "Codex GUI",
   "client.cliGui.officialInstall": "{cli} の公式インストールガイド",
   "client.cliGui.claude": "Claude GUI",

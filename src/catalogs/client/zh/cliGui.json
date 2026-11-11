@@ -1,4 +1,6 @@
 {
+  "client.agentHub.title": "Agent Hub",
+  "client.agentHub.workspace": "Agent Hub ? {device}",
   "client.cliGui.codex": "Codex GUI",
   "client.cliGui.claude": "Claude GUI",
   "client.cliGui.gemini": "Gemini GUI",
