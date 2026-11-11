@@ -41,5 +41,15 @@
   "client.officialAccounts.noDevice": "请先连接一台运行 RemoteAI 的电脑。",
   "client.officialAccounts.deactivate": "取消默认账户",
   "client.officialAccounts.deactivated": "已取消 Claude Code 的默认账户选择。",
-  "client.officialAccounts.manage": "管理 Claude Code 账户"
+  "client.officialAccounts.manage": "管理 Claude Code 账户",
+  "client.officialAccounts.browserModeTitle": "选择浏览器模式",
+  "client.officialAccounts.browserModeHint": "选择普通窗口或无痕窗口来完成授权。",
+  "client.officialAccounts.browserNormal": "普通窗口",
+  "client.officialAccounts.browserPrivate": "无痕窗口",
+  "client.officialAccounts.privateBrowserManual": "请手动打开浏览器的无痕窗口，并粘贴授权链接来完成授权。",
+  "client.officialAccounts.authorizationLink": "授权链接",
+  "client.officialAccounts.copyLink": "复制授权链接",
+  "client.officialAccounts.linkCopied": "已复制链接",
+  "client.officialAccounts.copyLinkFailed": "复制失败，请选中链接后手动复制。",
+  "client.officialAccounts.openBrowserFailed": "未能打开浏览器，请重试。"
 }

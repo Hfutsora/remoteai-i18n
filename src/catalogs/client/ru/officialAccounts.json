@@ -41,5 +41,15 @@
   "client.officialAccounts.noDevice": "Сначала подключитесь к компьютеру с запущенным RemoteAI.",
   "client.officialAccounts.deactivate": "Снять выбор по умолчанию",
   "client.officialAccounts.deactivated": "Выбор аккаунта Claude Code по умолчанию сброшен.",
-  "client.officialAccounts.manage": "Управление аккаунтами Claude Code"
+  "client.officialAccounts.manage": "Управление аккаунтами Claude Code",
+  "client.officialAccounts.browserModeTitle": "Выберите режим браузера",
+  "client.officialAccounts.browserModeHint": "Пройдите авторизацию в обычном или приватном окне браузера.",
+  "client.officialAccounts.browserNormal": "Обычное окно",
+  "client.officialAccounts.browserPrivate": "Приватное окно",
+  "client.officialAccounts.privateBrowserManual": "Откройте приватное окно браузера и вставьте ссылку авторизации, чтобы продолжить.",
+  "client.officialAccounts.authorizationLink": "Ссылка авторизации",
+  "client.officialAccounts.copyLink": "Скопировать ссылку авторизации",
+  "client.officialAccounts.linkCopied": "Ссылка скопирована",
+  "client.officialAccounts.copyLinkFailed": "Не удалось скопировать ссылку. Выделите и скопируйте её вручную.",
+  "client.officialAccounts.openBrowserFailed": "Не удалось открыть браузер. Попробуйте ещё раз."
 }

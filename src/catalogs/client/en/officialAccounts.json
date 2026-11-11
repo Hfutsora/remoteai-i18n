@@ -41,5 +41,15 @@
   "client.officialAccounts.noDevice": "Connect to a computer running RemoteAI first.",
   "client.officialAccounts.deactivate": "Clear default",
   "client.officialAccounts.deactivated": "Default Claude Code account selection cleared.",
-  "client.officialAccounts.manage": "Manage Claude Code accounts"
+  "client.officialAccounts.manage": "Manage Claude Code accounts",
+  "client.officialAccounts.browserModeTitle": "Choose a browser mode",
+  "client.officialAccounts.browserModeHint": "Authorize in a regular or private browser window.",
+  "client.officialAccounts.browserNormal": "Regular window",
+  "client.officialAccounts.browserPrivate": "Private window",
+  "client.officialAccounts.privateBrowserManual": "Open a private browser window and paste the authorization link to continue.",
+  "client.officialAccounts.authorizationLink": "Authorization link",
+  "client.officialAccounts.copyLink": "Copy authorization link",
+  "client.officialAccounts.linkCopied": "Link copied",
+  "client.officialAccounts.copyLinkFailed": "Couldn't copy the link. Select it and copy it manually.",
+  "client.officialAccounts.openBrowserFailed": "Couldn't open the browser. Please try again."
 }

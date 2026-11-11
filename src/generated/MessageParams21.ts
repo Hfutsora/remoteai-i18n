@@ -109,8 +109,13 @@ export interface MessageParams21 {
   "client.npmScripts.invalid": Record<string, never>;
   "client.npmScripts.run": { "name": string | number };
   "client.npmScripts.stop": { "name": string | number };
+  "client.officialAccounts.authorizationLink": Record<string, never>;
   "client.officialAccounts.authOverride": Record<string, never>;
   "client.officialAccounts.back": Record<string, never>;
+  "client.officialAccounts.browserModeHint": Record<string, never>;
+  "client.officialAccounts.browserModeTitle": Record<string, never>;
+  "client.officialAccounts.browserNormal": Record<string, never>;
+  "client.officialAccounts.browserPrivate": Record<string, never>;
   "client.officialAccounts.busy": Record<string, never>;
   "client.officialAccounts.cancel": Record<string, never>;
   "client.officialAccounts.cliHint": Record<string, never>;
@@ -119,6 +124,8 @@ export interface MessageParams21 {
   "client.officialAccounts.code": Record<string, never>;
   "client.officialAccounts.compatibility": Record<string, never>;
   "client.officialAccounts.connect": Record<string, never>;
+  "client.officialAccounts.copyLink": Record<string, never>;
+  "client.officialAccounts.copyLinkFailed": Record<string, never>;
   "client.officialAccounts.credentialsChanged": Record<string, never>;
   "client.officialAccounts.current": Record<string, never>;
   "client.officialAccounts.deactivate": Record<string, never>;
@@ -128,14 +135,17 @@ export interface MessageParams21 {
   "client.officialAccounts.importHint": Record<string, never>;
   "client.officialAccounts.invalidRequest": Record<string, never>;
   "client.officialAccounts.keychainFailed": Record<string, never>;
+  "client.officialAccounts.linkCopied": Record<string, never>;
   "client.officialAccounts.loginExpired": Record<string, never>;
   "client.officialAccounts.loginFailed": Record<string, never>;
   "client.officialAccounts.manage": Record<string, never>;
   "client.officialAccounts.networkFailed": Record<string, never>;
   "client.officialAccounts.noDevice": Record<string, never>;
   "client.officialAccounts.openBrowser": Record<string, never>;
+  "client.officialAccounts.openBrowserFailed": Record<string, never>;
   "client.officialAccounts.pkceHint": Record<string, never>;
   "client.officialAccounts.pkceLogin": Record<string, never>;
+  "client.officialAccounts.privateBrowserManual": Record<string, never>;
   "client.officialAccounts.reauthorize": Record<string, never>;
   "client.officialAccounts.refresh": Record<string, never>;
   "client.officialAccounts.remove": Record<string, never>;
@@ -190,14 +200,4 @@ export interface MessageParams21 {
   "client.portForwarding.remotePort": Record<string, never>;
   "client.portForwarding.removeMapping": Record<string, never>;
   "client.portForwarding.returnToTheAppAndStartTheMappingAgain": Record<string, never>;
-  "client.portForwarding.sameAsRemote": Record<string, never>;
-  "client.portForwarding.somePageContentCouldNotLoadCheckThatTheService": Record<string, never>;
-  "client.portForwarding.somePageResourcesCouldNotLoadCheckTheServiceAnd": Record<string, never>;
-  "client.portForwarding.start": Record<string, never>;
-  "client.portForwarding.starting": Record<string, never>;
-  "client.portForwarding.startMapping": Record<string, never>;
-  "client.portForwarding.stopMapping": Record<string, never>;
-  "client.portForwarding.stopping": Record<string, never>;
-  "client.portForwarding.switchingAppsMayInterruptTheMappingPreviewHereForA": Record<string, never>;
-  "client.portForwarding.targetIp": Record<string, never>;
 }

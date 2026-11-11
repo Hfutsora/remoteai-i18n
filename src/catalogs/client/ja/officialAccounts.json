@@ -41,5 +41,15 @@
   "client.officialAccounts.noDevice": "RemoteAI を実行中のコンピューターに接続してください。",
   "client.officialAccounts.deactivate": "既定を解除",
   "client.officialAccounts.deactivated": "Claude Code の既定アカウント選択を解除しました。",
-  "client.officialAccounts.manage": "Claude Code アカウントを管理"
+  "client.officialAccounts.manage": "Claude Code アカウントを管理",
+  "client.officialAccounts.browserModeTitle": "ブラウザーのモードを選択",
+  "client.officialAccounts.browserModeHint": "通常またはプライベートウィンドウで認証を行います。",
+  "client.officialAccounts.browserNormal": "通常ウィンドウ",
+  "client.officialAccounts.browserPrivate": "プライベートウィンドウ",
+  "client.officialAccounts.privateBrowserManual": "ブラウザーのプライベートウィンドウを開き、認証リンクを貼り付けて続行してください。",
+  "client.officialAccounts.authorizationLink": "認証リンク",
+  "client.officialAccounts.copyLink": "認証リンクをコピー",
+  "client.officialAccounts.linkCopied": "リンクをコピーしました",
+  "client.officialAccounts.copyLinkFailed": "コピーできませんでした。リンクを選択して手動でコピーしてください。",
+  "client.officialAccounts.openBrowserFailed": "ブラウザーを開けませんでした。もう一度お試しください。"
 }
