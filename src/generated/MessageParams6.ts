@@ -188,16 +188,16 @@ export interface MessageParams6 {
   "client.composer.viewQuotes": { "value1": string | number };
   "client.composer.waitForTheCurrentTaskToFinishAndResolveQueued": Record<string, never>;
   "client.composer.waitingToRetry": Record<string, never>;
+  "client.computerUseAdmin.active": Record<string, never>;
+  "client.computerUseAdmin.allow": Record<string, never>;
+  "client.computerUseAdmin.authorizationFailed": Record<string, never>;
+  "client.computerUseAdmin.explanation": Record<string, never>;
+  "client.computerUseAdmin.inactive": Record<string, never>;
+  "client.computerUseAdmin.inherited": Record<string, never>;
+  "client.computerUseAdmin.retry": Record<string, never>;
+  "client.computerUseAdmin.revoke": Record<string, never>;
+  "client.computerUseAdmin.title": Record<string, never>;
   "client.configEditor.addItem": Record<string, never>;
   "client.configEditor.addSetting": Record<string, never>;
   "client.configEditor.addSettingsSupportedByOtherVersions": Record<string, never>;
-  "client.configEditor.allSettings": Record<string, never>;
-  "client.configEditor.checkTheConfigurationInTheEditorFirst": Record<string, never>;
-  "client.configEditor.chooseOrEnterACustomValue": Record<string, never>;
-  "client.configEditor.clearThisItemAndUseTheDefault": Record<string, never>;
-  "client.configEditor.configurationDirectory": Record<string, never>;
-  "client.configEditor.configurationMethod": Record<string, never>;
-  "client.configEditor.configurationNotSavedYet": Record<string, never>;
-  "client.configEditor.configured": Record<string, never>;
-  "client.configEditor.configuredExpandToEdit": { "value1": string | number };
 }

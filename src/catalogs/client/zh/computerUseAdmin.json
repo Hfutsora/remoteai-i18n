@@ -1,0 +1,11 @@
+{
+  "client.computerUseAdmin.title": "操作管理员窗口",
+  "client.computerUseAdmin.active": "本次运行已获授权，可操作管理员窗口。",
+  "client.computerUseAdmin.inactive": "当前仅能操作普通权限的窗口。",
+  "client.computerUseAdmin.inherited": "Remote AI 已以管理员身份运行。",
+  "client.computerUseAdmin.explanation": "开启后，每次启动 Remote AI，首次进入 Codex GUI 时确认一次。取消后可手动重试，退出应用后授权结束。",
+  "client.computerUseAdmin.allow": "允许操作管理员窗口",
+  "client.computerUseAdmin.retry": "重新授权",
+  "client.computerUseAdmin.revoke": "关闭管理员授权",
+  "client.computerUseAdmin.authorizationFailed": "未获得管理员授权。请在 Windows 确认窗口中允许，或稍后重试。"
+}

@@ -1,6 +1,7 @@
 import loungeAttachments from '../src/catalogs/client/zh/loungeAttachments.json';
 import cliGui from '../src/catalogs/client/zh/cliGui.json';
 import remoteCommand from '../src/catalogs/client/zh/remoteCommand.json';
+import computerUseAdmin from '../src/catalogs/client/zh/computerUseAdmin.json';
 import toolResults from '../src/catalogs/client/zh/toolResults.json';
 import { createHash } from 'node:crypto';
 import { expect, it } from 'vitest';
@@ -60,6 +61,7 @@ const additions = new Set(['client.chat.usePlugin',
   ...Object.keys(cliGui),
   ...Object.keys(conversationSync),
   ...Object.keys(remoteCommand),
+  ...Object.keys(computerUseAdmin),
   ...Object.keys(toolResults),
   ...Object.keys(gitConflicts),
   ...Object.keys(gitActivity),

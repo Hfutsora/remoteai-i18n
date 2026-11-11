@@ -1,0 +1,11 @@
+{
+  "client.computerUseAdmin.title": "Окна с правами администратора",
+  "client.computerUseAdmin.active": "Доступ к окнам администратора разрешён до закрытия приложения.",
+  "client.computerUseAdmin.inactive": "Сейчас доступны только окна с обычными правами.",
+  "client.computerUseAdmin.inherited": "Remote AI запущен от имени администратора.",
+  "client.computerUseAdmin.explanation": "После включения Windows запросит подтверждение при первом входе в Codex GUI после запуска Remote AI. Если вы отмените запрос, можно повторить его вручную. При выходе из приложения доступ прекращается.",
+  "client.computerUseAdmin.allow": "Разрешить управление окнами администратора",
+  "client.computerUseAdmin.retry": "Повторить авторизацию",
+  "client.computerUseAdmin.revoke": "Отключить доступ администратора",
+  "client.computerUseAdmin.authorizationFailed": "Доступ администратора не предоставлен. Разрешите его в окне подтверждения Windows или повторите попытку позже."
+}
