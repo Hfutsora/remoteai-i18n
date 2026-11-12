@@ -1,0 +1,11 @@
+{
+  "market.browserSearchEngine": "Default search engine",
+  "market.browserSearchOrAddress": "Search or enter a URL",
+  "market.browserSearchGoogle": "Google",
+  "market.browserSearchBaidu": "Baidu",
+  "market.browserSearchBing": "Bing",
+  "market.browserSearchDuckDuckGo": "DuckDuckGo",
+  "market.browserSearchSaveFailed": "Could not save your search engine setting. Try again.",
+  "market.browserNoActiveMappings": "No port mappings are available to open",
+  "market.browserActiveMappingsHint": "Choose an active mapped address to open in this page."
+}

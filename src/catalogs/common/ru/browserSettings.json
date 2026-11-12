@@ -1,0 +1,11 @@
+{
+  "market.browserSearchEngine": "Поисковая система по умолчанию",
+  "market.browserSearchOrAddress": "Поиск или ввод адреса",
+  "market.browserSearchGoogle": "Google",
+  "market.browserSearchBaidu": "Baidu",
+  "market.browserSearchBing": "Bing",
+  "market.browserSearchDuckDuckGo": "DuckDuckGo",
+  "market.browserSearchSaveFailed": "Не удалось сохранить выбор поисковой системы. Повторите попытку.",
+  "market.browserNoActiveMappings": "Нет доступных для открытия пробросов портов",
+  "market.browserActiveMappingsHint": "Выберите адрес активного проброса, чтобы открыть его на этой странице."
+}

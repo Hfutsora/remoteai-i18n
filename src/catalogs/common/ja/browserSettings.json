@@ -1,0 +1,11 @@
+{
+  "market.browserSearchEngine": "既定の検索エンジン",
+  "market.browserSearchOrAddress": "検索または URL を入力",
+  "market.browserSearchGoogle": "Google",
+  "market.browserSearchBaidu": "Baidu",
+  "market.browserSearchBing": "Bing",
+  "market.browserSearchDuckDuckGo": "DuckDuckGo",
+  "market.browserSearchSaveFailed": "検索エンジンの設定を保存できませんでした。もう一度お試しください。",
+  "market.browserNoActiveMappings": "開けるポートマッピングはありません",
+  "market.browserActiveMappingsHint": "有効なマッピングのアドレスを選ぶと、このページで開きます。"
+}

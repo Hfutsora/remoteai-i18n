@@ -1,0 +1,11 @@
+{
+  "market.browserSearchEngine": "默认搜索引擎",
+  "market.browserSearchOrAddress": "搜索或输入网址",
+  "market.browserSearchGoogle": "谷歌",
+  "market.browserSearchBaidu": "百度",
+  "market.browserSearchBing": "必应",
+  "market.browserSearchDuckDuckGo": "DuckDuckGo",
+  "market.browserSearchSaveFailed": "未能保存搜索引擎设置，请重试。",
+  "market.browserNoActiveMappings": "暂无可打开的端口映射",
+  "market.browserActiveMappingsHint": "选择正在映射的地址，在当前页面打开。"
+}

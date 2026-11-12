@@ -99,6 +99,7 @@ export interface MessageParams35 {
   "market.bookmarkSynced": Record<string, never>;
   "market.bookmarkSyncFailed": Record<string, never>;
   "market.bookmarkSyncing": Record<string, never>;
+  "market.browserActiveMappingsHint": Record<string, never>;
   "market.browserAddress": Record<string, never>;
   "market.browserBack": Record<string, never>;
   "market.browserBlank": Record<string, never>;
@@ -119,8 +120,16 @@ export interface MessageParams35 {
   "market.browserMoreTabs": Record<string, never>;
   "market.browserNavigation": Record<string, never>;
   "market.browserNewTab": Record<string, never>;
+  "market.browserNoActiveMappings": Record<string, never>;
   "market.browserReload": Record<string, never>;
   "market.browserRestore": Record<string, never>;
+  "market.browserSearchBaidu": Record<string, never>;
+  "market.browserSearchBing": Record<string, never>;
+  "market.browserSearchDuckDuckGo": Record<string, never>;
+  "market.browserSearchEngine": Record<string, never>;
+  "market.browserSearchGoogle": Record<string, never>;
+  "market.browserSearchOrAddress": Record<string, never>;
+  "market.browserSearchSaveFailed": Record<string, never>;
   "market.browserSettings": Record<string, never>;
   "market.browserStaleReference": Record<string, never>;
   "market.browserTabActions": Record<string, never>;
@@ -191,13 +200,4 @@ export interface MessageParams35 {
   "market.pageQuery": Record<string, never>;
   "market.pageRequired": Record<string, never>;
   "market.pageSettings": Record<string, never>;
-  "market.pageUrl": Record<string, never>;
-  "market.permissionGroup": Record<string, never>;
-  "market.permissionManage": Record<string, never>;
-  "market.permissionManageDescription": Record<string, never>;
-  "market.permissionOrder": Record<string, never>;
-  "market.permissionOrderDescription": Record<string, never>;
-  "market.permissionPromote": Record<string, never>;
-  "market.permissionPromoteDescription": Record<string, never>;
-  "market.permissionRead": Record<string, never>;
 }
