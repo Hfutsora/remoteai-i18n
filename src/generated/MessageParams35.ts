@@ -117,12 +117,15 @@ export interface MessageParams35 {
   "market.browserHiddenTabs": Record<string, never>;
   "market.browserInvalidUrl": Record<string, never>;
   "market.browserLimit": Record<string, never>;
+  "market.browserManageTabs": { "count": string | number };
   "market.browserMoreTabs": Record<string, never>;
   "market.browserNavigation": Record<string, never>;
   "market.browserNewTab": Record<string, never>;
   "market.browserNoActiveMappings": Record<string, never>;
+  "market.browserNoMatchingTabs": Record<string, never>;
   "market.browserReload": Record<string, never>;
   "market.browserRestore": Record<string, never>;
+  "market.browserReturnToPage": Record<string, never>;
   "market.browserSearchBaidu": Record<string, never>;
   "market.browserSearchBing": Record<string, never>;
   "market.browserSearchDuckDuckGo": Record<string, never>;
@@ -130,6 +133,7 @@ export interface MessageParams35 {
   "market.browserSearchGoogle": Record<string, never>;
   "market.browserSearchOrAddress": Record<string, never>;
   "market.browserSearchSaveFailed": Record<string, never>;
+  "market.browserSearchTabs": Record<string, never>;
   "market.browserSettings": Record<string, never>;
   "market.browserStaleReference": Record<string, never>;
   "market.browserTabActions": Record<string, never>;
@@ -196,8 +200,4 @@ export interface MessageParams35 {
   "market.outputPrice": Record<string, never>;
   "market.ownKey": Record<string, never>;
   "market.pageHeaders": Record<string, never>;
-  "market.pageHint": Record<string, never>;
-  "market.pageQuery": Record<string, never>;
-  "market.pageRequired": Record<string, never>;
-  "market.pageSettings": Record<string, never>;
 }
