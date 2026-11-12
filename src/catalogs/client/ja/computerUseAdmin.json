@@ -3,7 +3,7 @@
   "client.computerUseAdmin.active": "今回の起動中は管理者権限のウィンドウを操作できます。",
   "client.computerUseAdmin.inactive": "現在、通常権限のウィンドウのみ操作できます。",
   "client.computerUseAdmin.inherited": "Remote AI は管理者として実行されています。",
-  "client.computerUseAdmin.explanation": "有効にすると、Remote AI の起動後、初めて Codex GUI を開く際に Windows の確認が表示されます。キャンセルした場合は手動で再試行できます。アプリを終了すると許可は解除されます。",
+  "client.computerUseAdmin.explanation": "チェックを入れると、すぐに Windows の許可を求めます。Remote AI を再起動した後は、初めて Codex GUI を開く際に再度確認が必要です。キャンセルした場合は再試行できます。アプリを終了すると許可は解除されます。",
   "client.computerUseAdmin.allow": "管理者ウィンドウの操作を許可",
   "client.computerUseAdmin.retry": "再度許可する",
   "client.computerUseAdmin.revoke": "管理者アクセスを無効にする",

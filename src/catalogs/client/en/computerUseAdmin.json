@@ -3,7 +3,7 @@
   "client.computerUseAdmin.active": "Access to administrator windows is allowed for this run.",
   "client.computerUseAdmin.inactive": "Only standard-permission windows can be controlled.",
   "client.computerUseAdmin.inherited": "Remote AI is running as administrator.",
-  "client.computerUseAdmin.explanation": "Once enabled, Windows asks for confirmation the first time you enter Codex GUI after starting Remote AI. You can retry if you cancel. Access ends when you quit the app.",
+  "client.computerUseAdmin.explanation": "Selecting this option immediately asks for Windows authorization. After restarting Remote AI, confirm again when you first enter Codex GUI. You can retry if you cancel. Access ends when you quit the app.",
   "client.computerUseAdmin.allow": "Allow administrator windows",
   "client.computerUseAdmin.retry": "Authorize again",
   "client.computerUseAdmin.revoke": "Turn off administrator access",
