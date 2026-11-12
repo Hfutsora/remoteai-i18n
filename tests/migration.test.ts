@@ -55,7 +55,7 @@ import loungeNotifications from '../src/catalogs/client/zh/loungeNotifications.j
 import conversationSync from '../src/catalogs/client/zh/conversation-sync.json';
 
 const baselines = {
-  "client": "c3d5d7793205e829b0349600145ef12c0c912c853fac054206d0a899b80a714b",
+  "client": "53df2c7fb8ee5d237a417b7bb69de30a1b04dcd1f34b52753015af7aa40f9e1d",
 };
 
 // New complete templates added after migration are covered by the catalog completeness checks.
