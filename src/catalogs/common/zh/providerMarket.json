@@ -178,5 +178,12 @@
   "market.selectionHint": "可勾选当前页条目进行批量操作。",
   "market.batchReviewEligibility": "批量审核仅适用于待审核的社区 Provider，请调整所选条目。",
   "market.batchDeleteConfirm": "确定删除所选的 {count} 个 Provider？删除后无法恢复，已添加到个人列表的配置会保留。",
-  "market.batchReviewConfirm": "本次将审核所选的 {count} 个 Provider，请确认已查看相关内容。"
+  "market.batchReviewConfirm": "本次将审核所选的 {count} 个 Provider，请确认已查看相关内容。",
+  "market.inspectorTitle": "开发者工具",
+  "market.inspectorPlacement": "停靠位置",
+  "market.inspectorRight": "停靠在右侧",
+  "market.inspectorBottom": "停靠在底部",
+  "market.inspectorWindow": "在独立窗口中打开",
+  "market.inspectorResize": "调整开发者工具大小",
+  "market.inspectorFailed": "无法调整开发者工具的位置，请关闭后重试。"
 }

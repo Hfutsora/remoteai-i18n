@@ -178,6 +178,13 @@ export interface MessageParams35 {
   "market.independentPrices": Record<string, never>;
   "market.input": Record<string, never>;
   "market.inputPrice": Record<string, never>;
+  "market.inspectorBottom": Record<string, never>;
+  "market.inspectorFailed": Record<string, never>;
+  "market.inspectorPlacement": Record<string, never>;
+  "market.inspectorResize": Record<string, never>;
+  "market.inspectorRight": Record<string, never>;
+  "market.inspectorTitle": Record<string, never>;
+  "market.inspectorWindow": Record<string, never>;
   "market.intro": Record<string, never>;
   "market.invalid": Record<string, never>;
   "market.loading": Record<string, never>;
@@ -193,11 +200,4 @@ export interface MessageParams35 {
   "market.modelPlaceholder": Record<string, never>;
   "market.models": Record<string, never>;
   "market.modelsEmpty": Record<string, never>;
-  "market.modelsFetchFailed": Record<string, never>;
-  "market.modelsImported": { "count": string | number };
-  "market.modelsLimit": { "count": string | number };
-  "market.moreActions": Record<string, never>;
-  "market.multiplier": Record<string, never>;
-  "market.name": Record<string, never>;
-  "market.next": Record<string, never>;
 }

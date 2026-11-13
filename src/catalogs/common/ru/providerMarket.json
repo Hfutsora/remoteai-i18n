@@ -178,5 +178,12 @@
   "market.selectionHint": "Выберите записи на этой странице для массовых действий.",
   "market.batchReviewEligibility": "Массовая проверка доступна только для Provider сообщества, ожидающих проверки. Измените выбор.",
   "market.batchDeleteConfirm": "Удалить выбранные Provider ({count})? Это действие нельзя отменить. Копии в личных списках сохранятся.",
-  "market.batchReviewConfirm": "Будут проверены выбранные Provider ({count}). Подтвердите, что вы ознакомились с их содержимым."
+  "market.batchReviewConfirm": "Будут проверены выбранные Provider ({count}). Подтвердите, что вы ознакомились с их содержимым.",
+  "market.inspectorTitle": "Инструменты разработчика",
+  "market.inspectorPlacement": "Расположение панели",
+  "market.inspectorRight": "Закрепить справа",
+  "market.inspectorBottom": "Закрепить снизу",
+  "market.inspectorWindow": "Открыть в отдельном окне",
+  "market.inspectorResize": "Изменить размер инструментов разработчика",
+  "market.inspectorFailed": "Не удалось переместить инструменты разработчика. Закройте их и попробуйте снова."
 }

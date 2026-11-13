@@ -178,5 +178,12 @@
   "market.selectionHint": "このページの項目を選択して一括操作できます。",
   "market.batchReviewEligibility": "一括審査は審査待ちのコミュニティ Provider のみが対象です。選択を変更してください。",
   "market.batchDeleteConfirm": "選択した {count} 件の Provider を削除しますか？元に戻せません。個人リストに追加済みの設定は残ります。",
-  "market.batchReviewConfirm": "選択した {count} 件の Provider を審査します。内容を確認済みであることをご確認ください。"
+  "market.batchReviewConfirm": "選択した {count} 件の Provider を審査します。内容を確認済みであることをご確認ください。",
+  "market.inspectorTitle": "開発者ツール",
+  "market.inspectorPlacement": "ドッキング位置",
+  "market.inspectorRight": "右側にドッキング",
+  "market.inspectorBottom": "下部にドッキング",
+  "market.inspectorWindow": "別ウィンドウで開く",
+  "market.inspectorResize": "開発者ツールのサイズを変更",
+  "market.inspectorFailed": "開発者ツールを移動できませんでした。閉じてからもう一度お試しください。"
 }
