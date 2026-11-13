@@ -1,4 +1,5 @@
 {
+  "market.browserDesktopSite": "Desktop site",
   "market.browserSearchEngine": "Default search engine",
   "market.browserSearchOrAddress": "Search or enter a URL",
   "market.browserSearchGoogle": "Google",

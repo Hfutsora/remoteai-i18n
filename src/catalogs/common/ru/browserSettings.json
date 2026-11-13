@@ -1,4 +1,5 @@
 {
+  "market.browserDesktopSite": "Версия для компьютера",
   "market.browserSearchEngine": "Поисковая система по умолчанию",
   "market.browserSearchOrAddress": "Поиск или ввод адреса",
   "market.browserSearchGoogle": "Google",

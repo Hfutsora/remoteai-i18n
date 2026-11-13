@@ -1,4 +1,5 @@
 {
+  "market.browserDesktopSite": "PC版サイト",
   "market.browserSearchEngine": "既定の検索エンジン",
   "market.browserSearchOrAddress": "検索または URL を入力",
   "market.browserSearchGoogle": "Google",

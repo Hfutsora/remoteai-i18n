@@ -109,6 +109,7 @@ export interface MessageParams35 {
   "market.browserCloseOtherTabs": Record<string, never>;
   "market.browserCloseRightTabs": Record<string, never>;
   "market.browserCloseTab": { "name": string | number };
+  "market.browserDesktopSite": Record<string, never>;
   "market.browserFailed": Record<string, never>;
   "market.browserForward": Record<string, never>;
   "market.browserFullscreen": Record<string, never>;
@@ -199,5 +200,4 @@ export interface MessageParams35 {
   "market.output": Record<string, never>;
   "market.outputPrice": Record<string, never>;
   "market.ownKey": Record<string, never>;
-  "market.pageHeaders": Record<string, never>;
 }
