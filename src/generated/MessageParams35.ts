@@ -116,6 +116,12 @@ export interface MessageParams35 {
   "market.browserHeadersDesktop": Record<string, never>;
   "market.browserHeadersUnsupported": Record<string, never>;
   "market.browserHiddenTabs": Record<string, never>;
+  "market.browserHome": Record<string, never>;
+  "market.browserHomeBookmarksHint": Record<string, never>;
+  "market.browserHomeHint": Record<string, never>;
+  "market.browserHomeMappings": Record<string, never>;
+  "market.browserHomeMappingsHint": Record<string, never>;
+  "market.browserHomeMappingsWebHint": Record<string, never>;
   "market.browserInvalidUrl": Record<string, never>;
   "market.browserLimit": Record<string, never>;
   "market.browserManageTabs": { "count": string | number };
@@ -194,10 +200,4 @@ export interface MessageParams35 {
   "market.multiplier": Record<string, never>;
   "market.name": Record<string, never>;
   "market.next": Record<string, never>;
-  "market.normal": Record<string, never>;
-  "market.official": Record<string, never>;
-  "market.officialNote": Record<string, never>;
-  "market.output": Record<string, never>;
-  "market.outputPrice": Record<string, never>;
-  "market.ownKey": Record<string, never>;
 }

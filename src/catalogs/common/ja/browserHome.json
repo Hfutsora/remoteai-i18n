@@ -1,0 +1,8 @@
+{
+  "market.browserHome": "ブラウザのホーム",
+  "market.browserHomeHint": "上の欄で検索や URL の入力、またはここから保存したリンクを開けます。",
+  "market.browserHomeBookmarksHint": "ページを開き、設定で「ブックマークを追加」を選ぶと、次回からここで開けます。",
+  "market.browserHomeMappings": "ポートマッピング",
+  "market.browserHomeMappingsHint": "「見つける」でポートマッピングを追加して有効にすると、接続後にここに表示されます。",
+  "market.browserHomeMappingsWebHint": "モバイル Web はローカルのポートマッピングに未対応です。アプリで有効にするか、上の欄にアクセス可能な URL を入力してください。"
+}

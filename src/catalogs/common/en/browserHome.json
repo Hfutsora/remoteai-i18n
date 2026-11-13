@@ -1,0 +1,8 @@
+{
+  "market.browserHome": "Browser home",
+  "market.browserHomeHint": "Search or enter a URL above, or open a saved link here.",
+  "market.browserHomeBookmarksHint": "Open a page and choose Add bookmark in settings to find it here next time.",
+  "market.browserHomeMappings": "Port mappings",
+  "market.browserHomeMappingsHint": "Add and enable a port mapping in Discover. It will appear here once connected.",
+  "market.browserHomeMappingsWebHint": "Mobile web does not support local port mappings yet. Enable one in the app, or enter an accessible URL above."
+}

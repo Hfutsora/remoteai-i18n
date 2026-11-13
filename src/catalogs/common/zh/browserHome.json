@@ -1,0 +1,8 @@
+{
+  "market.browserHome": "浏览器首页",
+  "market.browserHomeHint": "在上方搜索或输入网址，也可以从这里打开常用链接。",
+  "market.browserHomeBookmarksHint": "打开喜欢的网页后，在设置中选择“添加书签”，下次就能从这里快速打开。",
+  "market.browserHomeMappings": "端口映射",
+  "market.browserHomeMappingsHint": "在发现页添加并开启端口映射，连接成功后会显示在这里。",
+  "market.browserHomeMappingsWebHint": "手机网页暂不支持本地端口映射。你可以在 App 中开启映射，或在上方输入可访问的网址。"
+}
