@@ -1,6 +1,11 @@
 {
   "mirrors": [
     {
+      "source": "platform/admin/browser_home_messages.go.txt",
+      "target": "internal/browserhome/messages.go",
+      "notice": "Generated from @remoteai/i18n/platform/admin/browser_home_messages.go.txt. Do not edit."
+    },
+    {
       "source": "platform/admin/remote_command_messages.go.txt",
       "target": "internal/devices/remote_command_messages.go",
       "notice": "Generated from @remoteai/i18n/platform/admin/remote_command_messages.go.txt. Do not edit."

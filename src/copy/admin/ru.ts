@@ -1,4 +1,6 @@
+import { ru as browserHome } from './browserHome';
 export default {
+  ...browserHome,
   "app.subtitle": "Консоль управления",
   "language.label": "Язык",
   "nav.myAccounts": "Мои аккаунты",
